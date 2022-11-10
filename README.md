@@ -1,3 +1,3 @@
-# COMP1004-Cluster-F
-## Social media app
-### Minigames
+# comp1004-coursework-cluster-f
+comp1004-coursework-cluster-f created by GitHub Classroom
+Yay
