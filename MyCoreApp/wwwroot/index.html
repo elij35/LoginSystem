@@ -3,9 +3,77 @@
 <head>
     <meta charset="utf-8" />
     <title></title>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.js"
+            integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+            crossorigin="anonymous"></script>
+    <script src="js/spa.js"></script>
+
 </head>
 <body>
     <h1>
         Welcome
+
+        <div class="container row">
+
+            <!-- Sidebar -->
+            <nav class="navbar navbar-dark bg-dark">
+                <ul class="navbar-nav flex-column">
+                    <li class="nav-item"><a class="nav-link" id="index">Home</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="#" id="map">Map</a></li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" id="treasure">
+                            Treasure
+                            Game
+                        </a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="#" id="data">Data</a></li>
+                </ul>
+            </nav>
+
+            <!-- Page Content -->
+            <div id="page-content-wrapper" class="col-8 pl-0">
+
+                <div class="jumbotron bg-cover" style="background-image: linear-gradient(to bottom,
+rgba(255,255,255,0.6) 0%,rgba(255,255,255,0.9) 100%), url(/img/SUShop.jpg)">
+
+                    <div class="container">
+                        <h1 class="display-4">Welcome</h1>
+                        <p class="lead font-weight-bold">
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+
+            <style>
+                .footer {
+                    position: absolute;
+                    bottom: 0;
+                    width: 100%;
+                    /* Set the fixed height of the footer here */
+                    height: 60px;
+                    line-height: 60px; /* Vertically center the text there */
+                    background-color: #f5f5f5;
+                }
+            </style>
+            <footer class="footer">
+                <div class="container">
+                    <span class="text-muted">
+                        Copyright University of Plymoutfdhzrhgh - for teaching purposes
+                        only
+                    </span>
+                </div>
+            </footer>
+
+
+
+
+
+
+
+
+
 </body>
 </html>
