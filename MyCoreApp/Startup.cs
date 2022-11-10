@@ -50,7 +50,8 @@ namespace MyCoreApp
 
             app.UseAuthorization();
 
-            /* app.UseEndpoints(endpoints =>
+            /*
+            app.UseEndpoints(endpoints =>
              {
                  endpoints.MapRazorPages();
              });
