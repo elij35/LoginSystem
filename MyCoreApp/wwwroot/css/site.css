@@ -9,22 +9,22 @@
     padding-top: 20px;
 }
 
-    .sidebar a {
-        display: block;
-        color: black;
-        padding: 6px 6px 6px 32px;
-        text-decoration: none;
-    }
+.sidebar a {
+    display: block;
+    color: black;
+    padding: 6px 6px 6px 32px;
+    text-decoration: none;
+}
 
-        .sidebar a.active {
-            background-color: grey;
-            color: white;
-        }
+.sidebar a.active {
+    background-color: grey;
+    color: white;
+}
 
-        .sidebar a:hover:not(.active) {
-            background-color: #555;
-            color: white;
-        }
+.sidebar a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+}
 
 a {
     color: black;
