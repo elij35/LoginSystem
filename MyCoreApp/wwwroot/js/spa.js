@@ -10,13 +10,31 @@ $(document).ready(function () {
 });
 
 $(document).ready(function () {
-    $('#map').click(function () {
-        $('#page-content-wrapper').load('map.html');
+    $('#messages').click(function () {
+        $('#page-content-wrapper').load('messages.html');
     })
 });
 
 $(document).ready(function () {
-    $('#game').click(function () {
-        $('#page-content-wrapper').load('game.html');
+    $('#posts').click(function () {
+        $('#page-content-wrapper').load('posts.html');
+    })
+});
+
+$(document).ready(function () {
+    $('#friends').click(function () {
+        $('#page-content-wrapper').load('friends.html');
+    })
+});
+
+$(document).ready(function () {
+    $('#games').click(function () {
+        $('#page-content-wrapper').load('games.html');
+    })
+});
+
+$(document).ready(function () {
+    $('#account').click(function () {
+        $('#page-content-wrapper').load('accounts.html');
     })
 });
