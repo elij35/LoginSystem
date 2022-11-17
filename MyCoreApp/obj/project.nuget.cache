@@ -1,13 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "0lQ1C8OtL3enOsTxHDwaFeiYdjyjqbnaJMFO2FoWwJ+pE+/AsIBAf7JA4/oStwI7iL3DH201yrzljs4ENushEQ==",
+  "dgSpecHash": "WoILuUDetNE0UDwW/sCcVW8B38PPNzYbY9RCDJe7NSOdXrwtPxm/NuGmzItTt3vdxOuBPLKX7EQsKEFZn6vaMQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\elijb\\OneDrive - University of Plymouth\\.Git projects\\comp1004-coursework-cluster-f\\MyCoreApp\\MyCoreApp.csproj",
-  "expectedPackageFiles": [
-    "C:\\Users\\elijb\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\3.1.0\\microsoft.windowsdesktop.app.ref.3.1.0.nupkg.sha512",
-    "C:\\Users\\elijb\\.nuget\\packages\\microsoft.netcore.app.ref\\3.1.0\\microsoft.netcore.app.ref.3.1.0.nupkg.sha512",
-    "C:\\Users\\elijb\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\3.1.10\\microsoft.aspnetcore.app.ref.3.1.10.nupkg.sha512",
-    "C:\\Users\\elijb\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.1.31\\microsoft.netcore.app.host.win-x64.3.1.31.nupkg.sha512"
-  ],
+  "projectFilePath": "C:\\Users\\jbott1\\comp1004-coursework-cluster-f\\MyCoreApp\\MyCoreApp.csproj",
+  "expectedPackageFiles": [],
   "logs": []
 }
