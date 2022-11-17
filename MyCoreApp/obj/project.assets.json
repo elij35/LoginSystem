@@ -8,23 +8,23 @@
     ".NETCoreApp,Version=v3.1": []
   },
   "packageFolders": {
-    "C:\\Users\\bsanders-wyatt\\.nuget\\packages\\": {},
+    "C:\\Users\\jbott1\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\bsanders-wyatt\\Comp1004SocialMediaCoursework\\MyCoreApp\\MyCoreApp.csproj",
+      "projectUniqueName": "C:\\Users\\jbott1\\comp1004-coursework-cluster-f\\MyCoreApp\\MyCoreApp.csproj",
       "projectName": "MyCoreApp",
-      "projectPath": "C:\\Users\\bsanders-wyatt\\Comp1004SocialMediaCoursework\\MyCoreApp\\MyCoreApp.csproj",
-      "packagesPath": "C:\\Users\\bsanders-wyatt\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\bsanders-wyatt\\Comp1004SocialMediaCoursework\\MyCoreApp\\obj\\",
+      "projectPath": "C:\\Users\\jbott1\\comp1004-coursework-cluster-f\\MyCoreApp\\MyCoreApp.csproj",
+      "packagesPath": "C:\\Users\\jbott1\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\jbott1\\comp1004-coursework-cluster-f\\MyCoreApp\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
       ],
       "configFilePaths": [
-        "C:\\Users\\bsanders-wyatt\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\jbott1\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
