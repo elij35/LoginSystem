@@ -4,9 +4,37 @@
 // Write your Javascript code.
 
 $(document).ready(function () {
-    $('#map').click(function () {
-        $('#page-content-wrapper').load('map.html');
+    $('#index').click(function () {
+        $('#page-content-wrapper').load('index.html');
     })
 });
 
+$(document).ready(function () {
+    $('#messages').click(function () {
+        $('#page-content-wrapper').load('messages.html');
+    })
+});
 
+$(document).ready(function () {
+    $('#posts').click(function () {
+        $('#page-content-wrapper').load('posts.html');
+    })
+});
+
+$(document).ready(function () {
+    $('#friends').click(function () {
+        $('#page-content-wrapper').load('friends.html');
+    })
+});
+
+$(document).ready(function () {
+    $('#games').click(function () {
+        $('#page-content-wrapper').load('games.html');
+    })
+});
+
+$(document).ready(function () {
+    $('#account').click(function () {
+        $('#page-content-wrapper').load('accounts.html');
+    })
+});
