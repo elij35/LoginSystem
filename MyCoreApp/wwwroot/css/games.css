@@ -1,1 +1,38 @@
-﻿
+﻿.topbar {
+    background-color: #03045e;
+    color: grey;
+}
+
+.sidebar {
+    background-color: #03045e;
+}
+
+.sidebar a {
+    color: grey;
+}
+
+.sidebar a.active {
+    background-color: #033f63;
+    color: grey;
+}
+
+.sidebar a:hover:not(.active) {
+    background-color: #284b63;
+}
+
+.footer {
+    background-color: #03045e;
+    color: grey;
+}
+
+body {
+    background-color: #0077b6;
+}
+
+#game {
+    width: 1366px;
+    height: 768px;
+    border: 1px solid black;
+    margin-top: 20px;
+    margin-left: 5px;
+}
