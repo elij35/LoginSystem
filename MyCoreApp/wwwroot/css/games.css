@@ -29,10 +29,7 @@ body {
     background-color: #0077b6;
 }
 
-#game {
-    width: 1366px;
-    height: 768px;
-    border: 1px solid black;
+canvas {
     margin-top: 20px;
-    margin-left: 5px;
+    box-shadow: black 20px 10px 50px;
 }
