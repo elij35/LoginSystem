@@ -33,3 +33,30 @@ canvas {
     margin-top: 20px;
     box-shadow: black 20px 10px 50px;
 }
+
+button {
+    border: none;
+    appearance: none;
+    outline: none;
+    display: inline-block;
+    font-size: 1.5em;
+    cursor: pointer;
+    text-decoration: none;
+    padding: 12px 48px 12px 48px;
+    border-radius: 4px;
+    color: #ffffff;
+    background-color: #1bafdb;
+    border: 2px solid #ffffff;
+}
+
+.screen {
+    padding: 20px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-top: -100px;
+    margin-left: -100px;
+    height: 200px;
+    width: 250px;
+    text-align: center;
+}

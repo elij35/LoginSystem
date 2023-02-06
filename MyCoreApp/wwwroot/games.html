@@ -34,7 +34,10 @@
 
         <!-- Page Content -->
         <div class="container">
-            <canvas id="game" width="400" height="400"/>
+            <div id="start-screen" class="screen" style="display:block">
+                <button onclick="startSnake()">Snake</button>
+            </div>
+            <canvas id="game" width="400" height="400" style="display:none"/>
         </div>
     </div>
 
@@ -43,6 +46,13 @@
 </html>
 
 <script>
+    function toggleScreen(id, toggle)
+    {
+        let element = document.getElementById(id);
+        let display = (toggle) ? "block" : "none";
+        element.style.display = display;
+    }
+
     const canvas = document.getElementById('game');
     const ctx = canvas.getContext('2d');
 
@@ -72,11 +82,42 @@
 
     let score = 0;
 
+    function startSnake()
+    {
+        toggleScreen("start-screen", false);
+        toggleScreen("game", true);
+
+        speed = 7;
+        headX = 10;
+        headY = 10;
+        snakeParts.length = 0;
+        tailLength = 2;
+        appleX = 5;
+        appleY = 5;
+        xVelocity = 0;
+        yVelocity = 0;
+        score = 0;
+
+        drawGame();
+    }
+
+    function endSnake()
+    {
+        toggleScreen("start-screen", true);
+        toggleScreen("game", false);
+    }
+
     //game loop
     function drawGame()
     {
-        clearScreen();
         changeSnakePosition();
+        let result = isGameOver();
+        if (result == true)
+        {
+            setTimeout(endSnake, 3000);
+            return;
+        }
+        clearScreen();
         checkAppleCollision();
         drawApple();
         drawSnake();
@@ -84,6 +125,50 @@
         setTimeout(drawGame, 1000 / speed);
     }
 
+    function isGameOver()
+    {
+        let gameOver = false;
+
+        //check game has started
+        if (yVelocity === 0 && xVelocity === 0)
+        {
+            return false;
+        }
+
+        //walls
+        if (headX < 0 || headX === tileCount || headY < 0 || headY === tileCount)
+        {
+            gameOver = true;
+        }
+
+        //snake
+        for (let i = 0; i < snakeParts.length; i++)
+        {
+            let part = snakeParts[i];
+            if (part.x === headX && part.y === headY)
+            {
+                gameOver = true;
+                break;
+            }
+        }
+
+        //game over screen
+        if (gameOver == true)
+        {
+            ctx.fillStyle = "white";
+            ctx.font = "50px Verdana";
+
+            var gradient = ctx.createLinearGradient(0, 0, canvas.width, 0);
+            gradient.addColorStop("0", "magenta");
+            gradient.addColorStop("0.5", "blue");
+            gradient.addColorStop("1.0", "red");
+            ctx.fillStyle = gradient;
+
+            ctx.fillText("Game Over!", canvas.width / 6.5, canvas.height / 2);
+        }
+
+        return gameOver;
+    }
     function clearScreen()
     {
         ctx.fillStyle = 'black';
@@ -100,8 +185,21 @@
     {
         if (appleX == headX && appleY == headY)
         {
-            appleX = Math.floor(Math.random() * tileCount);
-            appleY = Math.floor(Math.random() * tileCount);
+            let foundSpace = false
+            while (foundSpace == false)
+            {
+                appleX = Math.floor(Math.random() * tileCount);
+                appleY = Math.floor(Math.random() * tileCount);
+                foundSpace = true;
+
+                for (let i = 0; i < snakeParts.length; i++) {
+                    let part = snakeParts[i];
+                    if (part.x === appleX && part.y === appleY) {
+                        foundSpace = false;
+                        break;
+                    }
+                }
+            }
             tailLength++;
             score++;
         }
@@ -135,8 +233,8 @@
     function drawScore()
     {
         ctx.fillStyle = "white";
-        ctx.font = "20px Arial";
-        ctx.fillText("Score " + score, canvas.width - 80, 20);
+        ctx.font = "20px Verdana";
+        ctx.fillText("Score " + score, canvas.width - 100, 20);
     }
 
     document.body.addEventListener('keydown', keyDown);
@@ -187,6 +285,4 @@
             xVelocity = 1;
         }
     }
-
-    drawGame();
 </script>
