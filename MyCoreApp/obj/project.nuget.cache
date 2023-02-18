@@ -1,8 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "WoILuUDetNE0UDwW/sCcVW8B38PPNzYbY9RCDJe7NSOdXrwtPxm/NuGmzItTt3vdxOuBPLKX7EQsKEFZn6vaMQ==",
+  "dgSpecHash": "GPbTiC40+jpNfFM+Qq0XqIyQUlaIh94zTWa2IWPx2/BV8H5ykOiJ3bArBtcf/jRLYobydhqn8qAOYrYhneHEuw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\jbott1\\comp1004-coursework-cluster-f\\MyCoreApp\\MyCoreApp.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\elijb\\OneDrive - University of Plymouth\\.Git projects\\comp1004-coursework-cluster-f\\MyCoreApp\\MyCoreApp.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\elijb\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\3.1.0\\microsoft.windowsdesktop.app.ref.3.1.0.nupkg.sha512",
+    "C:\\Users\\elijb\\.nuget\\packages\\microsoft.netcore.app.ref\\3.1.0\\microsoft.netcore.app.ref.3.1.0.nupkg.sha512",
+    "C:\\Users\\elijb\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\3.1.10\\microsoft.aspnetcore.app.ref.3.1.10.nupkg.sha512",
+    "C:\\Users\\elijb\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.1.32\\microsoft.netcore.app.host.win-x64.3.1.32.nupkg.sha512"
+  ],
   "logs": []
 }
