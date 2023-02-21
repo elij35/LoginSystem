@@ -10,26 +10,26 @@
     overflow: hidden;
 }
 
-.topbar a {
-    float: left;
+.topbar-right {
+    position: center;
+    float: right;
+    padding: 25px 12px;
+    margin-top: 15px;
+}
+
+.topbar-right a {
     color: black;
     background-color: grey;
     color: white;
     text-align: center;
-    padding: 22px 34px;
+    padding: 20px 20px;
     font-size: 18px;
-    margin-right:5px;
-}
-
-.topbar-right {
-    position: center;
-    float: right;
+    margin-right: 12px;
 }
 
 .topbar-right a:hover:not(.active) {
     background-color: #555;
     color: white;
-    text-transform: uppercase;
 }
 
 .icon {
@@ -98,7 +98,7 @@ body {
     margin-left: 200px;
     margin-top: 110px;
     margin-bottom: 50px;
-    height: 95%;
+    height: auto;
 }
 
 h1 {
