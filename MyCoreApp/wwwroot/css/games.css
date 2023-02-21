@@ -30,8 +30,10 @@ body {
 }
 
 canvas {
-    margin-top: 20px;
+    top: 140px;
+    left: 210px;
     box-shadow: black 20px 10px 50px;
+    position: fixed;
 }
 
 button {

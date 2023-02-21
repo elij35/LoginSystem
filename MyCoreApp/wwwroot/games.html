@@ -33,11 +33,12 @@
         </div>
 
         <!-- Page Content -->
-        <div class="container">
+        <div class="container" id="canvas-container">
             <div id="start-screen" class="screen" style="display:block">
                 <button onclick="startSnake()">Snake</button>
+                <button onclick="startPlatformer()">Platformer</button>
             </div>
-            <canvas id="game" width="400" height="400" style="display:none"/>
+            <canvas id="game" width="400" height="400" style="display:none" />
         </div>
     </div>
 
@@ -46,12 +47,19 @@
 </html>
 
 <script>
+
     function toggleScreen(id, toggle)
     {
         let element = document.getElementById(id);
         let display = (toggle) ? "block" : "none";
         element.style.display = display;
     }
+
+    //
+    //
+    // Snake
+    //
+    //
 
     const canvas = document.getElementById('game');
     const ctx = canvas.getContext('2d');
@@ -84,6 +92,9 @@
 
     function startSnake()
     {
+        canvas.width = "400";
+        canvas.height = "400";
+
         toggleScreen("start-screen", false);
         toggleScreen("game", true);
 
@@ -169,6 +180,7 @@
 
         return gameOver;
     }
+
     function clearScreen()
     {
         ctx.fillStyle = 'black';
@@ -284,5 +296,202 @@
             yVelocity = 0;
             xVelocity = 1;
         }
+    }
+
+    //
+    //
+    // Platformer
+    //
+    //
+
+    var gameLoop;
+    var player;
+    var borders = [];
+
+    var upKey;
+    var rightKey;
+    var downKey;
+    var leftKey;
+
+    function startPlatformer()
+    {
+        canvas.width = "1280";
+        canvas.height = "720";
+
+        toggleScreen("start-screen", false);
+        toggleScreen("game", true);
+
+        ctx.fillStyle = 'black';
+        ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+        //Setup Key Listeners
+        setupInputs();
+
+        //Create Player
+        player = new Player(100, 400);
+        
+        //Create Borders
+        //Floor
+        for (let i = 0; i < 6; i++)
+        {
+            borders.push(new Border(0 + 100 * i, 620, 100, 100, 1));
+        } 
+
+        //Wall
+        borders.push(new Border(0, 520, 100, 100, 2));
+
+        //Start Game Loop
+        gameLoop = setInterval(step, 1000 / 30);
+
+        setTimeout(endPlatformer, 5000);
+    }
+
+    function step() {
+        player.step();
+        draw();
+    }
+
+    function draw() {
+        ctx.fillStyle = 'black';
+        ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+        player.draw();
+
+        for (let i = 0; i < borders.length; i++) {
+            borders[i].draw();
+        }
+    }
+
+    function setupInputs()
+    {
+        document.addEventListener("keydown", function (event) {
+            if (event.key === "w" || event.key === "ArrowUp")
+            {
+                upKey = true;
+            }
+            else if (event.key === "a" || event.key === "ArrowLeft") {
+                leftKey = true;
+            }
+            else if (event.key === "s" || event.key === "ArrowDown") {
+                downKey = true;
+            }
+            else if (event.key === "d" || event.key === "ArrowRight") {
+                rightKey = true;
+            }
+        });
+
+        document.addEventListener("keyup", function (event) {
+            if (event.key === "w" || event.key === "ArrowUp") {
+                upKey = false;
+            }
+            else if (event.key === "a" || event.key === "ArrowLeft") {
+                leftKey = false;
+            }
+            else if (event.key === "s" || event.key === "ArrowDown") {
+                downKey = false;
+            }
+            else if (event.key === "d" || event.key === "ArrowRight") {
+                rightKey = false;
+            }
+        });
+    }
+
+    function Player(playerX, playerY)
+    {
+        this.playerX = playerX;
+        this.playerY = playerY;
+        this.playerXspeed = 0;
+        this.playerYspeed = 0;
+        this.friction = 0.6;
+        this.maxSpeed = 10;
+        this.playerWidth = 50;
+        this.playerHeight = 100;
+        this.active = true;
+
+        this.step = function()
+        {
+            if (this.active)
+            {
+                //Horizontal Movement
+                if (!leftKey && !rightKey || leftKey && rightKey)
+                {
+                    this.playerXspeed *= this.friction;
+                }
+                else if (rightKey)
+                {
+                    this.playerXspeed++;
+                }
+                else if (leftKey)
+                {
+                    this.playerXspeed--;
+                }
+
+                //Vertical Movement
+                if (upKey)
+                {
+                    this.playerYspeed -= 15;
+                }
+                //Apply Gravity
+                this.playerYspeed += 5;
+
+                //Correct Speed
+                if (this.playerXspeed > this.maxSpeed)
+                {
+                    this.playerXspeed = this.maxSpeed;
+                }
+                else if (this.playerXspeed < -this.maxSpeed)
+                {
+                    this.playerXspeed = -this.maxSpeed;
+                }
+
+                if (this.playerYspeed > this.maxSpeed)
+                {
+                    this.playerYspeed = this.maxSpeed;
+                }
+                else if (this.playerYspeed < -this.maxSpeed)
+                {
+                    this.playerYspeed = -this.maxSpeed;
+                }
+
+                //Changing Position
+                this.playerX += this.playerXspeed;
+                this.playerY += this.playerYspeed;
+            }
+        }
+
+        this.draw = function()
+        {
+            ctx.fillStyle = "green";
+            ctx.fillRect(this.playerX, this.playerY, this.playerWidth, this.playerHeight);
+        }
+    }
+
+    function Border(borderX, borderY, borderWidth, borderHeight, borderType)
+    {
+        this.borderX = borderX;
+        this.borderY = borderY;
+        this.borderWidth = borderWidth;
+        this.borderHeight = borderHeight;
+        this.borderType = borderType;
+
+        this.draw = function ()
+        {
+            if (this.borderType === 1)
+            {
+                ctx.fillStyle = "blue";
+            }
+            else if (this.borderType === 2)
+            {
+                ctx.fillStyle = "red";
+            }
+
+            ctx.fillRect(this.borderX, this.borderY, this.borderWidth, this.borderHeight)
+        }
+    }
+
+    function endPlatformer()
+    {
+        toggleScreen("start-screen", true);
+        toggleScreen("game", false);
     }
 </script>
