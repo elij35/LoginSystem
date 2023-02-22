@@ -52,8 +52,7 @@
 
 <script>
 
-    function toggleScreen(id, toggle)
-    {
+    function toggleScreen(id, toggle) {
         let element = document.getElementById(id);
         let display = (toggle) ? "block" : "none";
         element.style.display = display;
@@ -68,10 +67,8 @@
     const canvas = document.getElementById('game');
     const ctx = canvas.getContext('2d');
 
-    class SnakePart
-    {
-        constructor(x, y)
-        {
+    class SnakePart {
+        constructor(x, y) {
             this.x = x;
             this.y = y;
         }
@@ -94,8 +91,7 @@
 
     let score = 0;
 
-    function startSnake()
-    {
+    function startSnake() {
         canvas.width = "400";
         canvas.height = "400";
 
@@ -116,19 +112,16 @@
         drawGame();
     }
 
-    function endSnake()
-    {
+    function endSnake() {
         toggleScreen("start-screen", true);
         toggleScreen("game", false);
     }
 
     //game loop
-    function drawGame()
-    {
+    function drawGame() {
         changeSnakePosition();
         let result = isGameOver();
-        if (result == true)
-        {
+        if (result == true) {
             setTimeout(endSnake, 3000);
             return;
         }
@@ -140,36 +133,30 @@
         setTimeout(drawGame, 1000 / speed);
     }
 
-    function isGameOver()
-    {
+    function isGameOver() {
         let gameOver = false;
 
         //check game has started
-        if (yVelocity === 0 && xVelocity === 0)
-        {
+        if (yVelocity === 0 && xVelocity === 0) {
             return false;
         }
 
         //walls
-        if (headX < 0 || headX === tileCount || headY < 0 || headY === tileCount)
-        {
+        if (headX < 0 || headX === tileCount || headY < 0 || headY === tileCount) {
             gameOver = true;
         }
 
         //snake
-        for (let i = 0; i < snakeParts.length; i++)
-        {
+        for (let i = 0; i < snakeParts.length; i++) {
             let part = snakeParts[i];
-            if (part.x === headX && part.y === headY)
-            {
+            if (part.x === headX && part.y === headY) {
                 gameOver = true;
                 break;
             }
         }
 
         //game over screen
-        if (gameOver == true)
-        {
+        if (gameOver == true) {
             ctx.fillStyle = "white";
             ctx.font = "50px Verdana";
 
@@ -185,25 +172,20 @@
         return gameOver;
     }
 
-    function clearScreen()
-    {
+    function clearScreen() {
         ctx.fillStyle = 'black';
         ctx.fillRect(0, 0, canvas.width, canvas.height);
     }
 
-    function changeSnakePosition()
-    {
+    function changeSnakePosition() {
         headX = headX + xVelocity;
         headY = headY + yVelocity;
     }
 
-    function checkAppleCollision()
-    {
-        if (appleX == headX && appleY == headY)
-        {
+    function checkAppleCollision() {
+        if (appleX == headX && appleY == headY) {
             let foundSpace = false
-            while (foundSpace == false)
-            {
+            while (foundSpace == false) {
                 appleX = Math.floor(Math.random() * tileCount);
                 appleY = Math.floor(Math.random() * tileCount);
                 foundSpace = true;
@@ -221,24 +203,20 @@
         }
     }
 
-    function drawApple()
-    {
+    function drawApple() {
         ctx.fillStyle = 'red';
         ctx.fillRect(appleX * tileCount, appleY * tileCount, tileSize, tileSize);
     }
 
-    function drawSnake()
-    {
+    function drawSnake() {
         ctx.fillStyle = 'green';
-        for (let i = 0; i < snakeParts.length; i++)
-        {
+        for (let i = 0; i < snakeParts.length; i++) {
             let part = snakeParts[i];
             ctx.fillRect(part.x * tileCount, part.y * tileCount, tileSize, tileSize);
         }
 
         snakeParts.push(new SnakePart(headX, headY));
-        if (snakeParts.length > tailLength)
-        {
+        if (snakeParts.length > tailLength) {
             snakeParts.shift();
         }
 
@@ -246,8 +224,7 @@
         ctx.fillRect(headX * tileCount, headY * tileCount, tileSize, tileSize);
     }
 
-    function drawScore()
-    {
+    function drawScore() {
         ctx.fillStyle = "white";
         ctx.font = "20px Verdana";
         ctx.fillText("Score " + score, canvas.width - 100, 20);
@@ -255,13 +232,10 @@
 
     document.body.addEventListener('keydown', keyDown);
 
-    function keyDown(event)
-    {
+    function keyDown(event) {
         //up
-        if (event.keyCode == 38)
-        {
-            if (yVelocity == 1)
-            {
+        if (event.keyCode == 38) {
+            if (yVelocity == 1) {
                 return;
             }
             yVelocity = -1;
@@ -269,10 +243,8 @@
         }
 
         //down
-        if (event.keyCode == 40)
-        {
-            if (yVelocity == -1)
-            {
+        if (event.keyCode == 40) {
+            if (yVelocity == -1) {
                 return;
             }
             yVelocity = 1;
@@ -280,10 +252,8 @@
         }
 
         //left
-        if (event.keyCode == 37)
-        {
-            if (xVelocity == 1)
-            {
+        if (event.keyCode == 37) {
+            if (xVelocity == 1) {
                 return;
             }
             yVelocity = 0;
@@ -291,10 +261,8 @@
         }
 
         //right
-        if (event.keyCode == 39)
-        {
-            if (xVelocity == -1)
-            {
+        if (event.keyCode == 39) {
+            if (xVelocity == -1) {
                 return;
             }
             yVelocity = 0;
@@ -317,10 +285,10 @@
     var downKey;
     var leftKey;
 
-    function startPlatformer()
-    {
+    function startPlatformer() {
         canvas.width = "1280";
         canvas.height = "720";
+        endGame = false;
 
         toggleScreen("start-screen", false);
         toggleScreen("game", true);
@@ -333,13 +301,12 @@
 
         //Create Player
         player = new Player(100, 400);
-        
+
         //Create Borders
         //Floor
-        for (let i = 0; i < 6; i++)
-        {
+        for (let i = 0; i < 6; i++) {
             borders.push(new Border(0 + 100 * i, 620, 100, 100, 1));
-        } 
+        }
 
         //Wall
         borders.push(new Border(0, 520, 100, 100, 2));
@@ -347,6 +314,7 @@
         //Start Game Loop
         gameLoop = setInterval(step, 1000 / 30);
 
+        //End Game Loop
         setTimeout(endPlatformer, 5000);
     }
 
@@ -366,11 +334,9 @@
         }
     }
 
-    function setupInputs()
-    {
+    function setupInputs() {
         document.addEventListener("keydown", function (event) {
-            if (event.key === "w" || event.key === "ArrowUp")
-            {
+            if (event.key === "w" || event.key === "ArrowUp") {
                 upKey = true;
             }
             else if (event.key === "a" || event.key === "ArrowLeft") {
@@ -400,8 +366,7 @@
         });
     }
 
-    function Player(playerX, playerY)
-    {
+    function Player(playerX, playerY) {
         this.playerX = playerX;
         this.playerY = playerY;
         this.playerXspeed = 0;
@@ -412,49 +377,95 @@
         this.playerHeight = 100;
         this.active = true;
 
-        this.step = function()
-        {
-            if (this.active)
-            {
+        this.step = function () {
+            if (this.active) {
                 //Horizontal Movement
-                if (!leftKey && !rightKey || leftKey && rightKey)
-                {
+                if (!leftKey && !rightKey || leftKey && rightKey) {
                     this.playerXspeed *= this.friction;
                 }
-                else if (rightKey)
-                {
+                else if (rightKey) {
                     this.playerXspeed++;
                 }
-                else if (leftKey)
-                {
+                else if (leftKey) {
                     this.playerXspeed--;
                 }
 
                 //Vertical Movement
-                if (upKey)
-                {
+                if (upKey) {
                     this.playerYspeed -= 15;
                 }
                 //Apply Gravity
                 this.playerYspeed += 5;
 
                 //Correct Speed
-                if (this.playerXspeed > this.maxSpeed)
-                {
+                if (this.playerXspeed > this.maxSpeed) {
                     this.playerXspeed = this.maxSpeed;
                 }
-                else if (this.playerXspeed < -this.maxSpeed)
-                {
+                else if (this.playerXspeed < -this.maxSpeed) {
                     this.playerXspeed = -this.maxSpeed;
                 }
 
-                if (this.playerYspeed > this.maxSpeed)
-                {
+                if (this.playerYspeed > this.maxSpeed) {
                     this.playerYspeed = this.maxSpeed;
                 }
-                else if (this.playerYspeed < -this.maxSpeed)
-                {
+                else if (this.playerYspeed < -this.maxSpeed) {
                     this.playerYspeed = -this.maxSpeed;
+                }
+
+                if (this.playerXspeed > 0) {
+                    this.playerXspeed = Math.floor(this.playerXspeed);
+                }
+                else {
+                    this.playerXspeed = Math.ceil(this.playerXspeed);
+                }
+
+                if (this.playerYspeed > 0) {
+                    this.playerYspeed = Math.floor(this.playerYspeed);
+                }
+                else {
+                    this.playerYspeed = Math.ceil(this.playerYspeed);
+                }
+
+                //Horizontal Collision Rectangle
+                let horizontalRect = {
+                    x: this.playerX + this.playerXspeed,
+                    y: this.playerY,
+                    width: this.playerWidth,
+                    height: this.playerHeight
+                }
+
+                //Vertical Collision Rectangle
+                let verticalRect = {
+                    x: this.playerX,
+                    y: this.playerY + this.playerYspeed,
+                    width: this.playerWidth,
+                    height: this.playerHeight
+                }
+
+                //Check For Intersections
+                for (let i = 0; i < borders.length; i++) {
+                    let borderRect = {
+                        x: borders[i].borderX,
+                        y: borders[i].borderY,
+                        width: borders[i].borderWidth,
+                        height: borders[i].borderHeight
+                    }
+
+                    if (checkIntersection(horizontalRect, borderRect)) {
+                        while (checkIntersection(horizontalRect, borderRect)) {
+                            horizontalRect.x -= Math.sign(this.playerXspeed)
+                        }
+                        this.playerX = horizontalRect.x;
+                        this.playerXspeed = 0;
+                    }
+
+                    if (checkIntersection(verticalRect, borderRect)) {
+                        while (checkIntersection(verticalRect, borderRect)) {
+                            verticalRect.y -= Math.sign(this.playerYspeed)
+                        }
+                        this.playerY = horizontalRect.y;
+                        this.playerYspeed = 0;
+                    }
                 }
 
                 //Changing Position
@@ -463,29 +474,24 @@
             }
         }
 
-        this.draw = function()
-        {
+        this.draw = function () {
             ctx.fillStyle = "green";
             ctx.fillRect(this.playerX, this.playerY, this.playerWidth, this.playerHeight);
         }
     }
 
-    function Border(borderX, borderY, borderWidth, borderHeight, borderType)
-    {
+    function Border(borderX, borderY, borderWidth, borderHeight, borderType) {
         this.borderX = borderX;
         this.borderY = borderY;
         this.borderWidth = borderWidth;
         this.borderHeight = borderHeight;
         this.borderType = borderType;
 
-        this.draw = function ()
-        {
-            if (this.borderType === 1)
-            {
+        this.draw = function () {
+            if (this.borderType === 1) {
                 ctx.fillStyle = "blue";
             }
-            else if (this.borderType === 2)
-            {
+            else if (this.borderType === 2) {
                 ctx.fillStyle = "red";
             }
 
@@ -493,8 +499,26 @@
         }
     }
 
-    function endPlatformer()
-    {
+    function checkIntersection(r1, r2) {
+        if (r1.x >= r2.x + r2.width) {
+            return false;
+        }
+        else if (r1.x + r1.width <= r2.x) {
+            return false;
+        }
+        else if (r1.y >= r2.y + r2.height) {
+            return false;
+        }
+        else if (r1.y + r1.height <= r2.y) {
+            return false;
+        }
+        else {
+            return true;
+        }
+    }
+
+    function endPlatformer() {
+        clearInterval(gameLoop);
         toggleScreen("start-screen", true);
         toggleScreen("game", false);
     }
