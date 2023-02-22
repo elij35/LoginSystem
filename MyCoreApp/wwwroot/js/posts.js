@@ -38,15 +38,3 @@ $(document).ready(function () {
         $('#page-content-wrapper').load('accounts.html');
     })
 });
-
-$(document).ready(function () {
-    $('#login').click(function () {
-        $('#page-content-wrapper').load('login.html');
-    })
-});
-
-$(document).ready(function () {
-    $('#register').click(function () {
-        $('#page-content-wrapper').load('register.html');
-    })
-});

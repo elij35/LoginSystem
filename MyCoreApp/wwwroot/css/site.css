@@ -1,60 +1,18 @@
-﻿.topbar {
-    height: auto;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    background-color: lightgray;
-    padding-top: 5px;
-    padding-left: 200px;
-    overflow: hidden;
-}
-
-.topbar-right {
-    position: center;
-    float: right;
-    padding: 25px 12px;
-    margin-top: 15px;
-}
-
-.topbar-right a {
-    color: black;
-    background-color: grey;
-    color: white;
-    text-align: center;
-    padding: 20px 20px;
-    font-size: 18px;
-    margin-right: 12px;
-}
-
-.topbar-right a:hover:not(.active) {
-    background-color: #555;
-    color: white;
-}
-
-.icon {
-    height: 170px;
-    width: 200px;
-    position: fixed;
-    top: 0;
-    left: 0;
-}
-
-.sidebar {
-    height: 100%;
-    width: 200px;
+﻿.sidebar {
+    height: 95%;
+    width: 8%;
     position: fixed;
     z-index: 1;
+    top: 0;
     left: 0;
     background-color: lightgray;
     padding-top: 20px;
-    text-align: center;
 }
 
 .sidebar a {
     display: block;
     color: black;
-    padding: 6px 6px 6px 16px;
+    padding: 6px 6px 6px 32px;
     text-decoration: none;
 }
 
@@ -72,7 +30,6 @@ a {
     color: black;
     font-size: 22px;
     text-decoration: none;
-
 }
 
 body {
@@ -93,12 +50,25 @@ body {
     font-weight: bold;
 }
 
+.topbar {
+    width: 93%;
+    height: 110px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin-left: 200px;
+    background-color: lightgray;
+    padding-top: 5px;
+    text-align: center;
+}
+
 .container {
-    padding-top: 10px;
+    padding-top: 1px;
     margin-left: 200px;
     margin-top: 110px;
     margin-bottom: 50px;
-    height: auto;
+    height: 95%;
 }
 
 h1 {
