@@ -40,7 +40,11 @@
         <div class="container" id="canvas-container">
             <div id="start-screen" class="screen" style="display:block">
                 <button onclick="startSnake()">Snake</button>
-                <button onclick="startPlatformer()">Platformer</button>
+                <button onclick="platformerLevelSelect()">Platformer</button>
+            </div>
+            <div id="platformerLevelSelect" class="screen" style="display:none">
+                <button onclick="Level1()">Level 1</button>
+                <button onclick="Level2()">Level 2</button>
             </div>
             <canvas id="game" width="400" height="400" style="display:none" />
         </div>
@@ -285,42 +289,90 @@
     var downKey;
     var leftKey;
 
+    var midAir;
+    var interacting;
+    var level;
+    var map = "";
+    var foundExit = false;
+
+    function getMap(callback) {
+        var xhr = new XMLHttpRequest();
+        xhr.open('GET', level, true);
+        xhr.responseType = 'text';
+        xhr.send();
+
+        xhr.onload = function () {
+            if (xhr.status === 200) {
+                callback(xhr.responseText);
+            }
+        }
+    }
+
+    function platformerLevelSelect() {
+        toggleScreen("start-screen", false);
+        toggleScreen("platformerLevelSelect", true);
+    }
+
+    function Level1() {
+        level = "PlatformerLevels/Level1.txt";
+        startPlatformer();
+    }
+    function Level2() {
+        level = "PlatformerLevels/Level2.txt";
+        startPlatformer();
+    }
+
     function startPlatformer() {
         canvas.width = "1280";
         canvas.height = "720";
-        endGame = false;
 
-        toggleScreen("start-screen", false);
+        toggleScreen("platformerLevelSelect", false);
         toggleScreen("game", true);
 
         ctx.fillStyle = 'black';
         ctx.fillRect(0, 0, canvas.width, canvas.height);
 
+        foundExit = false;
+
         //Setup Key Listeners
         setupInputs();
 
-        //Create Player
-        player = new Player(100, 400);
+        //Load Map
+        getMap(function (fileContent) {
+            map = fileContent.split("\n");
 
-        //Create Borders
-        //Floor
-        for (let i = 0; i < 6; i++) {
-            borders.push(new Border(0 + 100 * i, 620, 100, 100, 1));
-        }
+            //Create Borders
+            for (let i = 0; i < map.length; i++) {
+                line = map[i];
+                for (let j = 0; j < line.length; j++) {
+                    if (line[j] === "#") {
+                        borders.push(new Border(0 + 40 * j, 0 + 40 * i, 40, 40, 1));
+                    }
 
-        //Wall
-        borders.push(new Border(0, 520, 100, 100, 2));
+                    if (line[j] === "E") {
+                        borders.push(new Border(0 + 40 * j, 0 + 40 * i, 40, 40, 2));
+                    }
+
+                    if (line[j] === "P") {
+                        //Create Player
+                        player = new Player((40 * j) + 10, 40 * i)
+                    }
+                }
+            }
+        })
 
         //Start Game Loop
         gameLoop = setInterval(step, 1000 / 30);
-
-        //End Game Loop
-        setTimeout(endPlatformer, 5000);
     }
 
     function step() {
         player.step();
         draw();
+        if (foundExit === true) {
+            clearInterval(gameLoop);
+            finalDraw();
+            setTimeout(endPlatformer, 3000);
+        }
     }
 
     function draw() {
@@ -332,6 +384,26 @@
         for (let i = 0; i < borders.length; i++) {
             borders[i].draw();
         }
+    }
+
+    function finalDraw() {
+        ctx.fillStyle = 'black';
+        ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+        for (let i = 0; i < borders.length; i++) {
+            borders[i].draw();
+        }
+
+        ctx.fillStyle = "white";
+        ctx.font = "50px Verdana";
+
+        var gradient = ctx.createLinearGradient(0, 0, canvas.width, 0);
+        gradient.addColorStop("0", "magenta");
+        gradient.addColorStop("0.5", "blue");
+        gradient.addColorStop("1.0", "red");
+        ctx.fillStyle = gradient;
+
+        ctx.fillText("Congratulations You Escaped!", canvas.width / 5, canvas.height / 2);
     }
 
     function setupInputs() {
@@ -372,9 +444,10 @@
         this.playerXspeed = 0;
         this.playerYspeed = 0;
         this.friction = 0.6;
-        this.maxSpeed = 10;
-        this.playerWidth = 50;
-        this.playerHeight = 100;
+        this.maxSpeed = 15;
+        this.fallSpeed = 50;
+        this.playerWidth = 20;
+        this.playerHeight = 40;
         this.active = true;
 
         this.step = function () {
@@ -391,9 +464,10 @@
                 }
 
                 //Vertical Movement
-                if (upKey) {
-                    this.playerYspeed -= 15;
+                if (upKey === true && midAir === false) {
+                    this.playerYspeed -= 50;
                 }
+
                 //Apply Gravity
                 this.playerYspeed += 5;
 
@@ -405,11 +479,11 @@
                     this.playerXspeed = -this.maxSpeed;
                 }
 
-                if (this.playerYspeed > this.maxSpeed) {
-                    this.playerYspeed = this.maxSpeed;
+                if (this.playerYspeed > this.fallSpeed) {
+                    this.playerYspeed = this.fallSpeed;
                 }
-                else if (this.playerYspeed < -this.maxSpeed) {
-                    this.playerYspeed = -this.maxSpeed;
+                else if (this.playerYspeed < -this.fallSpeed) {
+                    this.playerYspeed = -this.fallSpeed;
                 }
 
                 if (this.playerXspeed > 0) {
@@ -448,7 +522,8 @@
                         x: borders[i].borderX,
                         y: borders[i].borderY,
                         width: borders[i].borderWidth,
-                        height: borders[i].borderHeight
+                        height: borders[i].borderHeight,
+                        type: borders[i].borderType
                     }
 
                     if (checkIntersection(horizontalRect, borderRect)) {
@@ -463,9 +538,18 @@
                         while (checkIntersection(verticalRect, borderRect)) {
                             verticalRect.y -= Math.sign(this.playerYspeed)
                         }
-                        this.playerY = horizontalRect.y;
+                        this.playerY = verticalRect.y;
                         this.playerYspeed = 0;
+                        interacting = true;
                     }
+                }
+
+                if (interacting) {
+                    midAir = false;
+                    interacting = false;
+                }
+                else {
+                    midAir = true;
                 }
 
                 //Changing Position
@@ -513,12 +597,14 @@
             return false;
         }
         else {
+            if (r2.type === 2) {
+                foundExit = true;
+            }
             return true;
         }
     }
 
     function endPlatformer() {
-        clearInterval(gameLoop);
         toggleScreen("start-screen", true);
         toggleScreen("game", false);
     }
