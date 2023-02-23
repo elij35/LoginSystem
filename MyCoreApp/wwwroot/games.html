@@ -46,6 +46,9 @@
                 <button onclick="Level1()">Level 1</button>
                 <button onclick="Level2()">Level 2</button>
             </div>
+            <img src="GameStuff/Images/Stone.png" id="Bricks" width="40" height="40" style="display:none" />
+            <img src="GameStuff/Images/Door.png" id="Door" width="40" height="40" style="display:none" />
+            <img src="GameStuff/Images/Lava.png" id="Lava" width="40" height="40" style="display:none" />
             <canvas id="game" width="400" height="400" style="display:none" />
         </div>
     </div>
@@ -314,11 +317,11 @@
     }
 
     function Level1() {
-        level = "PlatformerLevels/Level1.txt";
+        level = "GameStuff/PlatformerLevels/Level1.txt";
         startPlatformer();
     }
     function Level2() {
-        level = "PlatformerLevels/Level2.txt";
+        level = "GameStuff/PlatformerLevels/Level2.txt";
         startPlatformer();
     }
 
@@ -348,12 +351,13 @@
                     if (line[j] === "#") {
                         borders.push(new Border(0 + 40 * j, 0 + 40 * i, 40, 40, 1));
                     }
-
-                    if (line[j] === "E") {
+                    else if (line[j] === "E") {
                         borders.push(new Border(0 + 40 * j, 0 + 40 * i, 40, 40, 2));
                     }
-
-                    if (line[j] === "P") {
+                    else if (line[j] === "L") {
+                        borders.push(new Border(0 + 40 * j, 0 + 40 * i, 40, 40, 3));
+                    }
+                    else if (line[j] === "P") {
                         //Create Player
                         player = new Player((40 * j) + 10, 40 * i)
                     }
@@ -559,7 +563,7 @@
         }
 
         this.draw = function () {
-            ctx.fillStyle = "green";
+            ctx.fillStyle = "blue";
             ctx.fillRect(this.playerX, this.playerY, this.playerWidth, this.playerHeight);
         }
     }
@@ -573,10 +577,19 @@
 
         this.draw = function () {
             if (this.borderType === 1) {
-                ctx.fillStyle = "blue";
+                var img = document.getElementById("Bricks");
+                var pat = ctx.createPattern(img, "repeat");
+                ctx.fillStyle = pat;
             }
             else if (this.borderType === 2) {
-                ctx.fillStyle = "red";
+                var img = document.getElementById("Door");
+                var pat = ctx.createPattern(img, "repeat");
+                ctx.fillStyle = pat;
+            }
+            else if (this.borderType === 3) {
+                var img = document.getElementById("Lava");
+                var pat = ctx.createPattern(img, "repeat");
+                ctx.fillStyle = pat;
             }
 
             ctx.fillRect(this.borderX, this.borderY, this.borderWidth, this.borderHeight)
