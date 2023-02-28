@@ -1,0 +1,69 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Cluster</title>
+    <link rel="stylesheet" href="css/posts-create.css">
+
+    <script src="https://code.jquery.com/jquery-3.5.1.js"
+            integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+            crossorigin="anonymous"></script>
+    <script src="js/posts-create.js"></script>
+
+</head>
+<body>
+    <div id="page-content-wrapper" class="col-8 pl-0">
+
+        <!-- Topbar -->
+        <div class="topbar">
+            <h1>Cluster F Software Project</h1>
+            <h2>Posts</h2>
+            <img class="icon" src="Logo.png" alt="Icon" />
+        </div>
+
+        <!-- Sidebar -->
+        <nav class="sidebar">
+            <a class="nav-link" href="#" id="index">Home</a>
+            <a class="nav-link" href="#" id="messages">Messages</a>
+            <a class="nav-link" href="#" id="posts">Posts</a>
+            <a class="nav-link" href="#" id="friends">Friends</a>
+            <a class="nav-link" href="#" id="games">Games</a>
+            <a class="nav-link" href="#" id="account">Account settings</a>
+
+            <div class="sidebar-bottom">
+                <a class="nav-link active" href="#" id="posts-create">Create</a>
+            </div>
+        </nav>
+
+
+        <!-- Page Content -->
+        <div class="main">
+
+            <div class="post-block">
+
+                <h1>Create Me</h1>
+                <form id="myform" action="" method="">
+                    <input type="text" name="im1" value="my value" />
+                    <input type="text" name="im2" value="my value 1" />
+                    <input type="text" name="im2" value="my value 2" />
+                    <select name="imselect">
+                        <option value="Option 1">Option 1 </option>
+                        <option value="Option 2">Option 2 </option>
+                        <option value="Option 3">Option 3 </option>
+                    </select>
+                    <input type="button" name="submit" id="submit" value="Get Value" />
+
+                </form>
+                <div id="values"></div>
+            </div>
+
+        </div>
+
+
+
+
+    </div>
+
+    <footer class="footer">Copyright University of Plymouth Cluster F</footer>
+</body>
+</html>

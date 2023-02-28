@@ -1,1 +1,64 @@
-﻿
+﻿.topbar {
+    background-color: #03045e;
+    color: grey;
+}
+
+.sidebar {
+    background-color: #03045e;
+}
+
+.sidebar a {
+    color: grey;
+}
+
+.sidebar a.active {
+    background-color: #033f63;
+    color: grey;
+}
+
+.sidebar a:hover:not(.active) {
+    background-color: #284b63;
+}
+
+.footer {
+    background-color: #03045e;
+    color: grey;
+}
+
+body {
+    background-color: #0077b6;
+}
+
+canvas {
+    top: 140px;
+    left: 210px;
+    box-shadow: black 20px 10px 50px;
+    position: fixed;
+}
+
+button {
+    border: none;
+    appearance: none;
+    outline: none;
+    display: inline-block;
+    font-size: 1.5em;
+    cursor: pointer;
+    text-decoration: none;
+    padding: 12px 48px 12px 48px;
+    border-radius: 4px;
+    color: #ffffff;
+    background-color: #1bafdb;
+    border: 2px solid #ffffff;
+}
+
+.screen {
+    padding: 20px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-top: -100px;
+    margin-left: -100px;
+    height: 200px;
+    width: 250px;
+    text-align: center;
+}

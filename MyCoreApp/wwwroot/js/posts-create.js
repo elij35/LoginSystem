@@ -20,7 +20,6 @@ $(document).ready(function () {
         $('#page-content-wrapper').load('posts.html');
     })
 });
-
 $(document).ready(function () {
     $('#posts-create').click(function () {
         $('#page-content-wrapper').load('posts-create.html');
@@ -55,4 +54,18 @@ $(document).ready(function () {
     $('#register').click(function () {
         $('#page-content-wrapper').load('register.html');
     })
+});
+
+
+$(function () {
+    $("#submit").on('click', function () {
+        var myvalue = '';
+        var $myform = $('#myform :input');
+        console.log($myform);
+        $myform.each(function () {
+            myvalue += $(this).val() + "<br>";
+        });
+        console.log(myvalue);
+        $('#values').html(myvalue);
+    });
 });

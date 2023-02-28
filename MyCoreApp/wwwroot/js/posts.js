@@ -20,6 +20,11 @@ $(document).ready(function () {
         $('#page-content-wrapper').load('posts.html');
     })
 });
+$(document).ready(function () {
+    $('#posts-create').click(function () {
+        $('#page-content-wrapper').load('posts-create.html');
+    })
+});
 
 $(document).ready(function () {
     $('#friends').click(function () {
@@ -36,5 +41,17 @@ $(document).ready(function () {
 $(document).ready(function () {
     $('#account').click(function () {
         $('#page-content-wrapper').load('accounts.html');
+    })
+});
+
+$(document).ready(function () {
+    $('#login').click(function () {
+        $('#page-content-wrapper').load('login.html');
+    })
+});
+
+$(document).ready(function () {
+    $('#register').click(function () {
+        $('#page-content-wrapper').load('register.html');
     })
 });

@@ -63,8 +63,8 @@ h2 {
 .main {
     margin-top: 130px;
     margin-left: 210px; /* Same as the width of the sidenav */
-    background-color: mediumpurple;
-    padding: 2px 0px 0px 20px;
+    background-color: whitesmoke;
+    padding: 2px 50px 50px 20px;
 }
 
 a {
@@ -93,3 +93,21 @@ body {
 p {
     font-size: 18px;
 }
+
+.post-block {
+    margin: 100px;
+    position: center;
+    height: 100px;
+    width:80%;
+    background-color: #DEEBF7;
+    border: 3px solid #41719C;
+    border-radius:25px;
+    text-align: center;
+}
+
+
+/*blues*/
+/* #DEEBF7   post block background*/
+/* #B4C7E7   post block title and info*/
+/* BDD7EE    post block content*/
+/* #41719C   post block outside boarder*/
