@@ -58,7 +58,7 @@ $(document).ready(function () {
 
 
 $(function () {
-    $("#submit").on('click', function () {
+    $("#CPCreate").on('click', function () {
         var myvalue = '';
         var $myform = $('#myform :input');
         console.log($myform);

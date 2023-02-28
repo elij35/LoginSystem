@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\bensw\\Documents\\Comp1004\\socialMedia\\comp1004-coursework-cluster-f\\MyCoreApp\\MyCoreApp.csproj",
+      "projectUniqueName": "C:\\Users\\bensw\\Documents\\Comp1004\\SocialMediaProject\\comp1004-coursework-cluster-f\\MyCoreApp\\MyCoreApp.csproj",
       "projectName": "MyCoreApp",
-      "projectPath": "C:\\Users\\bensw\\Documents\\Comp1004\\socialMedia\\comp1004-coursework-cluster-f\\MyCoreApp\\MyCoreApp.csproj",
+      "projectPath": "C:\\Users\\bensw\\Documents\\Comp1004\\SocialMediaProject\\comp1004-coursework-cluster-f\\MyCoreApp\\MyCoreApp.csproj",
       "packagesPath": "C:\\Users\\bensw\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\bensw\\Documents\\Comp1004\\socialMedia\\comp1004-coursework-cluster-f\\MyCoreApp\\obj\\",
+      "outputPath": "C:\\Users\\bensw\\Documents\\Comp1004\\SocialMediaProject\\comp1004-coursework-cluster-f\\MyCoreApp\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\bensw\\AppData\\Roaming\\NuGet\\NuGet.Config",
