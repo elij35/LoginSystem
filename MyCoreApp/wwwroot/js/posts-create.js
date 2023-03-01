@@ -55,17 +55,3 @@ $(document).ready(function () {
         $('#page-content-wrapper').load('register.html');
     })
 });
-
-
-$(function () {
-    $("#CPCreate").on('click', function () {
-        var myvalue = '';
-        var $myform = $('#myform :input');
-        console.log($myform);
-        $myform.each(function () {
-            myvalue += $(this).val() + "<br>";
-        });
-        console.log(myvalue);
-        $('#values').html(myvalue);
-    });
-});
