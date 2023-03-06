@@ -45,6 +45,9 @@
             <div id="platformerLevelSelect" class="screen" style="display:none">
                 <button onclick="Level1()">Level 1</button>
                 <button onclick="Level2()">Level 2</button>
+                <button onclick="Level3()">Level 3</button>
+                <button onclick="Level4()">Level 4</button>
+                <button onclick="Level5()">Level 5</button>
             </div>
             <img src="GameStuff/Images/Stone.png" id="Bricks" width="40" height="40" style="display:none" />
             <img src="GameStuff/Images/Door.png" id="Door" width="40" height="40" style="display:none" />
@@ -286,6 +289,7 @@
     var gameLoop;
     var player;
     var borders = [];
+    var fps = 30;
 
     var upKey;
     var rightKey;
@@ -329,6 +333,18 @@
         level = "GameStuff/PlatformerLevels/Level2.txt";
         startPlatformer();
     }
+    function Level3() {
+        level = "GameStuff/PlatformerLevels/Level3.txt";
+        startPlatformer();
+    }
+    function Level4() {
+        level = "GameStuff/PlatformerLevels/Level4.txt";
+        startPlatformer();
+    }
+    function Level5() {
+        level = "GameStuff/PlatformerLevels/Level5.txt";
+        startPlatformer();
+    }
 
     function startPlatformer() {
         canvas.width = "1280";
@@ -340,9 +356,12 @@
         ctx.fillStyle = 'black';
         ctx.fillRect(0, 0, canvas.width, canvas.height);
 
+        //Reset Variables
         foundExit = false;
         dead = false;
         cycle = 0;
+        time = 0;
+        borders = [];
 
         //Setup Key Listeners
         setupInputs();
@@ -373,12 +392,13 @@
         })
 
         //Start Game Loop
-        gameLoop = setInterval(step, 1000 / 30);
+        gameLoop = setInterval(step, 1000 / fps);
     }
 
     function step() {
         player.step();
         draw();
+        timer();
         if (foundExit === true) {
             clearInterval(gameLoop);
             exitDraw();
@@ -401,6 +421,15 @@
         }
     }
 
+    function timer() {
+        time += 1 / fps;
+        displayTime = (Math.round(time * 1000) / 1000).toFixed(3);
+        ctx.fillStyle = 'white';
+        ctx.font = '20px Verdana';
+
+        ctx.fillText("Time: " + displayTime, canvas.width - 200, canvas.height / 10);
+    }
+
     function exitDraw() {
         ctx.fillStyle = 'black';
         ctx.fillRect(0, 0, canvas.width, canvas.height);
@@ -408,6 +437,12 @@
         for (let i = 0; i < borders.length; i++) {
             borders[i].draw();
         }
+
+        displayTime = (Math.round(time * 1000) / 1000).toFixed(3);
+        ctx.fillStyle = 'white';
+        ctx.font = '20px Verdana';
+
+        ctx.fillText("Time: " + displayTime, canvas.width - 200, canvas.height / 10);
 
         ctx.fillStyle = "white";
         ctx.font = "50px Verdana";
