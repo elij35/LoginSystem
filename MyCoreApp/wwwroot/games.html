@@ -39,7 +39,7 @@
         <!-- Page Content -->
         <div class="container" id="canvas-container">
             <div id="start-screen" class="screen" style="display:block">
-                <button onclick="startSnake()">Snake</button>
+                <button onclick="snakeSelect()">Snake</button>
                 <button onclick="platformerLevelSelect()">Platformer</button>
                 <button onclick="startPewPewPew()">Pew Pew Pew</button>
             </div>
@@ -50,10 +50,14 @@
                 <button onclick="Level4()">Level 4</button>
                 <button onclick="Level5()">Level 5</button>
             </div>
+            <div id="snakeSelect" class="screen" style="display:none">
+                <button onclick="Classic()">Classic</button>
+                <button onclick="FourCorners()">The Four Corners</button>
+            </div>
             <img src="GameStuff/Images/Stone.png" id="Bricks" width="40" height="40" style="display:none" />
             <img src="GameStuff/Images/Door.png" id="Door" width="40" height="40" style="display:none" />
             <img src="GameStuff/Images/Lava.png" id="Lava" width="40" height="40" style="display:none" />
-            <canvas id="game" width="400" height="400" style="display:none" />
+            <canvas id="game" width="1280" height="720" style="display:none" />
         </div>
     </div>
 
@@ -86,12 +90,17 @@
     }
     let speed = 7;
 
-    let tileCount = 20;
-    let tileSize = canvas.width / tileCount - 2;
+    let XtileCount = 64;
+    let YtileCount = 36;
+    let XdrawSize = canvas.width / XtileCount - 2;
+    let YdrawSize = canvas.height / YtileCount - 2;
+    let tileSize = canvas.width / XtileCount;
 
     let headX = 10;
     let headY = 10;
     const snakeParts = [];
+    var snakeMap;
+    var obstacles = [];
     let tailLength = 2;
 
     let appleX = 5;
@@ -102,11 +111,26 @@
 
     let score = 0;
 
-    function startSnake() {
-        canvas.width = "400";
-        canvas.height = "400";
-
+    function snakeSelect() {
         toggleScreen("start-screen", false);
+        toggleScreen("snakeSelect", true);
+    }
+
+    function Classic() {
+        level = "GameStuff/SnakeLevels/Classic.txt";
+        startSnake();
+    }
+
+    function FourCorners() {
+        level = "GameStuff/SnakeLevels/FourCorners.txt";
+        startSnake();
+    }
+
+    function startSnake() {
+        canvas.width = "1280";
+        canvas.height = "720";
+
+        toggleScreen("snakeSelect", false);
         toggleScreen("game", true);
 
         speed = 7;
@@ -119,6 +143,22 @@
         xVelocity = 0;
         yVelocity = 0;
         score = 0;
+        obstacles = [];
+
+        //Load Map
+        getMap(function (fileContent) {
+            map = fileContent.split("\n");
+
+            //Create Obstacles
+            for (let i = 0; i < map.length; i++) {
+                line = map[i];
+                for (let j = 0; j < line.length; j++) {
+                    if (line[j] === "#") {
+                        obstacles.push(new Obstacle(0 + 20 * j, 0 + 20 * i, tileSize, tileSize, 1));
+                    }
+                }
+            }
+        })
 
         drawGame();
     }
@@ -141,6 +181,11 @@
         drawApple();
         drawSnake();
         drawScore();
+
+        for (let i = 0; i < obstacles.length; i++) {
+            obstacles[i].draw();
+        }
+
         setTimeout(drawGame, 1000 / speed);
     }
 
@@ -152,9 +197,17 @@
             return false;
         }
 
-        //walls
-        if (headX < 0 || headX === tileCount || headY < 0 || headY === tileCount) {
+        //edges
+        if (headX < 0 || headX === XtileCount || headY < 0 || headY === YtileCount) {
             gameOver = true;
+        }
+
+        //objects
+        for (let i = 0; i < obstacles.length; i++) {
+            let obs = obstacles[i];
+            if ((obs.obstacleX/tileSize) === headX && (obs.obstacleY/tileSize) === headY) {
+                gameOver = true;
+            }
         }
 
         //snake
@@ -169,7 +222,7 @@
         //game over screen
         if (gameOver == true) {
             ctx.fillStyle = "white";
-            ctx.font = "50px Verdana";
+            ctx.font = "100px Verdana";
 
             var gradient = ctx.createLinearGradient(0, 0, canvas.width, 0);
             gradient.addColorStop("0", "magenta");
@@ -177,7 +230,7 @@
             gradient.addColorStop("1.0", "red");
             ctx.fillStyle = gradient;
 
-            ctx.fillText("Game Over!", canvas.width / 6.5, canvas.height / 2);
+            ctx.fillText("Game Over!", canvas.width / 4, canvas.height / 2);
         }
 
         return gameOver;
@@ -197,13 +250,21 @@
         if (appleX == headX && appleY == headY) {
             let foundSpace = false
             while (foundSpace == false) {
-                appleX = Math.floor(Math.random() * tileCount);
-                appleY = Math.floor(Math.random() * tileCount);
+                appleX = Math.floor(Math.random() * XtileCount);
+                appleY = Math.floor(Math.random() * YtileCount);
                 foundSpace = true;
 
                 for (let i = 0; i < snakeParts.length; i++) {
                     let part = snakeParts[i];
                     if (part.x === appleX && part.y === appleY) {
+                        foundSpace = false;
+                        break;
+                    }
+                }
+
+                for (let i = 0; i < obstacles.length; i++) {
+                    let obs = obstacles[i];
+                    if ((obs.obstacleX / tileSize) === appleX && (obs.obstacleY / tileSize) === appleY) {
                         foundSpace = false;
                         break;
                     }
@@ -216,14 +277,14 @@
 
     function drawApple() {
         ctx.fillStyle = 'red';
-        ctx.fillRect(appleX * tileCount, appleY * tileCount, tileSize, tileSize);
+        ctx.fillRect(appleX * tileSize, appleY * tileSize, XdrawSize, YdrawSize);
     }
 
     function drawSnake() {
         ctx.fillStyle = 'green';
         for (let i = 0; i < snakeParts.length; i++) {
             let part = snakeParts[i];
-            ctx.fillRect(part.x * tileCount, part.y * tileCount, tileSize, tileSize);
+            ctx.fillRect(part.x * tileSize, part.y * tileSize, XdrawSize, YdrawSize);
         }
 
         snakeParts.push(new SnakePart(headX, headY));
@@ -232,20 +293,20 @@
         }
 
         ctx.fillStyle = 'orange';
-        ctx.fillRect(headX * tileCount, headY * tileCount, tileSize, tileSize);
+        ctx.fillRect(headX * tileSize, headY * tileSize, XdrawSize, YdrawSize);
     }
 
     function drawScore() {
         ctx.fillStyle = "white";
         ctx.font = "20px Verdana";
-        ctx.fillText("Score " + score, canvas.width - 100, 20);
+        ctx.fillText("Score " + score, canvas.width - 120, 40);
     }
 
     document.body.addEventListener('keydown', keyDown);
 
     function keyDown(event) {
         //up
-        if (event.keyCode == 38) {
+        if (event.keyCode == 38 || event.keyCode == 87) {
             if (yVelocity == 1) {
                 return;
             }
@@ -254,7 +315,7 @@
         }
 
         //down
-        if (event.keyCode == 40) {
+        if (event.keyCode == 40 || event.keyCode == 83) {
             if (yVelocity == -1) {
                 return;
             }
@@ -263,7 +324,7 @@
         }
 
         //left
-        if (event.keyCode == 37) {
+        if (event.keyCode == 37 || event.keyCode == 65) {
             if (xVelocity == 1) {
                 return;
             }
@@ -272,12 +333,28 @@
         }
 
         //right
-        if (event.keyCode == 39) {
+        if (event.keyCode == 39 || event.keyCode == 68) {
             if (xVelocity == -1) {
                 return;
             }
             yVelocity = 0;
             xVelocity = 1;
+        }
+    }
+
+    function Obstacle(obstacleX, obstacleY, obstacleWidth, obstacleHeight, obstacleType) {
+        this.obstacleX = obstacleX;
+        this.obstacleY = obstacleY;
+        this.obstacleWidth = obstacleWidth;
+        this.obstacleHeight = obstacleHeight;
+        this.obstacleType = obstacleType;
+
+        this.draw = function () {
+            if (this.obstacleType === 1) {
+                ctx.fillStyle = 'grey';
+            }
+
+            ctx.fillRect(this.obstacleX, this.obstacleY, this.obstacleWidth, this.obstacleHeight);
         }
     }
 
@@ -672,7 +749,7 @@
                 ctx.fillStyle = pat;
             }
 
-            ctx.fillRect(this.borderX, this.borderY, this.borderWidth, this.borderHeight)
+            ctx.fillRect(this.borderX, this.borderY, this.borderWidth, this.borderHeight);
         }
     }
 
