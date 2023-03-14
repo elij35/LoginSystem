@@ -820,28 +820,51 @@
             timeToNextShip = 0;
         }
 
-        for (let i = 0; i < ships.length; i++) {
-            ships[i].update(timedifference);
-            ships[i].draw();
-        }
+        [...ships].forEach(object => object.update(timedifference));
+        [...ships].forEach(object => object.draw());
+        ships = ships.filter(object => !object.deleteEntity);
 
         requestAnimationFrame(animate);
     }
 
     function Ship() {
-        this.shipWidth = 150;
-        this.shipHeight = 80;
-        this.shipX = canvas.width;
-        this.shipY = Math.random() * (canvas.height - this.shipHeight);
         this.shipXdirection = Math.random() * 5 + 2;
         this.shipYdirection = Math.random() * 5 - 1;
 
+        if (this.shipXdirection <= 3) {
+            this.spriteWidth = 232;
+            this.spriteHeight = 182;
+            this.shipImage = new Image();
+            this.shipImage.src = "GameStuff/Images/PurpleShip.png";
+        }
+        else if (this.shipXdirection < 5) {
+            this.spriteWidth = 171;
+            this.spriteHeight = 98;
+            this.shipImage = new Image();
+            this.shipImage.src = "GameStuff/Images/RedShip.png";
+        }
+        else {
+            this.spriteWidth = 135;
+            this.spriteHeight = 124;
+            this.shipImage = new Image();
+            this.shipImage.src = "GameStuff/Images/GreenShip.png";
+        }
+
+        this.shipWidth = this.spriteWidth;
+        this.shipHeight = this.spriteHeight;
+        this.shipX = canvas.width;
+        this.shipY = Math.random() * (canvas.height - this.shipHeight);
+        this.deleteEntity = false;
+
         this.update = function () {
             this.shipX -= this.shipXdirection;
+            if (this.shipX < 0 - this.shipWidth) {
+                this.deleteEntity = true;
+            }
         }
 
         this.draw = function () {
-            ctx.fillRect(this.shipX, this.shipY, this.shipWidth, this.shipHeight);
+            ctx.drawImage(this.shipImage, 0, 0, this.spriteWidth, this.spriteHeight, this.shipX, this.shipY, this.shipWidth, this.shipHeight);
         }
     }
 
