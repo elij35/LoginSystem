@@ -89,6 +89,7 @@
         }
     }
     let speed = 7;
+    let nextSpeed = 0;
 
     let XtileCount = 64;
     let YtileCount = 36;
@@ -134,6 +135,7 @@
         toggleScreen("game", true);
 
         speed = 7;
+        nextSpeed = 0;
         headX = 10;
         headY = 10;
         snakeParts.length = 0;
@@ -270,8 +272,15 @@
                     }
                 }
             }
+
             tailLength++;
             score++;
+            nextSpeed++;
+
+            if (nextSpeed >= 10) {
+                speed++;
+                nextSpeed = 0;
+            }
         }
     }
 
