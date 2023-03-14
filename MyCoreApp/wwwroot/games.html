@@ -797,6 +797,52 @@
 
         ctx.fillStyle = 'black';
         ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+        animate(0);
+    }
+
+    const ship = new Ship();
+    let ships = [];
+
+    let lasttime = 0;
+    let timeToNextShip = 0;
+    let shipGap = 1000;
+
+    function animate(timestamp) {
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+        let timedifference = timestamp - lasttime;
+        lasttime = timestamp;
+        timeToNextShip += timedifference;
+
+        if (timeToNextShip > shipGap) {
+            ships.push(new Ship());
+            timeToNextShip = 0;
+        }
+
+        for (let i = 0; i < ships.length; i++) {
+            ships[i].update(timedifference);
+            ships[i].draw();
+        }
+
+        requestAnimationFrame(animate);
+    }
+
+    function Ship() {
+        this.shipWidth = 150;
+        this.shipHeight = 80;
+        this.shipX = canvas.width;
+        this.shipY = Math.random() * (canvas.height - this.shipHeight);
+        this.shipXdirection = Math.random() * 5 + 2;
+        this.shipYdirection = Math.random() * 5 - 1;
+
+        this.update = function () {
+            this.shipX -= this.shipXdirection;
+        }
+
+        this.draw = function () {
+            ctx.fillRect(this.shipX, this.shipY, this.shipWidth, this.shipHeight);
+        }
     }
 
     function endPewPewPew() {
