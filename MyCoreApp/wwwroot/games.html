@@ -810,6 +810,8 @@
         ctx.fillStyle = 'black';
         ctx.fillRect(0, 0, canvas.width, canvas.height);
 
+        canvas.addEventListener("click", onClick, false);
+
         animate(0);
     }
 
@@ -819,6 +821,9 @@
     let lasttime = 0;
     let timeToNextShip = 0;
     let shipGap = 1000;
+
+    var clickX;
+    var clickY;
 
     function animate(timestamp) {
         ctx.clearRect(0, 0, canvas.width, canvas.height);
@@ -837,6 +842,28 @@
         ships = ships.filter(object => !object.deleteEntity);
 
         requestAnimationFrame(animate);
+    }
+
+    function onClick(e) {
+        var element = canvas;
+        var offsetX = 0, offsetY = 0;
+
+        if (element.offsetParent) {
+            while (element = element.offsetParent) {
+                offsetX += element.offsetLeft;
+                offsetY += element.offsetTop;
+            }
+        }
+
+        clickX = e.pageX - offsetX - 210;
+        clickY = e.pageY - offsetY - 140;
+
+        for (let i = 0; i < ships.length; i++) {
+            if (clickX > ships[i].shipX && clickX < (ships[i].shipX + ships[i].shipWidth) && clickY > ships[i].shipY && clickY < (ships[i].shipY + ships[i].shipHeight)) {
+                console.log("Hit");
+                ships[i].deleteEntity = true;
+            }
+        }
     }
 
     function Ship() {
