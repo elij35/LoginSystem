@@ -807,16 +807,24 @@
         toggleScreen("start-screen", false);
         toggleScreen("game", true);
 
-        ctx.fillStyle = 'black';
-        ctx.fillRect(0, 0, canvas.width, canvas.height);
-
         canvas.addEventListener("click", onClick, false);
+
+        ships = [];
+        explosions = [];
+        pewScore = 0;
+        pewHealth = 10;
+        lasttime = 0;
+        timeToNextShip = 0;
 
         animate(0);
     }
 
     const ship = new Ship();
     let ships = [];
+    let explosions = [];
+
+    let pewScore = 0;
+    let pewHealth = 10;
 
     let lasttime = 0;
     let timeToNextShip = 0;
@@ -826,7 +834,9 @@
     var clickY;
 
     function animate(timestamp) {
-        ctx.clearRect(0, 0, canvas.width, canvas.height);
+        var backgroundImage = new Image();
+        backgroundImage.src = "GameStuff/Images/Space.png";
+        ctx.drawImage(backgroundImage, 0, 0, canvas.width, canvas.height, 0, 0, canvas.width, canvas.height);
 
         let timedifference = timestamp - lasttime;
         lasttime = timestamp;
@@ -839,9 +849,25 @@
 
         [...ships].forEach(object => object.update(timedifference));
         [...ships].forEach(object => object.draw());
-        ships = ships.filter(object => !object.deleteEntity);
+        [...explosions].forEach(object => object.draw());
 
-        requestAnimationFrame(animate);
+        ctx.fillStyle = "white";
+        ctx.font = "20px Verdana";
+        ctx.fillText("Score " + pewScore, canvas.width - 120, 40);
+
+        ctx.fillStyle = "white";
+        ctx.font = "20px Verdana";
+        ctx.fillText("Health " + pewHealth, 40, 40);
+
+        ships = ships.filter(object => !object.deleteEntity);
+        explosions = explosions.filter(object => !object.deleteEntity);
+
+        if (pewHealth > 0) {
+            requestAnimationFrame(animate);
+        }
+        else {
+            endPewPewPew();
+        }
     }
 
     function onClick(e) {
@@ -860,8 +886,13 @@
 
         for (let i = 0; i < ships.length; i++) {
             if (clickX > ships[i].shipX && clickX < (ships[i].shipX + ships[i].shipWidth) && clickY > ships[i].shipY && clickY < (ships[i].shipY + ships[i].shipHeight)) {
-                console.log("Hit");
-                ships[i].deleteEntity = true;
+                ships[i].shipHealth--;
+                if (ships[i].shipHealth === 0) {
+                    ships[i].deleteEntity = true;
+                    pewScore += ships[i].shipScore;
+                }
+
+                explosions.push(new Explosion(clickX, clickY));
             }
         }
     }
@@ -875,18 +906,24 @@
             this.spriteHeight = 182;
             this.shipImage = new Image();
             this.shipImage.src = "GameStuff/Images/PurpleShip.png";
+            this.shipHealth = 3;
+            this.shipScore = 3;
         }
         else if (this.shipXdirection < 5) {
             this.spriteWidth = 171;
             this.spriteHeight = 98;
             this.shipImage = new Image();
             this.shipImage.src = "GameStuff/Images/RedShip.png";
+            this.shipHealth = 2;
+            this.shipScore = 2;
         }
         else {
             this.spriteWidth = 135;
             this.spriteHeight = 124;
             this.shipImage = new Image();
             this.shipImage.src = "GameStuff/Images/GreenShip.png";
+            this.shipHealth = 1;
+            this.shipScore = 1;
         }
 
         this.shipWidth = this.spriteWidth;
@@ -899,11 +936,98 @@
             this.shipX -= this.shipXdirection;
             if (this.shipX < 0 - this.shipWidth) {
                 this.deleteEntity = true;
+                pewHealth -= this.shipScore;
             }
         }
 
         this.draw = function () {
             ctx.drawImage(this.shipImage, 0, 0, this.spriteWidth, this.spriteHeight, this.shipX, this.shipY, this.shipWidth, this.shipHeight);
+        }
+    }
+
+    function Explosion(clickedX, clickedY) {
+        this.explosionX = clickedX;
+        this.explosionY = clickedY;
+        this.explosionWidth = 30;
+        this.explosionHeight = 30;
+        this.explosionState = 1;
+        this.nextState = 0;
+        this.explosionImage = new Image();
+        this.explosionImage.src = "GameStuff/Images/Explosion1.png";
+        this.deleteEntity = false;
+
+        this.draw = function () {
+            if (this.explosionState === 1) {
+                this.explosionImage.src = "GameStuff/Images/Explosion1.png";
+                if (this.nextState === 10) {
+                    this.explosionState++;
+                    this.nextState = 0;
+                }
+                else {
+                    this.nextState++;
+                }
+            }
+            else if (this.explosionState === 2) {
+                this.explosionImage.src = "GameStuff/Images/Explosion2.png";
+                if (this.nextState === 10) {
+                    this.explosionState++;
+                    this.nextState = 0;
+                }
+                else {
+                    this.nextState++;
+                }
+            }
+            else if (this.explosionState === 3) {
+                this.explosionImage.src = "GameStuff/Images/Explosion3.png";
+                if (this.nextState === 10) {
+                    this.explosionState++;
+                    this.nextState = 0;
+                }
+                else {
+                    this.nextState++;
+                }
+            }
+            else if (this.explosionState === 4) {
+                this.explosionImage.src = "GameStuff/Images/Explosion4.png";
+                if (this.nextState === 10) {
+                    this.explosionState++;
+                    this.nextState = 0;
+                }
+                else {
+                    this.nextState++;
+                }
+            }
+            else if (this.explosionState === 5) {
+                this.explosionImage.src = "GameStuff/Images/Explosion5.png";
+                if (this.nextState === 10) {
+                    this.explosionState++;
+                    this.nextState = 0;
+                }
+                else {
+                    this.nextState++;
+                }
+            }
+            else if (this.explosionState === 6) {
+                this.explosionImage.src = "GameStuff/Images/Explosion6.png";
+                if (this.nextState === 10) {
+                    this.explosionState++;
+                    this.nextState = 0;
+                }
+                else {
+                    this.nextState++;
+                }
+            }
+            else if (this.explosionState === 7) {
+                this.explosionImage.src = "GameStuff/Images/Explosion7.png";
+                if (this.nextState === 10) {
+                    this.deleteEntity = true;
+                }
+                else {
+                    this.nextState++;
+                }
+            }
+
+            ctx.drawImage(this.explosionImage, 0, 0, this.explosionWidth, this.explosionHeight, this.explosionX - 15, this.explosionY - 15, this.explosionWidth, this.explosionHeight);
         }
     }
 
