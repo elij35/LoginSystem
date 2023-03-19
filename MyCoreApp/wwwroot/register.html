@@ -10,8 +10,6 @@
             integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
             crossorigin="anonymous"></script>
     <script src="js/spa.js"></script>
-    <script src="js/login-register.js"></script>
-
 </head>
 <body>
     <div id="page-content-wrapper" class="col-8 pl-0">
@@ -39,25 +37,67 @@
         <!-- Page Content -->
         <div class="container">
             <div class="container2">
-                <h2>Create an account</h2>
+                <h2>Register for new account</h2>
 
-                <form action="/action_page.php" method="post">
-                    <label for="uname"><b>Username</b></label>
-                    <input type="text" placeholder="Enter Username" name="uname" required>
+                <form id="register">
+                    <label for="username"><b>Username</b></label>
+                    <input id="username" type="text" placeholder="Enter Username" name="username" required>
 
-                    <label for="psw"><b>Password</b></label>
-                    <input type="password" placeholder="Enter Password" name="psw" required>
+                    <label for="password"><b>Password</b></label>
+                    <input type="password" placeholder="Enter Password" id="password1" name="password1" required>
 
-                    <label for="psw"><b>Repeat password</b></label>
-                    <input type="password" placeholder="Enter Password" name="psw" required>
+                    <label for="password"><b>Repeat Password</b></label>
+                    <input type="password" placeholder="Repeat Password" id="password2" name="password2" required>
 
-                    <button type="submit">Register</button>
-                    <button type="button" class="cancelbtn" href="#" id="index">Cancel</button>
-                    <a class="psw" href="#" id="login">Already got an account? Log in</a>
+                    <button onclick="storeRegister()">submit</button>
+
+                    <button type="button" class="cancelbtn" href="#" id="cancel">Cancel</button>
+                    <a class="psw" href="#" id="login1">Already got an account? Log in</a>
+
                 </form>
             </div>
         </div>
     </div>
+    <script>
+        function storeRegister() {
+            if (document.getElementById("username").value != "" && document.getElementById("password1").value != "" && document.getElementById("password2").value != "") {
+
+                var pass1 = document.getElementById("password1");
+                var pass2 = document.getElementById("password2");
+
+                if (pass1.value == pass2.value) {
+                    let inputs = {
+                        "Username": JSON.stringify(document.getElementById("username").value),
+                        "password": JSON.stringify(document.getElementById("password1").value),
+                    }
+
+                    //Clearing local storage before writing values
+                    localStorage.clear();
+
+                    //saves JSON to local storage                   
+                    localStorage.setItem("New-users", JSON.stringify(inputs));
+                    alert("Inputs successfully stored");
+                }
+
+                else {
+                    alert("Passwords do not match!");
+                }                           
+            }
+        }
+
+        $(document).ready(function () {
+            $('#login1').click(function () {
+                $('#page-content-wrapper').load('login.html');
+            })
+        });
+
+        $(document).ready(function () {
+            $('#cancel').click(function () {
+                $('#page-content-wrapper').load('index.html');
+            })
+        });
+
+    </script>
 
     <footer class="footer">Copyright University of Plymouth Cluster F</footer>
 </body>

@@ -50,9 +50,3 @@ $(document).ready(function () {
         $('#page-content-wrapper').load('register.html');
     })
 });
-
-$(document).ready(function () {
-    $('#login').click(function () {
-        $('#register-form').load('login.html');
-    })
-});
