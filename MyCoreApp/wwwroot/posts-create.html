@@ -4,6 +4,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cluster</title>
+    <link rel="stylesheet" href="css/site.css">
+    <link rel="stylesheet" href="css/posts.css">
     <link rel="stylesheet" href="css/posts-create.css">
 
     <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
@@ -15,9 +17,8 @@
 
         <!-- Topbar -->
         <div class="topbar">
-            <h1>Cluster F Software Project</h1>
-            <h2>Posts</h2>
             <img class="logo" src="Logo.png" alt="Icon">
+            <h1>Posts Create</h1>
         </div>
 
         <!-- Sidebar -->
@@ -38,21 +39,23 @@
         <!-- Page Content -->
         <div class="main">
 
-            <div class="post-block">
+            <div class="post-block-create">
 
                 <h1>Create Post</h1>
 
                 <p>
                     <label for="title">Title:</label>
-                    <input type="text" id="title" maxlength="69">
+                    <input type="text" id="title" maxlength="69" placeholder="Input your title here">
                 </p>
                 <p>
                     <label for="content">Content:</label>
-                    <textarea id="content" cols="69" rows="1" oninput="this.style.height = &quot;&quot;;this.style.height = this.scrollHeight + &quot;px&quot;" maxlength="256"></textarea>
+                    <textarea id="content" cols="69" rows="1" oninput="this.style.height = &quot;&quot;;this.style.height = this.scrollHeight + &quot;px&quot;" maxlength="256" placeholder="Write your post here"></textarea>
                 </p>
                 <p>
-                    <button type="button" id="btnSave">Done</button>
-                    <button type="button" id="btnCancel">Cancel</button>
+                    <button type="button" onclick="btnSave()">Done</button>
+
+                    <button type="button" onclick="btnCancel()">Cancel</button>
+
                 </p>
 
 

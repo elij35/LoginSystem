@@ -55,3 +55,60 @@ $(document).ready(function () {
         $('#page-content-wrapper').load('register.html');
     })
 });
+
+
+
+const myObj = {
+    firstName: "Ben", lastName: "Sanders-Wyatt", age: 21, city: "Plymouth",
+    friends: { A: "002-AmyU", B: "003-BethU", C: "004-CharlotteU", D: "005-DaisyU" },
+    posts1: { date: "july 57", title: "Hello", content: "World" },
+    posts2: { date: "feb 3", title: "The", content: "2nd" }
+};
+
+
+
+
+
+
+function btnSave() {
+
+    if (document.getElementById("title").value != "") {
+        if (document.getElementById("content").value != "") {
+
+            let inputs = {
+                "title": JSON.stringify(document.getElementById("title").value),
+                "content": JSON.stringify(document.getElementById("content").value),
+            }
+
+            localStorage.set
+
+
+
+        }
+        else {
+            alert("Please input some content")
+        }
+    }
+    else {
+        alert("Please input a title")
+    }
+
+}
+    
+
+function btnCancel() {
+
+    document.getElementById("title").value = ""
+    document.getElementById("content").value = ""
+
+}
+
+
+
+
+
+function myFunction() {
+    var popup = document.getElementById("myPopup");
+    popup.classList.toggle("show");
+}
+

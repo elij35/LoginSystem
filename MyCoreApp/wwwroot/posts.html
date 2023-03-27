@@ -1,19 +1,24 @@
 ﻿<!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cluster</title>
+    <link rel="stylesheet" href="css/site.css">
     <link rel="stylesheet" href="css/posts.css">
 
-    <script src="https://code.jquery.com/jquery-3.5.1.js"
-            integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
-            crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
     <script src="js/posts.js"></script>
 
 </head>
 <body>
     <div id="page-content-wrapper" class="col-8 pl-0">
+
+        <!-- Topbar -->
+        <div class="topbar">
+            <img class="logo" src="Logo.png" alt="Icon">
+            <h1>Posts</h1>
+        </div>
 
         <!-- Sidebar -->
         <nav class="sidebar">
@@ -30,53 +35,38 @@
         </nav>
 
 
-        <div class="topbar">
-            <h1>Cluster F Software Project</h1>
-            <h2>Posts</h2>
-            <img class="icon" src="Logo.png" alt="Icon" />
-        </div>
-
         <!-- Page Content -->
         <div class="main">
-            <h1>test333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333</h1>
-            <h1>hi</h1>
-            <h1>hi</h1>
-            <h1>hi</h1>
-            <h1>hi</h1>
-            <h1>hi</h1>
-            <h1>hi</h1>
-            <h1>hi</h1>
-            <h1>hi</h1>
-            <h1>hi</h1>
-            <h1>hi</h1>
-            <h1>hi</h1>
-            <h1>hi</h1>
-            <h1>hi</h1>
-            <h1>hi</h1>
-            <h1>hi</h1>
-            <h1>hi</h1>
-            <h1>hi</h1>
-            <h1>hi</h1>
-            <h1>hi</h1>
-            <h1>hi</h1>
-            <h1>hi</h1>
-            <h1>hi</h1>
-            <h1>hi</h1>
-            <h1>hi</h1>
-            <h1>hi</h1>
-            <h1>hi</h1>
-            <h1>hi</h1>
-            <h1>hi</h1>
-            <h1>hi</h1>
-            <h1>hi</h1>
-            <h1>hi</h1>
-            <h1>hi</h1>
-            <h1>hi</h1>
-            <h1>hi</h1>
-            <h1>hi</h1>
-            <h1>hi</h1>
+
+            <div id="post-container">
+
+                <div class="post-block">This is the test</div>
+                <div class="post-block">This is the test</div>
+                <div class="post-block">This is the test</div>
+                <div class="post-block">This is the test</div>
+
+
+
+
+            </div>
+
+            <div id="waiting">
+                <div class="skeleton-card"></div>
+            </div>
+            <div class="card-actions">
+                <span>
+                    Showing
+                    <span id="post-count"></span> of
+                    <span id="post-max"></span> cards
+                </span>
+            </div>
 
         </div>
+
+
+
+
+
 
         <footer class="footer">Copyright University of Plymouth Cluster F</footer>
     </div>

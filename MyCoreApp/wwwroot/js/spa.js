@@ -56,3 +56,35 @@ $(document).ready(function () {
         $('#page-content-wrapper').load('register.html');
     })
 });
+
+
+var currentUser = "None";
+
+function user1() {
+    localStorage.setItem("currentUser", "user1");
+    currentUser = localStorage.getItem("currentUser");
+    document.getElementById("userCurrent").innerHTML = currentUser;
+}
+function user2() {
+    localStorage.setItem("currentUser", "user2");
+    currentUser = localStorage.getItem("currentUser");
+    document.getElementById("userCurrent").innerHTML = currentUser;
+}
+function user3() {
+    localStorage.setItem("currentUser", "user3");
+    currentUser = localStorage.getItem("currentUser");
+    document.getElementById("userCurrent").innerHTML = currentUser;
+}
+function user4() {
+    localStorage.setItem("currentUser", "user4");
+    currentUser = localStorage.getItem("currentUser");
+    document.getElementById("userCurrent").innerHTML = currentUser;
+}
+function user5() {
+    localStorage.setItem("currentUser", "user5");
+    currentUser = localStorage.getItem("currentUser");
+    document.getElementById("userCurrent").innerHTML = currentUser;
+}
+
+
+

@@ -1,18 +1,25 @@
 ﻿<!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta charset="utf-8" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cluster</title>
     <link rel="stylesheet" href="css/site.css">
 
-    <script src="https://code.jquery.com/jquery-3.5.1.js"
-            integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
-            crossorigin="anonymous"></script>
-    <script src="js/spa.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script src="js/spa.js" async></script>
 
 </head>
 <body>
     <div id="page-content-wrapper" class="col-8 pl-0">
+
+        <!-- Topbar -->
+        <div class="topbar">
+            <img class="logo" src="Logo.png" alt="Icon">
+            <h1>Home</h1>
+            <h2>Current User: <b id="userCurrent">Nothing</b></h2>
+        </div>
+
 
         <!-- Sidebar -->
         <nav class="sidebar">
@@ -24,24 +31,21 @@
             <a class="nav-link" href="#" id="account">Account settings</a>
         </nav>
 
-        <div class="topbar">
-            <div class="topbar-right">
-                <a class="nav-link" href="#" id="login">Login</a>
-                <a class="nav-link" href="#" id="register">Register</a>
-            </div>
-
-            <h1>Cluster F Software Project</h1>
-            <h2>Home page</h2>
-            <img class="icon" src="Logo.png" alt="Icon" />
-        </div>
-
         <!-- Page Content -->
         <div class="container">
-            <h1>Enter text here</h1>
-        </div>
+            <h1>Home page</h1>
 
-        <footer class="footer">Copyright University of Plymouth Cluster F</footer>
+            <button type="button" onclick=user1()>User 1</button>
+            <button type="button" onclick="user2()">User 2</button>
+            <button type="button" onclick="user3()">User 3</button>
+            <button type="button" onclick="user4()">User 4</button>
+            <button type="button" onclick="user5()">User 5</button>
+
+
+
+        </div>
     </div>
 
+    <footer class="footer">Copyright University of Plymouth Cluster F</footer>
 </body>
 </html>

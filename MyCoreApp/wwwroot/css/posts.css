@@ -1,31 +1,12 @@
-﻿.topbar {
-    width: 100%;
-    height: 125px;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    background-color: #A9D18E;
-    padding-top: 5px;
-    padding-left: 220px;
-    z-index: 2;
-}
-
-h1 {
-    font-size: 24px;
-}
-
-h2 {
-    font-size: 22px;
-}
-
-.icon {
+﻿
+.logo {
     height: 170px;
     width: 200px;
     position: fixed;
     top: 0;
     left: 0;
 }
+
 
 .sidebar {
     height: 100%;
@@ -35,12 +16,12 @@ h2 {
     left: 0;
     background-color: #A9D18E;
     text-align: center;
+    padding-top: 20px;
 }
 
     .sidebar a {
         display: block;
-        color: black;
-        text-decoration: none;
+        padding: 6px 0px 6px 0px;
     }
 
         .sidebar a.active {
@@ -53,34 +34,63 @@ h2 {
             color: white;
         }
 
-.sidebar-bottom {
-    bottom: 120px;
-    position: fixed;
-    width: 220px;
-    text-align: center;
-}
-
-.main {
-    margin-top: 130px;
-    margin-left: 210px; /* Same as the width of the sidenav */
-    background-color: mediumpurple;
-    padding: 2px 0px 0px 20px;
-}
-
 a {
     color: black;
     font-size: 22px;
     text-decoration: none;
 }
 
-body {
-    margin-bottom: 60px;
-    font-family: Arial, Helvetica, sans-serif;
+.sidebar-bottom {
+    height: 38px;
+    bottom: 40px;
+    position: fixed;
+    width: 220px;
+    text-align: center;
 }
+
+
+
+.main {
+    padding: 10px;
+    background-color: whitesmoke;
+}
+
+.post-block {
+    height: 200px;
+    background-color: #DEEBF7;
+    border: 3px solid #41719C;
+    border-radius: 25px;
+    text-align: left;
+    margin: 0px;
+    padding: 0px 16px 0px 16px;
+    width: 100%;
+    margin-bottom:20px;
+}
+
+p {
+    font-size: 20px;
+}
+
+#title {
+    width: 100%;
+    height: 19px;
+    font-weight: bold;
+}
+
+#content {
+    resize: none;
+    width: 100%;
+    font-family: Arial;
+    height: 19px;
+}
+
+
+
 
 .footer {
     position: fixed;
     bottom: 0;
+    scroll-padding-bottom: auto;
     left: 0;
     width: 100%;
     line-height: 40px;
@@ -90,6 +100,81 @@ body {
     font-weight: bold;
 }
 
-p {
-    font-size: 18px;
+
+
+
+
+
+
+
+
+body {
+    font-family: "Roboto", sans-serif;
+    overflow-x: hidden; /* Hide horizontal scrollbar */
+}
+
+#card-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card {
+    height: 55vh;
+    width: 100%;
+    margin: 8px;
+    border-radius: 3px;
+    transition: all 200ms ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+    .card:hover {
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
+
+.card-actions {
+    margin: 8px;
+    padding: 16px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#loader {
+    display: flex;
+}
+
+.skeleton-card {
+    height: 50px;
+    width: 100%;
+    margin: 8px;
+    border-radius: 3px;
+    transition: all 200ms ease-in-out;
+    position: relative;
+    background-color: #eaeaea;
+}
+
+    .skeleton-card::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        transform: translateX(-100%);
+        background-image: linear-gradient(90deg, rgba(255, 255, 255, 0) 0, rgba(255, 255, 255, 0.2) 20%, rgba(255, 255, 255, 0.5) 60%, rgba(255, 255, 255, 0));
+        animation: load 1s infinite;
+    }
+
+@keyframes load {
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+    .skeleton-card::after {
+        animation: none;
+    }
 }
