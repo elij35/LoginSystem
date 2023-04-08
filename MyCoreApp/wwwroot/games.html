@@ -38,7 +38,12 @@
 
         <!-- Page Content -->
         <div class="container" id="canvas-container">
-            <div id="start-screen" class="screen" style="display:block">
+            <div id="nameInput" class="screen" style="display:block">
+                <p>Please Enter Your Username</p>
+                <input type="text" id="username" name="username" required />
+                <button type="submit" onclick="toStartScreen()">Submit</button>
+            </div>
+            <div id="start-screen" class="screen" style="display:none">
                 <button onclick="snakeSelect()">Snake</button>
                 <button onclick="platformerLevelSelect()">Platformer</button>
                 <button onclick="startPewPewPew()">Pew Pew Pew</button>
@@ -71,6 +76,21 @@
         let element = document.getElementById(id);
         let display = (toggle) ? "block" : "none";
         element.style.display = display;
+    }
+
+    var username;
+
+    function toStartScreen() {
+        username = document.getElementById("username").value;
+        console.log(username);
+
+        if (username.trim().length == 0) {
+            alert("No Username Entered");
+        }
+        else {
+            toggleScreen("nameInput", false);
+            toggleScreen("start-screen", true);
+        }
     }
 
     //
@@ -166,6 +186,7 @@
     }
 
     function endSnake() {
+        highScores(score);
         toggleScreen("start-screen", true);
         toggleScreen("game", false);
     }
@@ -619,7 +640,7 @@
         this.playerWidth = 20;
         this.playerHeight = 40;
         this.playerImage = new Image();
-        this.playerImage.src = "GameStuff/Images/BluePlayer.png";
+        this.playerImage.src = "GameStuff/Images/BluePlayer2.png";
         this.active = true;
 
         this.step = function () {
@@ -1034,5 +1055,10 @@
     function endPewPewPew() {
         toggleScreen("start-screen", true);
         toggleScreen("game", false);
+    }
+
+    function highScores(highScore) {
+        console.log(highScore);
+        return;
     }
 </script>
