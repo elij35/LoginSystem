@@ -56,41 +56,50 @@ $(document).ready(function () {
     })
 });
 
+//temp
 
+var userInfo = "Empty";
 
-const myObj = {
-    firstName: "Ben", lastName: "Sanders-Wyatt", age: 21, city: "Plymouth",
-    friends: { A: "002-AmyU", B: "003-BethU", C: "004-CharlotteU", D: "005-DaisyU" },
-    posts1: { date: "july 57", title: "Hello", content: "World" },
-    posts2: { date: "feb 3", title: "The", content: "2nd" }
+userInfo = {
+    firstName: "Amy", lastName: "Anderson", age: 21,
+    friends: "user1 user2 user3 user4 user5",
+    posts: {
+        datetime1: { title: "Hello1", content: "This is my post content 1 datetime" },
+        datetime2: { title: "Hello2", content: "This is my post content 2 datetime" },
+        datetime3: { title: "Hello3", content: "This is my post content 3 datetime" },
+        datetime4: { title: "Hello4", content: "This is my post content 4 datetime" },
+        datetime5: { title: "Hello5", content: "This is my post content 5 datetime" },
+        datetime6: { title: "Hello6", content: "This is my post content 6 datetime" }
+    }
 };
 
+localStorage.setItem("user1Info", JSON.stringify(userInfo));
 
-
+//temp
 
 
 
 function btnSave() {
 
-    if (document.getElementById("title").value != "") {
-        if (document.getElementById("content").value != "") {
+    if (document.getElementById("title").value.trim() != "" || document.getElementById("content").value.trim() != "") {
+        
 
-            let inputs = {
-                "title": JSON.stringify(document.getElementById("title").value),
-                "content": JSON.stringify(document.getElementById("content").value),
-            }
-
-            localStorage.set
-
-
-
+        let inputs = {
+            "title": JSON.stringify(document.getElementById("title").value),
+            "content": JSON.stringify(document.getElementById("content").value),
         }
-        else {
-            alert("Please input some content")
-        }
+
+        currentUser = localStorage.getItem("currentUser");
+        userInfo = localStorage.getItem(currentUser);
+
+
+
+
+
+
     }
     else {
-        alert("Please input a title")
+        alert("Please don't leave fields empty");
     }
 
 }
@@ -98,8 +107,8 @@ function btnSave() {
 
 function btnCancel() {
 
-    document.getElementById("title").value = ""
-    document.getElementById("content").value = ""
+    document.getElementById("title").value = null
+    document.getElementById("content").value = null
 
 }
 

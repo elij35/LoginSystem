@@ -60,31 +60,112 @@ $(document).ready(function () {
 
 var currentUser = "None";
 
-function user1() {
-    localStorage.setItem("currentUser", "user1");
+function userA() {
+    localStorage.setItem("currentUser", "userA");
     currentUser = localStorage.getItem("currentUser");
     document.getElementById("userCurrent").innerHTML = currentUser;
 }
-function user2() {
-    localStorage.setItem("currentUser", "user2");
+function userB() {
+    localStorage.setItem("currentUser", "userB");
     currentUser = localStorage.getItem("currentUser");
     document.getElementById("userCurrent").innerHTML = currentUser;
 }
-function user3() {
-    localStorage.setItem("currentUser", "user3");
+function userC() {
+    localStorage.setItem("currentUser", "userC");
     currentUser = localStorage.getItem("currentUser");
     document.getElementById("userCurrent").innerHTML = currentUser;
 }
-function user4() {
-    localStorage.setItem("currentUser", "user4");
+function userD() {
+    localStorage.setItem("currentUser", "userD");
     currentUser = localStorage.getItem("currentUser");
     document.getElementById("userCurrent").innerHTML = currentUser;
 }
-function user5() {
-    localStorage.setItem("currentUser", "user5");
+function userE() {
+    localStorage.setItem("currentUser", "userE");
     currentUser = localStorage.getItem("currentUser");
     document.getElementById("userCurrent").innerHTML = currentUser;
 }
 
 
 
+
+var userInfo;
+
+userInfo = {
+    firstName: "Amy", lastName: "Anderson", age: 21,
+    friends: "userA userB userC userD userE",
+    posts: {
+        datetime1: { title: "Hello1", content: "This is my post content 1 datetime" },
+        datetime2: { title: "Hello2", content: "This is my post content 2 datetime" },
+        datetime3: { title: "Hello3", content: "This is my post content 3 datetime" },
+        datetime4: { title: "Hello4", content: "This is my post content 4 datetime" },
+        datetime5: { title: "Hello5", content: "This is my post content 5 datetime" },
+        datetime6: { title: "Hello6", content: "This is my post content 6 datetime" }
+    }
+};
+
+localStorage.setItem("userA", JSON.stringify(userInfo));
+
+
+userInfo = {
+    firstName: "Ben", lastName: "Brown", age: 22,
+    friends: "userA userB userC userD userE",
+    posts: {
+        datetime1: { title: "Hello1", content: "This is my post content 1 datetime" },
+        datetime2: { title: "Hello2", content: "This is my post content 2 datetime" },
+        datetime3: { title: "Hello3", content: "This is my post content 3 datetime" },
+        datetime4: { title: "Hello4", content: "This is my post content 4 datetime" },
+        datetime5: { title: "Hello5", content: "This is my post content 5 datetime" },
+        datetime6: { title: "Hello6", content: "This is my post content 6 datetime" }
+    }
+};
+
+localStorage.setItem("userB", JSON.stringify(userInfo));
+
+
+userInfo = {
+    firstName: "Charlie", lastName: "Carter", age: 23,
+    friends: "userA userB userC userD userE",
+    posts: {
+        datetime1: { title: "Hello1", content: "This is my post content 1 datetime" },
+        datetime2: { title: "Hello2", content: "This is my post content 2 datetime" },
+        datetime3: { title: "Hello3", content: "This is my post content 3 datetime" },
+        datetime4: { title: "Hello4", content: "This is my post content 4 datetime" },
+        datetime5: { title: "Hello5", content: "This is my post content 5 datetime" },
+        datetime6: { title: "Hello6", content: "This is my post content 6 datetime" }
+    }
+};
+
+localStorage.setItem("userC", JSON.stringify(userInfo));
+
+
+userInfo = {
+    firstName: "Daniel", lastName: "Davis", age: 24,
+    friends: "userA userB userC userD userE",
+    posts: {
+        datetime1: { title: "Hello1", content: "This is my post content 1 datetime" },
+        datetime2: { title: "Hello2", content: "This is my post content 2 datetime" },
+        datetime3: { title: "Hello3", content: "This is my post content 3 datetime" },
+        datetime4: { title: "Hello4", content: "This is my post content 4 datetime" },
+        datetime5: { title: "Hello5", content: "This is my post content 5 datetime" },
+        datetime6: { title: "Hello6", content: "This is my post content 6 datetime" }
+    }
+};
+
+localStorage.setItem("userD", JSON.stringify(userInfo));
+
+
+userInfo = {
+    firstName: "Elizabeth", lastName: "Evans", age: 25,
+    friends: "userA userB userC userD userE",
+    posts: {
+        datetime1: { title: "Hello1", content: "This is my post content 1 datetime" },
+        datetime2: { title: "Hello2", content: "This is my post content 2 datetime" },
+        datetime3: { title: "Hello3", content: "This is my post content 3 datetime" },
+        datetime4: { title: "Hello4", content: "This is my post content 4 datetime" },
+        datetime5: { title: "Hello5", content: "This is my post content 5 datetime" },
+        datetime6: { title: "Hello6", content: "This is my post content 6 datetime" }
+    }
+};
+
+localStorage.setItem("userE", JSON.stringify(userInfo));
