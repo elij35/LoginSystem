@@ -1,60 +1,4 @@
 ﻿
-.logo {
-    height: 170px;
-    width: 200px;
-    position: fixed;
-    top: 0;
-    left: 0;
-}
-
-
-.sidebar {
-    height: 100%;
-    width: 220px;
-    position: fixed;
-    z-index: 1;
-    left: 0;
-    background-color: #A9D18E;
-    text-align: center;
-    padding-top: 20px;
-}
-
-    .sidebar a {
-        display: block;
-        padding: 6px 0px 6px 0px;
-    }
-
-        .sidebar a.active {
-            background-color: #548235;
-            color: white;
-        }
-
-        .sidebar a:hover:not(.active) {
-            background-color: #555;
-            color: white;
-        }
-
-a {
-    color: black;
-    font-size: 22px;
-    text-decoration: none;
-}
-
-.sidebar-bottom {
-    height: 38px;
-    bottom: 40px;
-    position: fixed;
-    width: 220px;
-    text-align: center;
-}
-
-
-
-.main {
-    padding: 10px;
-    background-color: whitesmoke;
-}
-
 .post-block {
     height: 200px;
     background-color: #DEEBF7;
@@ -65,10 +9,6 @@ a {
     padding: 0px 16px 0px 16px;
     width: 100%;
     margin-bottom:20px;
-}
-
-p {
-    font-size: 20px;
 }
 
 #title {
@@ -82,35 +22,6 @@ p {
     width: 100%;
     font-family: Arial;
     height: 19px;
-}
-
-
-
-
-.footer {
-    position: fixed;
-    bottom: 0;
-    scroll-padding-bottom: auto;
-    left: 0;
-    width: 100%;
-    line-height: 40px;
-    background-color: #A9D18E;
-    text-align: center;
-    font-size: 16px;
-    font-weight: bold;
-}
-
-
-
-
-
-
-
-
-
-body {
-    font-family: "Roboto", sans-serif;
-    overflow-x: hidden; /* Hide horizontal scrollbar */
 }
 
 #card-container {

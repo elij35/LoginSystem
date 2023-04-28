@@ -21,6 +21,10 @@ $(document).ready(function () {
         $('#page-content-wrapper').load('posts-create.html');
     })
 
+    $('#posts-mine').click(function () {
+        $('#page-content-wrapper').load('posts-mine.html');
+    })
+
     $('#friends').click(function () {
         $('#page-content-wrapper').load('friends.html');
     })

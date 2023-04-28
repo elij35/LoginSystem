@@ -1,0 +1,166 @@
+﻿
+.post-block {
+    position: relative;
+    height: 50vh;
+    background-color: #DEEBF7;
+    border: 3px solid #41719C;
+    border-radius: 25px;
+    text-align: left;
+    margin: 0px;
+    width: 100%;
+    margin-bottom: 20px;
+    display: grid;
+    grid-template-columns: 25% 20% 5% 20% 5% 25%;
+    grid-template-rows: 20% 10% 40% 10% 10% 10%;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        ". postTitle postTitle postTitle postTitle postTitle"
+        "postName postContent postContent postContent postContent postContent"
+        "postCommentsBox postContent postContent postContent postContent postContent"
+        "postCommentsInput postContent postContent postContent postContent postContent"
+        "postDate postContent postContent postContent postContent postContent"
+        ". postLike postNumLike postComment postNumCom .";
+}
+
+
+.postName {
+    grid-area: postName;
+    text-align: center;
+    border: solid;
+    border-width: 2px 0px 2px 0px;
+    border-color: #5B9BD5;
+    padding-top: 2%;
+    font-size: 18px;
+}
+
+.postTitle {
+    grid-area: postTitle;
+    font-weight: bold;
+    border: solid;
+    border-width: 0px 0px 0px 2px;
+    border-color: #5B9BD5;
+    padding: 4%;
+    font-size: 25px;
+}
+
+.postDate {
+    grid-area: postDate;
+    text-align: center;
+    border: solid;
+    border-width: 2px 0px 2px 0px;
+    border-color: #5B9BD5;
+    font-size: 16px;
+    padding-top: 2%;
+}
+
+.postNumCom {
+    grid-area: postNumCom;
+    text-align: center;
+    border: solid;
+    border-width: 0px 2px 0px 0px;
+    border-color: #5B9BD5;
+    font-size: 16px;
+    padding-top: 25%;
+}
+
+.postNumLike {
+    grid-area: postNumLike;
+    text-align: center;
+    font-size: 16px;
+    padding-top: 25%;
+}
+
+.postLike {
+    grid-area: postLike;
+    text-align: right;
+    border: solid;
+    border-width: 0px 2px 0px 2px;
+    border-color: #5B9BD5;
+    padding: 5%;
+    font-size: 19px;
+}
+
+.postComment {
+    grid-area: postComment;
+    text-align: right;
+    border: solid;
+    border-width: 0px 2px 0px 2px;
+    border-color: #5B9BD5;
+    padding: 5%;
+    font-size: 19px;
+}
+
+.postCommentsBox {
+    grid-area: postCommentsBox;
+    font-size: 12px;
+    padding: 2%;
+
+    word-wrap: break-word;
+    hyphens: auto;
+
+    overflow-y:scroll;
+}
+
+.postCommentsInput {
+    grid-area: postCommentsInput;
+}
+
+.postFriendsComments {
+    padding: 5px;
+}
+
+.postContent {
+    grid-area: postContent;
+    border: solid;
+    border-width: 2px 0px 2px 2px;
+    border-color: #5B9BD5;
+    font-size: 20px;
+    padding: 1%;
+    word-wrap: break-word;
+    hyphens: auto;
+
+}
+
+
+
+.title {
+    font-weight: bold;
+
+}
+
+.content {
+    resize: none;
+    width: 100%;
+    font-family: Arial;
+    height: 19px;
+}
+
+#card-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card {
+    height: 55vh;
+    width: 100%;
+    margin: 8px;
+    border-radius: 3px;
+    transition: all 200ms ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+    .card:hover {
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
+
+.card-actions {
+    margin: 8px;
+    padding: 16px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
