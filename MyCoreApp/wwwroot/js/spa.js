@@ -71,23 +71,85 @@ function userE() {
 
 
 
-//Setup the default profiles for the users
+//Setup the simulated already created posts
 
 var userInfo;
 var userPosts;
 
+
+////////////////UserA
+
 userInfo = [
     ["Amy", "Anderson", "21"],
-    ["userA", "userB", "userC", "userD", "userE"]
+    ["userB", "userC", "userD", "userE"]
 ];
 
 localStorage.setItem("userA", JSON.stringify(userInfo));
 
 userPosts = [
-    ["datetime1", "title1", "content1", ["userA", "userB", "userC"], "1stComment", "2ndComment", "3rdCom..."],
-    ["datetime2", "title2", "content2", ["userA", "userB", "userC"], "1stComment", "2ndComment", "3rdCom..."],
-    ["datetime3", "title3", "content3", ["userA", "userB", "userC"], "1stComment", "2ndComment", "3rdCom..."],
-    ["datetime4", "title4", "content4", ["userA", "userB", "userC"], "1stComment", "2ndComment", "3rdCom..."]
+    [0, "The National Trust celebrating Cotehele's orchards",
+        "Tomorrow staff and students from our School of Biological and Marine Sciences will be running a Blossom Blitz highlighting the importance of blossom to biodiversity and working with visitors to explore the different species that rely on it. \n Come along to find out what wildlife makes the orchard its home and see how much you can spot to help build a picture of this amazing habitat.",
+        ["userA", "userB", "userC"], "1stComment", "2ndComment", "3rdCom..."],
+
+
+    [974030764000, "La Selva Biological Station, Costa Rica",
+        "La Selva offers 1,600 hectares of well-preserved old-growth and recovering wet lowland tropical forest that is home to over 2,000 species of plant, hundreds of species of birds, mammals, reptiles, amphibians, and thousands of insects.",
+        ["userA", "userB", "userC"], "1stComment", "2ndComment", "3rdCom..."],
+
+    [1020232799000, "For word wrap",
+        "PneumonoultramicroscopicsilicovolcanoconiosisPneumonoultramicroscopicsilicovolcanoconiosisPneumonoultramicroscopicsilicovolcanoconiosisPneumonoultramicroscopicsilicovolcanoconiosisPneumonoultramicroscopicsilicovolcanoconiosisPneumonoultramicroscopicsilicovolcanoconiosisPneumonoultramicroscopicsilicovolcanoconiosisPneumonoultramicroscopicsilicovolcanoconiosisPneumonoultramicroscopicsilicovolcanoconiosisPneumonoultramicroscopicsilicovolcanoconiosis",
+        ["userA", "userB", "userC"], "1stComment", "2ndComment", "3rdCom..."],
+
+    [1449027265000, "Hi Guys!",
+        "Just wanted to say hi!",
+        ["userA", "userB", "userC"], "1stComment", "2ndComment", "3rdCom..."],
+
+    [1540227235000, "Where I got the posts from",
+    "Coming up with simulated posts is a bit of a hassle so I have elected to borrow some of Plymouth Unis. \n Hope they dont mind...",
+    ["userA", "userB", "userC"], "1stComment", "2ndComment", "3rdCom..."],
+
+    [1619023562000, "This can be any title you want... but not too long",
+    "These posts simulate already made posts the user has made. \n \n You can create more by going to the create tab in the sidebar.",
+    ["userA", "userB", "userC"], "1stComment", "2ndComment", "3rdCom..."]
+];
+
+localStorage.setItem("userAPosts", JSON.stringify(userPosts));
+
+
+////////////////UserB
+
+userInfo = [
+    ["Amy", "Anderson", "21"],
+    ["userB", "userC", "userD", "userE"]
+];
+
+localStorage.setItem("userA", JSON.stringify(userInfo));
+
+userPosts = [
+    [0, "The National Trust celebrating Cotehele's orchards",
+        "Tomorrow staff and students from our School of Biological and Marine Sciences will be running a Blossom Blitz highlighting the importance of blossom to biodiversity and working with visitors to explore the different species that rely on it. \n Come along to find out what wildlife makes the orchard its home and see how much you can spot to help build a picture of this amazing habitat.",
+        ["userA", "userB", "userC"], "1stComment", "2ndComment", "3rdCom..."],
+
+
+    [974030764000, "La Selva Biological Station, Costa Rica",
+        "La Selva offers 1,600 hectares of well-preserved old-growth and recovering wet lowland tropical forest that is home to over 2,000 species of plant, hundreds of species of birds, mammals, reptiles, amphibians, and thousands of insects.",
+        ["userA", "userB", "userC"], "1stComment", "2ndComment", "3rdCom..."],
+
+    [1020232799000, "For word wrap",
+        "PneumonoultramicroscopicsilicovolcanoconiosisPneumonoultramicroscopicsilicovolcanoconiosisPneumonoultramicroscopicsilicovolcanoconiosisPneumonoultramicroscopicsilicovolcanoconiosisPneumonoultramicroscopicsilicovolcanoconiosisPneumonoultramicroscopicsilicovolcanoconiosisPneumonoultramicroscopicsilicovolcanoconiosisPneumonoultramicroscopicsilicovolcanoconiosisPneumonoultramicroscopicsilicovolcanoconiosisPneumonoultramicroscopicsilicovolcanoconiosis",
+        ["userA", "userB", "userC"], "1stComment", "2ndComment", "3rdCom..."],
+
+    [1449027265000, "Hi Guys!",
+        "Just wanted to say hi!",
+        ["userA", "userB", "userC"], "1stComment", "2ndComment", "3rdCom..."],
+
+    [1540227235000, "Where I got the posts from",
+        "Coming up with simulated posts is a bit of a hassle so I have elected to borrow some of Plymouth Unis. \n Hope they dont mind...",
+        ["userA", "userB", "userC"], "1stComment", "2ndComment", "3rdCom..."],
+
+    [1619023562000, "This can be any title you want... but not too long",
+        "These posts simulate already made posts the user has made. \n \n You can create more by going to the create tab in the sidebar.",
+        ["userA", "userB", "userC"], "1stComment", "2ndComment", "3rdCom..."]
 ];
 
 localStorage.setItem("userAPosts", JSON.stringify(userPosts));

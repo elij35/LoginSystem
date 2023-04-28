@@ -87,8 +87,8 @@ for (let i = myPosts.length - 1; i >= 0; i--) {
     var inside = document.createElement("div");
     inside.className = "postDate";
     inside.innerHTML = index;
-    var time = new Date(myPosts[i][0])
-    inside.innerText = time.toDateString() + "   " + time.toLocaleTimeString([], { hour: "numeric", minute: "numeric", hour12: true });;
+    var time = new Date(myPosts[i][0]);
+    inside.innerText = time.toDateString() + "   " + time.toLocaleTimeString("en", { hour: "numeric", minute: "numeric", hour12: true });;
     post.appendChild(inside);
 
     //get post title
@@ -120,18 +120,19 @@ for (let i = myPosts.length - 1; i >= 0; i--) {
     post.appendChild(inside);
 
     //get comments
-    var inside = document.createElement("div");
-    inside.className = "postCommentsBox";
-    post.appendChild(inside);
+    var commentBox = document.createElement("div");
+    commentBox.className = "postCommentsBox";
+    commentBox.id = "commentBox" + i;
+    post.appendChild(commentBox);
 
-    for (let j = myPosts[i].length - 1; j >= 4; j--) {
+    for (let j = 4; j <= myPosts[i].length - 1; j++) {
         myPosts[i][j]
         var comment = document.createElement("div");
         comment.className = "postFriendsComments";
 
         comment.innerText = myPosts[i][j];
 
-        inside.appendChild(comment);
+        commentBox.appendChild(comment);
     }
 
 
@@ -148,25 +149,26 @@ for (let i = myPosts.length - 1; i >= 0; i--) {
     inside.addEventListener("keypress", function (event) {
         if (event.key === "Enter") {
             event.preventDefault();
-            alert(i); //this is the post number (btw 0 indexed)
-            var sup = document.getElementById("post" + i).value;
-            alert(sup); //this is the textbox value
+            //i is the post number. newComment is the textbox value
+            var newComment = userInfo[0][0] + " " + userInfo[0][1] + " - " + document.getElementById("post" + i).value;
 
+            myPosts[i].push(newComment);
 
-            //take the post number and textbox value and store the comment into the post
+            localStorage.setItem(currentUser + "Posts", JSON.stringify(myPosts));
 
+            //adds comment to comment box
+            var comment = document.createElement("div");
+            comment.className = "postFriendsComments";
+            comment.innerText = newComment;
+            var commentBox = document.getElementById("commentBox" + i);
 
+            commentBox.appendChild(comment);
 
-
-
+            //clears text box
+            document.getElementById("post" + i).value = "";
 
         }
-
-
     });
-
-
-
 
 
 }
@@ -200,24 +202,3 @@ $(window).scroll(function () {
     }
 });
 */
-
-//create the postblock div nees the other divs inside title,content,name,date...
-/*
-<div class="post-block">
-    <div class="postName">Name</div>
-    <div class="postPic">Pic?</div>
-    <div class="postTitle">Title</div>
-    <div class="postDate">Date</div>
-    <div class="postNumCom">NumCom</div>
-    <div class="postNumLike">NumLike</div>
-    <div class="postLike">Likes</div>
-    <div class="postComment">Comments</div>
-    <div class="postContent">Content</div>
-</div>
-*/
-
-
-
-
-
- 
