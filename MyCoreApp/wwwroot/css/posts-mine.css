@@ -20,7 +20,7 @@
         "postCommentsBox postContent postContent postContent postContent postContent"
         "postCommentsInput postContent postContent postContent postContent postContent"
         "postDate postContent postContent postContent postContent postContent"
-        ". postLike postNumLike postComment postNumCom .";
+        ". postLike postNumLike postComment postNumCom postDelete";
 }
 
 
@@ -61,14 +61,20 @@
     border-width: 0px 2px 0px 0px;
     border-color: #5B9BD5;
     font-size: 16px;
-    padding-top: 25%;
+    line-height: 300%;
 }
 
 .postNumLike {
     grid-area: postNumLike;
     text-align: center;
     font-size: 16px;
-    padding-top: 25%;
+    text-align: center;
+    border-radius: inherit;
+    position: absolute;
+    height: 90%;
+    width: 90%;
+    place-self: center;
+    line-height: 300%;
 }
 
 .postLike {
@@ -122,6 +128,18 @@
 
 }
 
+.postDelete {
+    grid-area: postDelete;
+    text-align: center;
+    font-size: 19px;
+    background: #ffcccc;
+    border-radius: inherit;
+    position: absolute;
+    height: 90%;
+    width: 90%;
+    place-self: center;
+}
+
 
 
 .title {
@@ -136,31 +154,12 @@
     height: 19px;
 }
 
-#card-container {
-    display: flex;
-    flex-wrap: wrap;
+.end-of-posts {
+    border-style: solid;
+    border-radius: 25px;
+    border-color: darkgray;
+    padding: 10px;
+    color: #545454;
+    font-weight: bold;
+    text-align: center;
 }
-
-.card {
-    height: 55vh;
-    width: 100%;
-    margin: 8px;
-    border-radius: 3px;
-    transition: all 200ms ease-in-out;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-    .card:hover {
-        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    }
-
-.card-actions {
-    margin: 8px;
-    padding: 16px 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-

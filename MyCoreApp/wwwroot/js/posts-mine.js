@@ -1,5 +1,5 @@
-﻿$(document).ready(function () {
-
+﻿//Lets you swap html pages
+$(document).ready(function () {
 
     $('#index').click(function () {
         $('#page-content-wrapper').load('index.html');
@@ -53,8 +53,10 @@ var userInfo = JSON.parse(localStorage.getItem(currentUser));
 
 var postContainer = document.getElementById("post-container");
 
+//print out all of the users posts
 for (let i = myPosts.length - 1; i >= 0; i--) {
 
+    //creates post block
     var post = document.createElement("div");
     post.className = "post-block";
     post.innerHTML = index;
@@ -117,6 +119,7 @@ for (let i = myPosts.length - 1; i >= 0; i--) {
     inside.className = "postNumCom";
     inside.innerHTML = index;
     inside.innerText = myPosts[i].length - 4;
+    inside.id = "postNumComments" + i;
     post.appendChild(inside);
 
     //get comments
@@ -126,7 +129,6 @@ for (let i = myPosts.length - 1; i >= 0; i--) {
     post.appendChild(commentBox);
 
     for (let j = 4; j <= myPosts[i].length - 1; j++) {
-        myPosts[i][j]
         var comment = document.createElement("div");
         comment.className = "postFriendsComments";
 
@@ -134,7 +136,6 @@ for (let i = myPosts.length - 1; i >= 0; i--) {
 
         commentBox.appendChild(comment);
     }
-
 
     //create comment input box
     var inside = document.createElement("input");
@@ -149,56 +150,55 @@ for (let i = myPosts.length - 1; i >= 0; i--) {
     inside.addEventListener("keypress", function (event) {
         if (event.key === "Enter") {
             event.preventDefault();
-            //i is the post number. newComment is the textbox value
-            var newComment = userInfo[0][0] + " " + userInfo[0][1] + " - " + document.getElementById("post" + i).value;
 
-            myPosts[i].push(newComment);
+            if (document.getElementById("post" + i).value.trim() != "") {
+                //i is the post number. newComment is the textbox value
 
-            localStorage.setItem(currentUser + "Posts", JSON.stringify(myPosts));
+                var newComment = userInfo[0][0] + " " + userInfo[0][1] + " - " + document.getElementById("post" + i).value;
 
-            //adds comment to comment box
-            var comment = document.createElement("div");
-            comment.className = "postFriendsComments";
-            comment.innerText = newComment;
-            var commentBox = document.getElementById("commentBox" + i);
+                myPosts[i].push(newComment);
 
-            commentBox.appendChild(comment);
+                localStorage.setItem(currentUser + "Posts", JSON.stringify(myPosts));
 
-            //clears text box
-            document.getElementById("post" + i).value = "";
+                //adds comment to comment box
+                var comment = document.createElement("div");
+                comment.className = "postFriendsComments";
+                comment.innerText = newComment;
+                var commentBox = document.getElementById("commentBox" + i);
 
+                commentBox.appendChild(comment);
+
+                //clears text box
+                document.getElementById("post" + i).value = "";
+
+                //increase comment count
+                document.getElementById("postNumComments" + i).innerHTML = parseInt(document.getElementById("postNumComments" + i).innerHTML) + 1;
+            }
+            
         }
     });
 
 
+    //create delete post btn
+    var inside = document.createElement("div");
+    inside.className = "postDelete";
+    inside.innerHTML = index;
+    inside.innerText = "Delete?";
+    inside.id = "postDelete" + i;
+    post.appendChild(inside);
+
+
+    //deletes the post
+    inside.addEventListener("click", function (event) {
+
+        if (confirm("Are you sure you want to delete this post?") == true) {
+
+            myPosts.splice(i, 1);
+
+            localStorage.setItem(currentUser + "Posts", JSON.stringify(myPosts));
+
+        }
+
+    });
+
 }
-
- 
-
-
-
-
-
-
-
-/*
- * This will be needed for the posts html page but not this one
- * 
-$(window).scroll(function () {
-    if ($(window).scrollTop() + $(window).height() > $(document).height() - 100) {
-
-        const post = document.createElement("div");
-        post.className = "post-block";
-        post.innerHTML = index;
-
-        post.innerText = "hello" + count;
-
-        count = count + 1;
-
-        postContainer.appendChild(post);
-
-
-
-    }
-});
-*/

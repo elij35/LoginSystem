@@ -1,4 +1,9 @@
-﻿body {
+﻿html {
+    background-color: whitesmoke;
+}
+
+
+body {
     margin: 130px 0px 0px 220px;
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -34,6 +39,10 @@ h2 {
     position: fixed;
     top: 5px;
     left: 61px;
+}
+
+.friendsDiagram {
+    position: absolute;
 }
 
 
@@ -81,7 +90,6 @@ a {
 
 .main {
     padding: 10px;
-    background-color: whitesmoke;
 }
 
 p {

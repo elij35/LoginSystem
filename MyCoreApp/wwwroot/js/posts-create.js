@@ -1,4 +1,5 @@
-﻿$(document).ready(function () {
+﻿//Lets you swap html pages
+$(document).ready(function () {
 
     $('#index').click(function () {
         $('#page-content-wrapper').load('index.html');
@@ -41,7 +42,7 @@
     })
 });
 
-
+//btn to create new post
 function btnSave() {
 
     if (document.getElementById("title").value.trim() != "" || document.getElementById("content").value.trim() != "") {
@@ -49,17 +50,20 @@ function btnSave() {
         let currentUser = localStorage.getItem("currentUser")
         let myPosts = JSON.parse(localStorage.getItem(currentUser + "Posts"));
 
+        //create structure for the new post
         let newPost = [
             Date.now(),
             document.getElementById("title").value,
             document.getElementById("content").value,
             []
         ];
+        //store new post
         myPosts.push(newPost);
 
         localStorage.setItem(currentUser + "Posts", JSON.stringify(myPosts));
         alert("Post Created");
 
+        //clear txt boxes
         document.getElementById("title").value = null
         document.getElementById("content").value = null
     }
@@ -69,7 +73,7 @@ function btnSave() {
 
 }
     
-
+//cancel btn clears the txt boxes
 function btnCancel() {
 
     document.getElementById("title").value = null
