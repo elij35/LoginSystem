@@ -68,19 +68,6 @@
     color: white;
 }
 
-a {
-    color: black;
-    font-size: 22px;
-    text-decoration: none;
-
-}
-
-body {
-    margin-bottom: 60px;
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: whitesmoke;
-}
-
 .footer {
     position: fixed;
     bottom: 0;
@@ -94,21 +81,62 @@ body {
 }
 
 .container {
-    padding-top: 10px;
-    margin-left: 200px;
-    margin-top: 110px;
-    margin-bottom: 50px;
-    height: auto;
+      margin: 0 auto;
+    padding-bottom: 25px;
+    background: #eee;
+    width: 600px;
+    max-width: 100%;
+    border: 2px solid #212121;
+    border-radius: 4px;
+
+form {
+    padding: 15px 25px;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
 }
 
-h1 {
-    font-size: 24px;
+    form label {
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+
+input {
+    font-family: "Lato";
 }
 
-h2 {
-    font-size: 22px;
+#wrapper {
+    margin: 0 auto;
+    padding-bottom: 25px;
+    background: #eee;
+    width: 600px;
+    max-width: 100%;
+    border: 2px solid #212121;
+    border-radius: 4px;
 }
 
-p {
-    font-size: 18px;
+#chatbox {
+    text-align: left;
+    margin: 0 auto;
+    margin-bottom: 25px;
+    padding: 10px;
+    background: #fff;
+    height: 300px;
+    width: 530px;
+    border: 1px solid #a7a7a7;
+    overflow: auto;
+    border-radius: 4px;
+    border-bottom: 4px solid #a7a7a7;
+}
+
+
+#name {
+    border-radius: 4px;
+    border: 1px solid #ff9800;
+    padding: 2px 8px;
+}
+
+#menu {
+    padding: 15px 25px;
+    display: flex;
 }

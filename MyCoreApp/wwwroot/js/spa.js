@@ -9,50 +9,46 @@ $(document).ready(function () {
     })
 });
 
-$(document).ready(function () {
-    $('#messages').click(function () {
-        $('#page-content-wrapper').load('messages.html');
-    })
-});
+var user = "";
+function user1_onCilck() {
+    user = "Mike";
+    user1.disabled = true;
+    user2.disabled = false;
+    user3.disabled = false;
+    t.disabled = false;
+    t.value = "";
+    b.disabled = false
+    N.innerHTML = "Welcome " + user + " ";
+}
+function user2_onCilck() {
+    user = "Sam";
+    user3.disabled = false;
+    user2.disabled = true;
+    user1.disabled = false;
+    t.disabled = false;
+    t.value = "";
+    b.disabled = false;
+    N.innerHTML = "Welcome " + user + " ";
+}
+function user3_onCilck() {
+    user = "Mohamad";
+    user3.disabled = true;
+    user2.disabled = false;
+    user1.disabled = false;
+    t.disabled = false;
+    t.value = "";
+    b.disabled = false;
+    N.innerHTML = "Welcome " + user + " ";
+}
 
-$(document).ready(function () {
-    $('#posts').click(function () {
-        $('#page-content-wrapper').load('posts.html');
-    })
-});
+function b_onClick() {
+    if (t.value != "") {
+        var newm = document.createElement("li");
+        newm.innerHTML = user + ": " + t.value;
+        m.appendChild(newm);
+        t.value = "";
+    }
+}
 
-$(document).ready(function () {
-    $('#friends').click(function () {
-        $('#page-content-wrapper').load('friends.html');
-    })
-});
 
-$(document).ready(function () {
-    $('#games').click(function () {
-        $('#page-content-wrapper').load('games.html');
-    })
-});
 
-$(document).ready(function () {
-    $('#account').click(function () {
-        $('#page-content-wrapper').load('accounts.html');
-    })
-});
-
-$(document).ready(function () {
-    $('#login').click(function () {
-        $('#page-content-wrapper').load('login.html');
-    })
-});
-
-$(document).ready(function () {
-    $('#register').click(function () {
-        $('#page-content-wrapper').load('register.html');
-    })
-});
-
-$(document).ready(function () {
-    $('#login').click(function () {
-        $('#register-form').load('login.html');
-    })
-});

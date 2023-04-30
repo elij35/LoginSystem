@@ -227,3 +227,41 @@ C:\Users\ebowen2\OneDrive - University of Plymouth\.Git projects\comp1004-course
 C:\Users\ebowen2\OneDrive - University of Plymouth\.Git projects\comp1004-coursework-cluster-f\MyCoreApp\obj\Debug\netcoreapp3.1\MyCoreApp.pdb
 C:\Users\ebowen2\OneDrive - University of Plymouth\.Git projects\comp1004-coursework-cluster-f\MyCoreApp\obj\Debug\netcoreapp3.1\MyCoreApp.genruntimeconfig.cache
 C:\Users\ebowen2\OneDrive - University of Plymouth\.Git projects\comp1004-coursework-cluster-f\MyCoreApp\obj\Debug\netcoreapp3.1\MyCoreApp.csproj.CopyComplete
+C:\Users\MTrissi\comp1004\comp1004-coursework-cluster-f\MyCoreApp\bin\Debug\netcoreapp3.1\appsettings.Development.json
+C:\Users\MTrissi\comp1004\comp1004-coursework-cluster-f\MyCoreApp\bin\Debug\netcoreapp3.1\appsettings.json
+C:\Users\MTrissi\comp1004\comp1004-coursework-cluster-f\MyCoreApp\bin\Debug\netcoreapp3.1\MyCoreApp.exe
+C:\Users\MTrissi\comp1004\comp1004-coursework-cluster-f\MyCoreApp\bin\Debug\netcoreapp3.1\MyCoreApp.deps.json
+C:\Users\MTrissi\comp1004\comp1004-coursework-cluster-f\MyCoreApp\bin\Debug\netcoreapp3.1\MyCoreApp.runtimeconfig.json
+C:\Users\MTrissi\comp1004\comp1004-coursework-cluster-f\MyCoreApp\bin\Debug\netcoreapp3.1\MyCoreApp.runtimeconfig.dev.json
+C:\Users\MTrissi\comp1004\comp1004-coursework-cluster-f\MyCoreApp\bin\Debug\netcoreapp3.1\MyCoreApp.dll
+C:\Users\MTrissi\comp1004\comp1004-coursework-cluster-f\MyCoreApp\bin\Debug\netcoreapp3.1\MyCoreApp.pdb
+C:\Users\MTrissi\comp1004\comp1004-coursework-cluster-f\MyCoreApp\bin\Debug\netcoreapp3.1\MyCoreApp.Views.dll
+C:\Users\MTrissi\comp1004\comp1004-coursework-cluster-f\MyCoreApp\bin\Debug\netcoreapp3.1\MyCoreApp.Views.pdb
+C:\Users\MTrissi\comp1004\comp1004-coursework-cluster-f\MyCoreApp\obj\Debug\netcoreapp3.1\MyCoreApp.csproj.AssemblyReference.cache
+C:\Users\MTrissi\comp1004\comp1004-coursework-cluster-f\MyCoreApp\obj\Debug\netcoreapp3.1\MyCoreApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\MTrissi\comp1004\comp1004-coursework-cluster-f\MyCoreApp\obj\Debug\netcoreapp3.1\MyCoreApp.AssemblyInfoInputs.cache
+C:\Users\MTrissi\comp1004\comp1004-coursework-cluster-f\MyCoreApp\obj\Debug\netcoreapp3.1\MyCoreApp.AssemblyInfo.cs
+C:\Users\MTrissi\comp1004\comp1004-coursework-cluster-f\MyCoreApp\obj\Debug\netcoreapp3.1\MyCoreApp.csproj.CoreCompileInputs.cache
+C:\Users\MTrissi\comp1004\comp1004-coursework-cluster-f\MyCoreApp\obj\Debug\netcoreapp3.1\MyCoreApp.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\MTrissi\comp1004\comp1004-coursework-cluster-f\MyCoreApp\obj\Debug\netcoreapp3.1\MyCoreApp.RazorAssemblyInfo.cache
+C:\Users\MTrissi\comp1004\comp1004-coursework-cluster-f\MyCoreApp\obj\Debug\netcoreapp3.1\MyCoreApp.RazorAssemblyInfo.cs
+C:\Users\MTrissi\comp1004\comp1004-coursework-cluster-f\MyCoreApp\obj\Debug\netcoreapp3.1\staticwebassets\MyCoreApp.StaticWebAssets.Manifest.cache
+C:\Users\MTrissi\comp1004\comp1004-coursework-cluster-f\MyCoreApp\obj\Debug\netcoreapp3.1\staticwebassets\MyCoreApp.StaticWebAssets.xml
+C:\Users\MTrissi\comp1004\comp1004-coursework-cluster-f\MyCoreApp\obj\Debug\netcoreapp3.1\scopedcss\bundle\MyCoreApp.styles.css
+C:\Users\MTrissi\comp1004\comp1004-coursework-cluster-f\MyCoreApp\obj\Debug\netcoreapp3.1\MyCoreApp.TagHelpers.input.cache
+C:\Users\MTrissi\comp1004\comp1004-coursework-cluster-f\MyCoreApp\obj\Debug\netcoreapp3.1\MyCoreApp.TagHelpers.output.cache
+C:\Users\MTrissi\comp1004\comp1004-coursework-cluster-f\MyCoreApp\obj\Debug\netcoreapp3.1\MyCoreApp.RazorCoreGenerate.cache
+C:\Users\MTrissi\comp1004\comp1004-coursework-cluster-f\MyCoreApp\obj\Debug\netcoreapp3.1\Razor\Pages\Error.cshtml.g.cs
+C:\Users\MTrissi\comp1004\comp1004-coursework-cluster-f\MyCoreApp\obj\Debug\netcoreapp3.1\Razor\Pages\Index.cshtml.g.cs
+C:\Users\MTrissi\comp1004\comp1004-coursework-cluster-f\MyCoreApp\obj\Debug\netcoreapp3.1\Razor\Pages\Privacy.cshtml.g.cs
+C:\Users\MTrissi\comp1004\comp1004-coursework-cluster-f\MyCoreApp\obj\Debug\netcoreapp3.1\Razor\Pages\Shared\_Layout.cshtml.g.cs
+C:\Users\MTrissi\comp1004\comp1004-coursework-cluster-f\MyCoreApp\obj\Debug\netcoreapp3.1\Razor\Pages\Shared\_ValidationScriptsPartial.cshtml.g.cs
+C:\Users\MTrissi\comp1004\comp1004-coursework-cluster-f\MyCoreApp\obj\Debug\netcoreapp3.1\Razor\Pages\_ViewImports.cshtml.g.cs
+C:\Users\MTrissi\comp1004\comp1004-coursework-cluster-f\MyCoreApp\obj\Debug\netcoreapp3.1\Razor\Pages\_ViewStart.cshtml.g.cs
+C:\Users\MTrissi\comp1004\comp1004-coursework-cluster-f\MyCoreApp\obj\Debug\netcoreapp3.1\MyCoreApp.RazorTargetAssemblyInfo.cache
+C:\Users\MTrissi\comp1004\comp1004-coursework-cluster-f\MyCoreApp\obj\Debug\netcoreapp3.1\MyCoreApp.RazorTargetAssemblyInfo.cs
+C:\Users\MTrissi\comp1004\comp1004-coursework-cluster-f\MyCoreApp\obj\Debug\netcoreapp3.1\MyCoreApp.Views.pdb
+C:\Users\MTrissi\comp1004\comp1004-coursework-cluster-f\MyCoreApp\obj\Debug\netcoreapp3.1\MyCoreApp.dll
+C:\Users\MTrissi\comp1004\comp1004-coursework-cluster-f\MyCoreApp\obj\Debug\netcoreapp3.1\MyCoreApp.pdb
+C:\Users\MTrissi\comp1004\comp1004-coursework-cluster-f\MyCoreApp\obj\Debug\netcoreapp3.1\MyCoreApp.genruntimeconfig.cache
+C:\Users\MTrissi\comp1004\comp1004-coursework-cluster-f\MyCoreApp\obj\Debug\netcoreapp3.1\MyCoreApp.csproj.CopyComplete

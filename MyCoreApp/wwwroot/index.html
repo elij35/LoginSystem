@@ -7,7 +7,9 @@
 
     <script src="https://code.jquery.com/jquery-3.5.1.js"
             integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
-            crossorigin="anonymous"></script>
+            crossorigin="anonymous">
+
+    </script>
     <script src="js/spa.js"></script>
 
 </head>
@@ -16,28 +18,36 @@
 
         <!-- Sidebar -->
         <nav class="sidebar">
-            <a class="nav-link active" href="#" id="index">Home</a>
-            <a class="nav-link" href="#" id="messages">Messages</a>
-            <a class="nav-link" href="#" id="posts">Posts</a>
-            <a class="nav-link" href="#" id="friends">Friends</a>
-            <a class="nav-link" href="#" id="games">Games</a>
-            <a class="nav-link" href="#" id="account">Account settings</a>
+            <a class="nav-link active" href="#" id="index">Massaging</a>
         </nav>
 
-        <div class="topbar">
-            <div class="topbar-right">
-                <a class="nav-link" href="#" id="login">Login</a>
-                <a class="nav-link" href="#" id="register">Register</a>
-            </div>
 
+        <div class="topbar">
             <h1>Cluster F Software Project</h1>
-            <h2>Home page</h2>
-            <img class="icon" src="Logo.png" alt="Icon" />
+            <h2>Massaging</h2>
+            <img class="icon" src="image/Logo.png" alt="Icon" />
         </div>       
 
         <!-- Page Content -->
         <div class="container">
-            <h1>Enter text here</h1>
+            <input type="button" id="user1" value="Mike" onclick="user1_onCilck()" />
+            <input type="button" id="user2" value="Sam" onclick="user2_onCilck()" />
+            <input type="button" id="user3" value="Mohamad" onclick="user3_onCilck()" />
+            <div id="wrapper">
+                <div id="menu">
+                    <p class="welcome" id="N">Welcome</p>
+
+                </div>
+                <div id="chatbox">
+                    <ul id="m"></ul>
+                    <p id="data1"></p>
+                </div>
+                <form name="message">
+                    <input type="text" id="t" value="please chose a name to start" disabled="true" />
+                    <input type="button" id="b" value="Send" disabled="true" onclick="b_onClick()" />
+                    <!--<button type="button" id="b">Send</button>-->
+                </form>
+            </div>
         </div>
     </div>
 
