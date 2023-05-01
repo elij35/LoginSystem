@@ -61,6 +61,7 @@ for (let i = myPosts.length - 1; i >= 0; i--) {
     post.className = "post-block";
     post.innerHTML = index;
     post.innerText = "";
+    post.id = "postBlock" + i;
 
     postContainer.appendChild(post);
 
@@ -192,6 +193,8 @@ for (let i = myPosts.length - 1; i >= 0; i--) {
     inside.addEventListener("click", function (event) {
 
         if (confirm("Are you sure you want to delete this post?") == true) {
+
+            document.getElementById("postBlock" + i).remove();
 
             myPosts.splice(i, 1);
 
