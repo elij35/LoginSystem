@@ -1,0 +1,58 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cluster</title>
+    <link rel="stylesheet" href="css/site.css">
+    <link rel="stylesheet" href="css/masseging.css">
+
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script src="js/spa.js"></script>
+    <script src="js/masseging.js"></script>
+
+</head>
+<body>
+    <div id="page-content-wrapper" class="col-8 pl-0">
+
+        <!-- Topbar -->
+        <div class="topbar">
+            <img class="icon" src="img/Logo.png" alt="Icon" />
+            <h1>Messages</h1>
+        </div>
+
+        <!-- Sidebar -->
+        <nav class="sidebar">
+            <a class="nav-link" href="#" id="index">Home</a>
+            <a class="nav-link active" href="#" id="messages">Messages</a>
+            <a class="nav-link" href="#" id="posts">Posts</a>
+            <a class="nav-link" href="#" id="friends">Friends</a>
+            <a class="nav-link" href="#" id="games">Games</a>
+        </nav>
+
+        <!-- Page Content -->
+        <div class="container">
+            <input type="button" id="user1" value="Mike" onclick="user1_onCilck()" />
+            <input type="button" id="user2" value="Sam" onclick="user2_onCilck()" />
+            <input type="button" id="user3" value="Mohamad" onclick="user3_onCilck()" />
+            <div id="wrapper">
+                <div id="menu">
+                    <p class="welcome" id="N">Welcome</p>
+
+                </div>
+                <div id="chatbox">
+                    <ul id="m"></ul>
+                    <p id="data1"></p>
+                </div>
+                <form name="message">
+                    <input type="text" id="t" value="please chose a name to start" disabled="true" />
+                    <input type="button" id="b" value="Send" disabled="true" onclick="b_onClick()" />
+                    <!--<button type="button" id="b">Send</button>-->
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">Copyright of Myself</footer>
+</body>
+</html>

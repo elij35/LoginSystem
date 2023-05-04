@@ -6,7 +6,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace comp1004_MT_SAP.Pages
+namespace MT_simple_chat_v4.Pages
 {
     public class PrivacyModel : PageModel
     {
