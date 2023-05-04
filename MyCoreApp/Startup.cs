@@ -1,6 +1,5 @@
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
@@ -9,7 +8,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace simplechat
+namespace comp1004_MT_SAP
 {
     public class Startup
     {
@@ -53,7 +52,7 @@ namespace simplechat
                 endpoints.MapControllers();
             });
 
-            Services.UserServices.Init();
+            //Services.DataService.Init();
         }
     }
 }

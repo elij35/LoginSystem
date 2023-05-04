@@ -7,9 +7,10 @@ using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace simplechat.Pages
+namespace comp1004_MT_SAP.Pages
 {
     [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
+    [IgnoreAntiforgeryToken]
     public class ErrorModel : PageModel
     {
         public string RequestId { get; set; }

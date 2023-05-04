@@ -7,7 +7,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace simplechat
+namespace comp1004_MT_SAP
 {
     public class Program
     {
