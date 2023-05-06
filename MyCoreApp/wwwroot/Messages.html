@@ -32,9 +32,13 @@
 
         <!-- Page Content -->
         <div class="container">
-            <input type="button" id="user1" value="Mike" onclick="user1_onCilck()" />
-            <input type="button" id="user2" value="Sam" onclick="user2_onCilck()" />
-            <input type="button" id="user3" value="Mohamad" onclick="user3_onCilck()" />
+            <p>Enter the name of the sender and reciver to start masseging</p>
+            <input type="text" id="Muser" /><input type="text" id="Suser" />
+            <input type="button" id="btnusers" value="Users" onclick="btnusers_onclick()" />
+            <br />
+            <input type="button" id="user1" value="Mike" onclick="user1_onCilck()" disabled ="true" />
+            <input type="button" id="user2" value="Sam" onclick="user2_onCilck()" disabled ="true" />
+            <input type="button" id="user3" value="Mohamad" onclick="user3_onCilck()" disabled ="true" />
             <div id="wrapper">
                 <div id="menu">
                     <p class="welcome" id="N">Welcome</p>
@@ -47,12 +51,12 @@
                 <form name="message">
                     <input type="text" id="t" value="please chose a name to start" disabled="true" />
                     <input type="button" id="b" value="Send" disabled="true" onclick="b_onClick()" />
-                    <!--<button type="button" id="b">Send</button>-->
                 </form>
+
             </div>
         </div>
     </div>
 
-    <footer class="footer">Copyright of Myself</footer>
+    <footer class="footer">Copyright of Plymouth University</footer>
 </body>
 </html>
