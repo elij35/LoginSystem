@@ -93,6 +93,7 @@ function user3_onCilck() {
 
 function b_onClick() {
     let names = keybase.concat(Muser + '-to-' + Suser);
+    let names1 = keybase.concat(Suser + '-to-' + Muser);
     let massege = [];
     if (t.value) {
         if (localStorage.getItem(names)) {
@@ -100,6 +101,7 @@ function b_onClick() {
         }
         massege.push(user + ": " + t.value);
         localStorage.setItem(names, JSON.stringify(massege));
+        localStorage.setItem(names1, JSON.stringify(massege));
         massege = JSON.parse(localStorage.getItem(names));
         var Lenght = massege.length;
         var newm = document.createElement("li");
@@ -108,4 +110,5 @@ function b_onClick() {
         document.getElementById('t').value = '';
     }
 }
+
 
