@@ -12,6 +12,8 @@ function btnusers_onclick() {
             document.getElementById('Muser').disabled = true;
             document.getElementById('Suser').disabled = true;
             document.getElementById('btnusers').disabled = true;
+            document.getElementById('del').disabled = false;
+            document.getElementById('rest').disabled = false;
 
             let names = keybase.concat(Muser + '-to-' + Suser);
             let massege = [];
@@ -58,6 +60,7 @@ function user1_onCilck() {
     b.disabled = false
     N.innerHTML = "Welcome " + user + " ";
 }
+
 function user2_onCilck() {
     user = "Sam";
     if (Muser == "Mike" || Suser == "Mike") {
@@ -93,7 +96,6 @@ function user3_onCilck() {
 
 function b_onClick() {
     let names = keybase.concat(Muser + '-to-' + Suser);
-    let names1 = keybase.concat(Suser + '-to-' + Muser);
     let massege = [];
     if (t.value) {
         if (localStorage.getItem(names)) {
@@ -101,7 +103,6 @@ function b_onClick() {
         }
         massege.push(user + ": " + t.value);
         localStorage.setItem(names, JSON.stringify(massege));
-        localStorage.setItem(names1, JSON.stringify(massege));
         massege = JSON.parse(localStorage.getItem(names));
         var Lenght = massege.length;
         var newm = document.createElement("li");
@@ -110,5 +111,28 @@ function b_onClick() {
         document.getElementById('t').value = '';
     }
 }
+// for clear the il which hold the masseges for rest button
+function rest_onClick() {
+    document.getElementById('Muser').disabled = false;
+    document.getElementById('Suser').disabled = false;
+    document.getElementById('btnusers').disabled = false;
+    user1.disabled = true;
+    user2.disabled = true;
+    user3.disabled = true;
+    while (m.firstChild) {
+        m.removeChild(m.firstChild);
+    }
+}
 
-
+function del_onClick() {
+    document.getElementById('Muser').disabled = false;
+    document.getElementById('Suser').disabled = false;
+    document.getElementById('btnusers').disabled = false;
+    user1.disabled = true;
+    user2.disabled = true;
+    user3.disabled = true;
+    localStorage.removeItem(keybase.concat(Muser + '-to-' + Suser));
+    while (m.firstChild) {
+        m.removeChild(m.firstChild);
+    }
+}

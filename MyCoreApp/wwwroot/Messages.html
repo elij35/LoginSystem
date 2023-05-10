@@ -33,17 +33,31 @@
 
         <!-- Page Content -->
         <div class="container">
-            <p>Enter the name of the sender and reciver to start masseging</p>
-            <input type="text" id="Muser" /><input type="text" id="Suser" />
+            <label for="Muser">Choose the first user for the chat:</label>
+            <select name="Muser" id="Muser">
+                <option></option>
+                <option value="Mike">Mike</option>
+                <option value="Sam">Sam</option>
+                <option value="Mohamad">Mohamad</option>
+            </select>
+
+            <label for="Suser">Choose the second user for the chat:</label>
+            <select name="Suser" id="Suser">
+                <option></option>
+                <option value="Mike">Mike</option>
+                <option value="Sam">Sam</option>
+                <option value="Mohamad">Mohamad</option>
+            </select>
             <input type="button" id="btnusers" value="Users" onclick="btnusers_onclick()" />
             <br />
-            <input type="button" id="user1" value="Mike" onclick="user1_onCilck()" disabled ="true" />
-            <input type="button" id="user2" value="Sam" onclick="user2_onCilck()" disabled ="true" />
-            <input type="button" id="user3" value="Mohamad" onclick="user3_onCilck()" disabled ="true" />
+            <input type="button" id="user1" value="Mike" onclick="user1_onCilck()" disabled="true" />
+            <input type="button" id="user2" value="Sam" onclick="user2_onCilck()" disabled="true" />
+            <input type="button" id="user3" value="Mohamad" onclick="user3_onCilck()" disabled="true" />
             <div id="wrapper">
                 <div id="menu">
                     <p class="welcome" id="N">Welcome</p>
-
+                    <button id="del" type="button" disabled="true" onclick="del_onClick()"><i class="fa fa-trash"></i>Delete</button>
+                    <button id="rest" type="button" disabled="true" onclick="rest_onClick()"><i class="fa fa-refresh"></i>Rest</button>
                 </div>
                 <div id="chatbox">
                     <ul id="m"></ul>
@@ -52,7 +66,7 @@
                 <form name="message">
                     <input type="text" id="t" value="please chose a name to start" disabled="true" />
                     <!--<input type="button" id="b" value="Send" disabled="true" onclick="b_onClick()" />-->
-                    <button class="btn" id="b" value="Send" disabled="true" onclick="b_onClick()"><i class="fa fa-send">Send</i></button>
+                    <button type="button" id="b" value="Send" disabled="true" onclick="b_onClick()"><i class="fa fa-send">Send</i></button>
                 </form>
 
             </div>
