@@ -12,6 +12,30 @@
 <body>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
     <style>
+        .container {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 0.4fr 0.4fr 2.2fr;
+            gap: 0px 0px;
+            grid-auto-flow: row;
+            grid-template-areas:
+                "friendsnav"
+                "search-bar"
+                "content";
+        }
+
+        .content {
+            grid-area: content;
+        }
+
+        .search-bar {
+            grid-area: search-bar;
+        }
+
+        .friendsnav {
+            grid-area: friendsnav;
+        }
+
         .friendbox {
             background: white;
             font-size: 20px;
@@ -39,8 +63,9 @@
     </style>
 
     <!-- Page Content -->
-    <div id="friends" class="col-lg-10 pl-0">
+    <div id="friends">
         <div class="container">
+            <div class="content"></div>
             <h1 class="text-center display-4">Friends Page</h1>
             <div class="row">
                 <div class="col-lg-5 friendbox">
@@ -81,6 +106,8 @@
                 </div>
 
             </div>
+            <div class="search-bar"></div>
+            <div class="friendsnav"></div>
         </div>
     </div>
 
