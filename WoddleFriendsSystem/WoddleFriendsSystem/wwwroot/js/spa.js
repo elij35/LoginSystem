@@ -28,3 +28,13 @@ $(document).ready(function () {
         $('#page-content-wrapper').load('games.html');
     })
 });
+$(document).ready(function () {
+    $('#closefriends').click(function () {
+        $('#page-content-wrapper').load('closefriends.html');
+    })
+});
+$(document).ready(function () {
+    $('#friendrequests').click(function () {
+        $('#page-content-wrapper').load('friendrequests.html');
+    })
+});

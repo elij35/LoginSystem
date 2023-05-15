@@ -7,192 +7,305 @@
     <title>Friends</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
     <link href="styles.css" rel="stylesheet">
+    <script src="js/spa.js"></script>
+
 </head>
 
 <body>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    <script src="js/spa.js"></script>
     <style>
-        .content {
-            grid-area: content;
-        }
-
-        .search-bar {
-            grid-area: search-bar;
-        }
-
-        .friendsnav {
-            grid-area: friendsnav;
-        }
-
-        .friendbox {
-            background: white;
-            font-size: 20px;
-            padding: 25px 1px 25px 1px;
-            border: 2px solid #212529;
-            margin: 10px;
-            
-        }
-        .userbox {
-            border: 2px solid #212529;
-        }
-        .tagbox {
-            color: white;
-            background: #212529;
-            font-size: 17px;
-            padding: 3px 50px 3px 50px ;
-            margin-left: 2px;
-        }
-        .bio {
-            font-size: 17px;
-            padding: 3px 0px 3px 5px ;
-            margin-left: 2px;
-        }
-        .flex-container {
-            display: flex;
-            flex-direction: row;
-            flex-wrap: nowrap;
-            justify-content: space-around;
-            align-items: normal;
-            align-content: normal;
-        }
-
-        .flex-items:nth-child(1) {
-            display: block;
-            flex-grow: 0;
-            flex-shrink: 1;
-            flex-basis: auto;
-            align-self: auto;
-            order: 0;
-        }
-
-        .flex-items:nth-child(2) {
-            display: block;
-            flex-grow: 0;
-            flex-shrink: 1;
-            flex-basis: auto;
-            align-self: auto;
-            order: 0;
-        }
-
     </style>
+
+    <script type="text/javascript">
+        /*
+        var divElement = document.createElement("div");
+
+        // Set some attributes for the div element
+        divElement.id = "myDiv";
+        divElement.textContent = "Hello, World!";
+        divElement.style.backgroundColor = "yellow";
+        divElement.style.padding = "10px";
+
+        // Append the div element to the body of the document
+        //document.body.appendChild(divElement);
+        document.getElementById('friendtabs').appendChild(divElement);*/
+
+        //Create friend tab div
+
+
+        var user2 = {
+            name: "Bob",
+            friends: ["Bob", "Clare", "Dave"],
+            closefriends: ["Dillan"],
+            friendrequests: ["Cheese"]
+        };
+
+        localStorage.setItem("user2", JSON.stringify(user2));
+
+        var user2 = JSON.parse(localStorage.getItem("user2"));
+        var user2name = user2.name;
+        console.log(user2name);
+
+
+            var tab = document.createElement('div');
+
+            tab.classList.add("card", "bg-light")
+
+            tab.setAttribute("id", "tab");
+
+            document.getElementById('friendtabs').appendChild(tab);
+
+            //created <div id="tab" class="card bg-light">
+
+            var tabBody = document.createElement("div");
+
+            tabBody.classList.add("card-body");
+            tabBody.setAttribute("id", "tabBody");
+
+            //tabBody.textContent("Friend 2");
+
+            document.getElementById('tab').appendChild(tabBody);
+
+            var userImg = document.createElement('img');
+
+            userImg.src = "/img/user.jpg";
+            userImg.alt = "user image";
+            userImg.classList.add("card");
+            userImg.setAttribute("style", "width:200px");
+            userImg.setAttribute("id", "userImg");
+
+            document.getElementById('tabBody').appendChild(userImg);
+
+            var name = document.createElement('p');
+
+            name.textContent = user2name;
+            name.classList.add("card-title");
+
+            document.getElementById('tabBody').appendChild(name);
+
+
+
+            var bio = document.createElement('p');
+    
+            bio.classList.add("card-text");
+            bio.textContent = "Bio";
+
+            document.getElementById('tabBody').appendChild(bio);
+    
+            var viewUser = document.createElement('a');
+    
+            viewUser.setAttribute("href", "#");
+            viewUser.setAttribute("id", "users");
+            viewUser.classList.add("btn");
+            viewUser.classList.add("nav-link");
+            viewUser.classList.add("btn-dark");
+            viewUser.textContent = "View User";
+                
+            document.getElementById('tabBody').appendChild(viewUser);
+
+            $('#users').click(function () {
+                $('#page-content-wrapper').load('users.html');
+            });
+        
+
+
+        /*let user1 = {
+            name: "Alice",
+        friends: ["Bob", "Clare", "Esther"],
+        closefriends: ["Daniel"],
+        friendrequests: ["Clare"]
+        };*/
+
+
+            //localStorage.setItem("user1", JSON.stringify(user1))
+
+
+        /*
+        let user3 = {
+            name: "Clare",
+        friends: ["Bob", "Clare", "Dave"],
+        closefriends: ["Dillan"],
+        friendrequests: ["Cheese"]
+        };
+        let user4 = {
+            name: "Dave",
+        friends: ["Bob", "Clare", "Dave"],
+        closefriends: ["Dillan"],
+        friendrequests: ["Cheese"]
+        };
+        let user5 = {
+            name: "Dillan",
+        friends: ["Bob", "Clare", "Dave"],
+        closefriends: ["Dillan"],
+        friendrequests: ["Cheese"]
+        };
+
+        localStorage.setItem("user1", user1);
+        console.log(localStorage);
+
+
+        let user2_serialized = JSON.stringify(user2);
+        console.log(user2_serialized);
+
+        localStorage.setItem("user2", user2);
+        console.log(localStorage);
+
+
+        let user3_serialized = JSON.stringify(user3);
+        console.log(user3_serialized);
+
+        localStorage.setItem("user3", user3);
+        console.log(localStorage);
+
+
+        let user4_serialized = JSON.stringify(user4);
+        console.log(user4_serialized);
+
+        localStorage.setItem("user4", user4);
+        console.log(localStorage);
+        */
+
+
+        /*
+
+
+
+// Load the friends data from local storage
+const loadFriendsData = () => {
+        try {
+            const friendsData = localStorage.getItem('friends');
+            return friendsData ? JSON.parse(friendsData) : [];
+        } catch (error) {
+            console.error('Error reading friends data:', error);
+            return [];
+        }
+};
+
+// Save the friends data to local storage
+const saveFriendsData = (data) => {
+        try {
+            localStorage.setItem('friends', JSON.stringify(data));
+            console.log('Friends data saved successfully!');
+        } catch (error) {
+            console.error('Error saving friends data:', error);
+        }
+};
+
+// Add a friend to the friends list
+const addFriend = (name) => {
+        const friendsData = loadFriendsData();
+
+        // Check if the friend already exists
+        if (friendsData.some(friend => friend.name === name)) {
+            console.log(`${name} is already your friend.`);
+            return;
+        }
+
+        // Add the friend to the friends list
+        friendsData.push({ name });
+        saveFriendsData(friendsData);
+        console.log(`${name} has been added to your friends list.`);
+};
+
+// Remove a friend from the friends list
+const removeFriend = (name) => {
+        let friendsData = loadFriendsData();
+
+        // Find the friend in the friends list
+        const friendIndex = friendsData.findIndex(friend => friend.name === name);
+
+        // Check if the friend exists
+        if (friendIndex === -1) {
+            console.log(`${name} is not your friend.`);
+            return;
+        }
+
+        // Remove the friend from the friends list
+        friendsData.splice(friendIndex, 1);
+        saveFriendsData(friendsData);
+        console.log(`${name} has been removed from your friends list.`);
+};
+
+// Get the list of friends
+const getFriendsList = () => {
+        const friendsData = loadFriendsData();
+
+        if (friendsData.length === 0) {
+            console.log('Your friends list is empty.');
+        } else {
+            console.log('Your friends list:');
+            friendsData.forEach(friend => console.log(friend.name));
+        }
+};
+
+// Usage example:
+addFriend('John');
+addFriend('Jane');
+getFriendsList();
+removeFriend('John');
+getFriendsList(); */
+        /*
+        function storeInputs() {
+
+            if (document.getElementById("input1").value != "" && document.getElementById("input2").value) {
+                try {
+            let inputs = {
+            "Input1": JSON.stringify(document.getElementById("input1").value),
+        "Input2": JSON.stringify(document.getElementById("input2").value)
+                    };
+
+
+        localStorage.setItem("Title", JSON.stringify(inputs));
+        alter("Inputs successfully stored");
+                }
+        catch (err) {
+            alter("Inputs not stored\n" + err.message);
+                }
+            }
+        else
+        alert("Fields cannot be empty")
+            }*/
+
+
+    </script>
 
     <!-- Page Content -->
     <div id="friends">
-        <!--
-    <h1 class="text-center display-4">Friends Page</h1>
-    <div class="flex-container">
-        <div class="flex-items friendbox">
-            <h3 class="tagbox">Friend 1</h3>
-            <p class="bio">Bio</p>
-            <h3 class="friendbox">View User</h3>
-        </div>
-        <div class="flex-items friendbox">
-            <h3 class="tagbox">Friend 2</h3>
-            <p class="bio">Bio</p>
+        <div id="friendtabs" class="card-colums">
+            <!--<div class="card bg-light">
+                <div class="card-body">
+                    <img class="card" src="/img/user.jpg" alt="Card image" style="width:200px">
+                    <p class="card-title">Friend 1</p>
+                    <p class="card-text">Bio</p>
+                    <a href="#" id="users" class="btn btn-dark ">View User</a>
+                </div>
+            </div>-->
         </div>
     </div>
-    --->
-        <div class="card-columns">
-            <div class="card bg-light">
-                <div class="card-body text-center">
-                    <p class="card-text">Friend 1</p>
-                    <p class="card-text">Ipsum lorem Ipsum lorem Ipsum lorem Ipsum lorem Ipsum lorem Ipsum lorem Ipsum lorem Ipsum lorem Ipsum lorem Ipsum lorem Ipsum lorem Ipsum lorem </p>
-                </div>
-            </div>
-            <div class="card bg-light">
-                <div class="card-body text-center">
-                    <p class="card-text">Friend 1</p>
-                    <p class="card-text">Ipsum lorem Ipsum lorem Ipsum lorem Ipsum lorem Ipsum lorem Ipsum lorem Ipsum lorem Ipsum lorem Ipsum lorem Ipsum lorem Ipsum lorem Ipsum lorem </p>
-                </div>
-            </div>
-            <div class="card bg-light">
-                <div class="card-body text-center">
-                    <p class="card-text">Friend 1</p>
-                    <p class="card-text">Ipsum lorem Ipsum lorem Ipsum lorem Ipsum lorem Ipsum lorem Ipsum lorem Ipsum lorem Ipsum lorem Ipsum lorem Ipsum lorem Ipsum lorem Ipsum lorem </p>
-                </div>
-            </div>
-            <div class="card bg-light">
-                <div class="card-body text-center">
-                    <p class="card-text">Friend 1</p>
-                    <p class="card-text">Ipsum lorem Ipsum lorem Ipsum lorem Ipsum lorem Ipsum lorem Ipsum lorem Ipsum lorem Ipsum lorem Ipsum lorem Ipsum lorem Ipsum lorem Ipsum lorem </p>
-                </div>
-            </div>
-            <div class="card bg-light">
-                <div class="card-body text-center">
-                    <p class="card-text">Friend 1</p>
-                    <p class="card-text">Ipsum lorem Ipsum lorem Ipsum lorem Ipsum lorem Ipsum lorem Ipsum lorem Ipsum lorem Ipsum lorem Ipsum lorem Ipsum lorem Ipsum lorem Ipsum lorem </p>
-                </div>
-            </div>
-            <div class="card bg-light">
-                <div class="card-body text-center">
-                    <p class="card-text">Friend 1</p>
-                    <p class="card-text">Ipsum lorem Ipsum lorem Ipsum lorem Ipsum lorem Ipsum lorem Ipsum lorem Ipsum lorem Ipsum lorem Ipsum lorem Ipsum lorem Ipsum lorem Ipsum lorem </p>
-                </div>
-            </div>
-        </div>
 
 
 
 
 
+    <!--<nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+        <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link" href="#" id="friends">Friends</a></li>
+            <li class="nav-item"><a class="nav-link" href="#" id="closefriends">Close Friends</a></li>
+            <li class="nav-item"><a class="nav-link" href="#" id="friendrequests">Friend Requests</a></li>
+        </ul>
+    </nav>-->
+    <!--<div class="card bg-light">
 
+        <div class="card-body">
 
-
-
-
-
-
-
-
-
-
-
-
-
-        <!--<div class="row">
-        <div class="col-lg-5 friendbox">
-            <div class="container row">
-                <div class="col-lg-4">
-                    <img class="userbox" src="/img/user.jpg" alt="user image">
-                </div>
-                <div class="col-lg-8">
-                    <h3 class="tagbox">Friend 1</h3>
-                    <p class="bio">Bio</p>
-                </div>
-            </div>
-        </div>
-        <div class="col-lg-5 friendbox">
-            <div class="container row">
-                <div class="col-lg-4">
-                    <img class="userbox" src="/img/user.jpg" alt="user image">
-                </div>
-                <div class="col-lg-8">
-                    <h3 class="tagbox">Friend 2</h3>
-                    <p class="bio">Bio</p>
-                </div>
-            </div>
-        </div>
-        <div class="col-lg-5 friendbox">
+            <img class="card" src="/img/user.jpg" alt="Card image" style="width:200px">
+            <p class="card-title">Friend 1</p>
+            <p class="card-text">Bio</p>
+            <a href="#" id="user1" class="btn btn-dark ">View User</a>
 
         </div>
-        <div class="col-lg-5 friendbox">
-            <div class="container row">
-                <div class="col-lg-4">
-                    <img class="userbox" src="/img/user.jpg" alt="user image">
-                </div>
-                <div class="col-lg-8">
-                    <h3 class="tagbox">Friend 4</h3>
-                    <p class="bio">Bio</p>
-                </div>
-            </div>
-        </div>
-
-    </div>
-    <div class="search-bar"></div>
-    <div class="friendsnav"></div>-->
-    </div>
-
-
+    </div>-->
 
 </body>
 

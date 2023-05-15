@@ -86,6 +86,8 @@
                 <li class="nav-item"><a class="nav-link active" href="#" id="index">Home</a></li>
                 <li class="nav-item"><a class="nav-link" href="#" id="users">Users</a></li>
                 <li class="nav-item"><a class="nav-link" href="#" id="friends">Friends</a></li>
+                <li class="nav-item"><a class="nav-link" href="#" id="friendrequests">Friend Requests</a></li>
+                <li class="nav-item"><a class="nav-link" href="#" id="closefriends">Close Friends</a></li>
                 <li class="nav-item"><a class="nav-link" href="#" id="posts">Posts</a></li>
                 <li class="nav-item"><a class="nav-link" href="#" id="messaging">Messaging</a></li>
                 <li class="nav-item"><a class="nav-link" href="#" id="games">Games</a></li>
@@ -102,91 +104,130 @@
         </p>
     </div>
 
+    <script>
+        /*const tab = document.createElement('div');
 
+        tab.classList.add("card", "bg-light")
 
+        tab.setAttribute("id", "tab");
 
-    <!--<style>
-        .sidenav {
-            height: 100%; /* Full-height: remove this if you want "auto" height */
-            width: 160px; /* Set the width of the sidebar */
-            position: fixed; /* Fixed Sidebar (stay in place on scroll) */
-            z-index: 1; /* Stay on top */
-            top: 0; /* Stay at the top */
-            left: 0;
-            background-color: #111; /* Black */
-            overflow-x: hidden; /* Disable horizontal scroll */
-            padding-top: 20px;
-        }
-        .main {
-            margin-left: 160px; /* Same as the width of the sidebar */
-            padding: 0px 10px;
-        }
-    </style>
+        //created <div id="tab" class="card bg-light">
 
-    <div class="container-fluid row">
-        <div class="sidenav">
-            <!-- Sidebar
-                <nav class="navbar-dark bg-dark text-center">
-                    <ul class="navbar-nav">
-                        <li class="nav-item"><a class="nav-link active" href="#" id="index">Home</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#" id="users">Users</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#" id="friends">Friends</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#" id="posts">Posts</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#" id="messaging">Messaging</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#" id="games">Games</a></li>
-                    </ul>
-                </nav>
-        </div>
-        <!-- Page Content
-        <div id="page-content-wrapper" class="text-center col-lg-10 p-0">
-            <div class="container-fluid">
-                <h1 class="display-4">Welcome to Woddle</h1>
-                <p class="lead font-weight-bold">
-                    COMP1004 SPA 02
-                    4
-                    Welcome to the COMP1004 sample Single Page Application. In this example
-                    we shall load a map, a treasure game and a data chart into this space to illustrate how JQuery
-                    will allow you to provide a rich user experience on one html page.
-                </p>
-            </div>
-        </div>
-    </div>-->
-    <!--   <style>
-            .default {
-                background-color: red;
+            const tabBody = document.createElement("div");
+
+            tabBody.classList.add("card-body");
+
+            tabBody.textContent = 'Hello world';
+
+            //created <div class="card-body">Hello world</div>
+
+            const friendtabs = document.getElementById('friendtabs');
+            friendtabs.appendChild(tab);
+
+            const tab = document.getElementById('tab');
+            tab.appendChild(tabBody);
+
+            const el = document.createElement('div');*/
+
+            // ✅ Add classes to element
+            el.classList.add('bg-yellow', 'text-lg');
+
+            // ✅ Set ID attribute on the element
+            el.setAttribute('id', 'my-id');
+
+            // ✅ Add text content to the element
+            el.textContent = 'Hello world';
+
+            // ✅ Or set the innerHTML of the element
+            // el.innerHTML = `<span>One, two, three</span>`;
+
+            // ✅ add element to DOM
+            const box = document.getElementById('page-content-wrapper');
+            box.appendChild(el);
+        </script>
+
+        <!--<style>
+            .sidenav {
+                height: 100%; /* Full-height: remove this if you want "auto" height */
+                width: 160px; /* Set the width of the sidebar */
+                position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+                z-index: 1; /* Stay on top */
+                top: 0; /* Stay at the top */
+                left: 0;
+                background-color: #111; /* Black */
+                overflow-x: hidden; /* Disable horizontal scroll */
+                padding-top: 20px;
             }
-
-            .newclass1 {
-                color: white;
-            }
-
-            .newclass2 {
-                background-color: green;
+            .main {
+                margin-left: 160px; /* Same as the width of the sidebar */
+                padding: 0px 10px;
             }
         </style>
 
+        <div class="container-fluid row">
+            <div class="sidenav">
+                <!-- Sidebar
+                    <nav class="navbar-dark bg-dark text-center">
+                        <ul class="navbar-nav">
+                            <li class="nav-item"><a class="nav-link active" href="#" id="index">Home</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#" id="users">Users</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#" id="friends">Friends</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#" id="posts">Posts</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#" id="messaging">Messaging</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#" id="games">Games</a></li>
+                        </ul>
+                    </nav>
+            </div>
+            <!-- Page Content
+            <div id="page-content-wrapper" class="text-center col-lg-10 p-0">
+                <div class="container-fluid">
+                    <h1 class="display-4">Welcome to Woddle</h1>
+                    <p class="lead font-weight-bold">
+                        COMP1004 SPA 02
+                        4
+                        Welcome to the COMP1004 sample Single Page Application. In this example
+                        we shall load a map, a treasure game and a data chart into this space to illustrate how JQuery
+                        will allow you to provide a rich user experience on one html page.
+                    </p>
+                </div>
+            </div>
+        </div>-->
+        <!--   <style>
+                .default {
+                    background-color: red;
+                }
 
-    </body>
-    <body style="text-align:center">
-        <h1 style="color:green">GeeksforGeeks</h1>
-        <h2>Change class name of element</h2>
-        <button class="default" onclick="changeClass()" id="myButton">
-            Click Here!
-        </button>
-        <p id="myPara">Old class name: default</p>
-        <script type="text/javascript">
-            function changeClass() {
-                document.getElementById('myButton')
-                    .className = "newclass1";
-                document.getElementById('myButton')
-                    .classList.add("newclass2");
-                var button_class = document.getElementById('myButton')
-                    .className;
-                document.getElementById('myPara')
-                    .innerHTML = "New class name: "
-                    + button_class;
-            }
-        </script>-->
+                .newclass1 {
+                    color: white;
+                }
+
+                .newclass2 {
+                    background-color: green;
+                }
+            </style>
+
+
+        </body>
+        <body style="text-align:center">
+            <h1 style="color:green">GeeksforGeeks</h1>
+            <h2>Change class name of element</h2>
+            <button class="default" onclick="changeClass()" id="myButton">
+                Click Here!
+            </button>
+            <p id="myPara">Old class name: default</p>
+            <script type="text/javascript">
+                function changeClass() {
+                    document.getElementById('myButton')
+                        .className = "newclass1";
+                    document.getElementById('myButton')
+                        .classList.add("newclass2");
+                    var button_class = document.getElementById('myButton')
+                        .className;
+                    document.getElementById('myPara')
+                        .innerHTML = "New class name: "
+                        + button_class;
+                }
+            </script>-->
 
 </body>
 
