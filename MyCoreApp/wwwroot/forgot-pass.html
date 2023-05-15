@@ -1,0 +1,47 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Cluster</title>
+    <link rel="stylesheet" href="css/site.css">
+    <link rel="stylesheet" href="css/login-register.css">
+
+    <script src="https://code.jquery.com/jquery-3.5.1.js"
+            integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+            crossorigin="anonymous"></script>
+    <script src="js/spa.js"></script>
+    <script src="js/forgot-pass.js"></script>
+    <script src="js/register.js"></script>
+</head>
+<body>
+    <div id="page-content-wrapper" class="col-8 pl-0">
+                
+        <!-- Page Content -->
+        <div class="container">
+            <div class="form">
+                <h2>Password Reset</h2>
+
+                <div id="hide_email">
+                    <p>Enter your email to reset your password</p>
+                    <input type="text" id="email" placeholder="Email address">
+                    <div class="event-buttons">
+                        <button type="button" onclick="check_email()">Next</button>
+                        <button type="button" class="cancel-button" onclick="register_page()">Cancel</button>
+                    </div>
+                </div>
+
+                <div id="show_pass">
+                    <p>Account found, enter a new password</p>
+                    <input type="password" id="password" placeholder="Password">
+                    <input type="password" id="confPassword" placeholder="Confirm Password">
+                    <input type="checkbox" onclick="show_password()">
+                    <label class="checkbox-text">Show Password</label>
+                    <div class="event-buttons">
+                        <button class="button-reset" type="button" onclick="update_password()">Reset</button>
+                    </div>
+                </div>                               
+            </div>
+        </div>
+    </div>
+</body>
+</html>

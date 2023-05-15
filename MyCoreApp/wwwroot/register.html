@@ -31,12 +31,19 @@
 
                 <div class="inputs">
                     <input type="password" id="confPassword" placeholder="Confirm Password">
+                    <input type="checkbox" class="checkbox-text" onclick="show_password()">
+                    <label class="checkbox-text">Show Password</label>
                 </div>
 
                 <div class="event-buttons">
                     <button type="button" onclick="register()">Register</button>
                     <button type="button" class="cancel-button" onclick="cancel()">Cancel</button>
                 </div>
+
+                <p class="got-account">
+                    Already have an account?
+                    <a href="#" onclick="got_account()">Login now</a>
+                </p>
 
             </div>                                
         </div>
