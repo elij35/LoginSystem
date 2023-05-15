@@ -1,5 +1,5 @@
 ﻿.topbar {
-    height: auto;
+    height: 120px;
     position: fixed;
     top: 0;
     left: 0;
@@ -14,7 +14,7 @@
     position: center;
     float: right;
     padding: 25px 12px;
-    margin-top: 15px;
+    margin-top: 26px;
 }
 
 .topbar-right a {
@@ -72,7 +72,6 @@ a {
     color: black;
     font-size: 22px;
     text-decoration: none;
-
 }
 
 body {
@@ -99,6 +98,7 @@ body {
     margin-top: 110px;
     margin-bottom: 50px;
     height: auto;
+    text-align: center;
 }
 
 h1 {
@@ -110,5 +110,5 @@ h2 {
 }
 
 p {
-    font-size: 18px;
+    font-size: 16px;
 }

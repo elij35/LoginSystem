@@ -148,6 +148,85 @@ C:\Users\jbott1\comp1004-coursework-cluster-f\MyCoreApp\obj\Debug\netcoreapp3.1\
 C:\Users\jbott1\comp1004-coursework-cluster-f\MyCoreApp\obj\Debug\netcoreapp3.1\MyCoreApp.pdb
 C:\Users\jbott1\comp1004-coursework-cluster-f\MyCoreApp\obj\Debug\netcoreapp3.1\MyCoreApp.genruntimeconfig.cache
 C:\Users\jbott1\comp1004-coursework-cluster-f\MyCoreApp\obj\Debug\netcoreapp3.1\MyCoreApp.csproj.CopyComplete
+C:\Users\ebowen2\OneDrive - University of Plymouth\.Git projects\comp1004-coursework-cluster-f\MyCoreApp\bin\Debug\netcoreapp3.1\appsettings.Development.json
+C:\Users\ebowen2\OneDrive - University of Plymouth\.Git projects\comp1004-coursework-cluster-f\MyCoreApp\bin\Debug\netcoreapp3.1\appsettings.json
+C:\Users\ebowen2\OneDrive - University of Plymouth\.Git projects\comp1004-coursework-cluster-f\MyCoreApp\bin\Debug\netcoreapp3.1\MyCoreApp.exe
+C:\Users\ebowen2\OneDrive - University of Plymouth\.Git projects\comp1004-coursework-cluster-f\MyCoreApp\bin\Debug\netcoreapp3.1\MyCoreApp.deps.json
+C:\Users\ebowen2\OneDrive - University of Plymouth\.Git projects\comp1004-coursework-cluster-f\MyCoreApp\bin\Debug\netcoreapp3.1\MyCoreApp.runtimeconfig.json
+C:\Users\ebowen2\OneDrive - University of Plymouth\.Git projects\comp1004-coursework-cluster-f\MyCoreApp\bin\Debug\netcoreapp3.1\MyCoreApp.runtimeconfig.dev.json
+C:\Users\ebowen2\OneDrive - University of Plymouth\.Git projects\comp1004-coursework-cluster-f\MyCoreApp\bin\Debug\netcoreapp3.1\MyCoreApp.dll
+C:\Users\ebowen2\OneDrive - University of Plymouth\.Git projects\comp1004-coursework-cluster-f\MyCoreApp\bin\Debug\netcoreapp3.1\MyCoreApp.pdb
+C:\Users\ebowen2\OneDrive - University of Plymouth\.Git projects\comp1004-coursework-cluster-f\MyCoreApp\bin\Debug\netcoreapp3.1\MyCoreApp.Views.dll
+C:\Users\ebowen2\OneDrive - University of Plymouth\.Git projects\comp1004-coursework-cluster-f\MyCoreApp\bin\Debug\netcoreapp3.1\MyCoreApp.Views.pdb
+C:\Users\ebowen2\OneDrive - University of Plymouth\.Git projects\comp1004-coursework-cluster-f\MyCoreApp\obj\Debug\netcoreapp3.1\MyCoreApp.csproj.AssemblyReference.cache
+C:\Users\ebowen2\OneDrive - University of Plymouth\.Git projects\comp1004-coursework-cluster-f\MyCoreApp\obj\Debug\netcoreapp3.1\MyCoreApp.AssemblyInfoInputs.cache
+C:\Users\ebowen2\OneDrive - University of Plymouth\.Git projects\comp1004-coursework-cluster-f\MyCoreApp\obj\Debug\netcoreapp3.1\MyCoreApp.AssemblyInfo.cs
+C:\Users\ebowen2\OneDrive - University of Plymouth\.Git projects\comp1004-coursework-cluster-f\MyCoreApp\obj\Debug\netcoreapp3.1\MyCoreApp.csproj.CoreCompileInputs.cache
+C:\Users\ebowen2\OneDrive - University of Plymouth\.Git projects\comp1004-coursework-cluster-f\MyCoreApp\obj\Debug\netcoreapp3.1\MyCoreApp.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\ebowen2\OneDrive - University of Plymouth\.Git projects\comp1004-coursework-cluster-f\MyCoreApp\obj\Debug\netcoreapp3.1\MyCoreApp.RazorAssemblyInfo.cache
+C:\Users\ebowen2\OneDrive - University of Plymouth\.Git projects\comp1004-coursework-cluster-f\MyCoreApp\obj\Debug\netcoreapp3.1\MyCoreApp.RazorAssemblyInfo.cs
+C:\Users\ebowen2\OneDrive - University of Plymouth\.Git projects\comp1004-coursework-cluster-f\MyCoreApp\obj\Debug\netcoreapp3.1\staticwebassets\MyCoreApp.StaticWebAssets.Manifest.cache
+C:\Users\ebowen2\OneDrive - University of Plymouth\.Git projects\comp1004-coursework-cluster-f\MyCoreApp\obj\Debug\netcoreapp3.1\staticwebassets\MyCoreApp.StaticWebAssets.xml
+C:\Users\ebowen2\OneDrive - University of Plymouth\.Git projects\comp1004-coursework-cluster-f\MyCoreApp\obj\Debug\netcoreapp3.1\scopedcss\bundle\MyCoreApp.styles.css
+C:\Users\ebowen2\OneDrive - University of Plymouth\.Git projects\comp1004-coursework-cluster-f\MyCoreApp\obj\Debug\netcoreapp3.1\MyCoreApp.TagHelpers.input.cache
+C:\Users\ebowen2\OneDrive - University of Plymouth\.Git projects\comp1004-coursework-cluster-f\MyCoreApp\obj\Debug\netcoreapp3.1\MyCoreApp.TagHelpers.output.cache
+C:\Users\ebowen2\OneDrive - University of Plymouth\.Git projects\comp1004-coursework-cluster-f\MyCoreApp\obj\Debug\netcoreapp3.1\MyCoreApp.RazorCoreGenerate.cache
+C:\Users\ebowen2\OneDrive - University of Plymouth\.Git projects\comp1004-coursework-cluster-f\MyCoreApp\obj\Debug\netcoreapp3.1\Razor\Pages\Error.cshtml.g.cs
+C:\Users\ebowen2\OneDrive - University of Plymouth\.Git projects\comp1004-coursework-cluster-f\MyCoreApp\obj\Debug\netcoreapp3.1\Razor\Pages\Index.cshtml.g.cs
+C:\Users\ebowen2\OneDrive - University of Plymouth\.Git projects\comp1004-coursework-cluster-f\MyCoreApp\obj\Debug\netcoreapp3.1\Razor\Pages\Privacy.cshtml.g.cs
+C:\Users\ebowen2\OneDrive - University of Plymouth\.Git projects\comp1004-coursework-cluster-f\MyCoreApp\obj\Debug\netcoreapp3.1\Razor\Pages\Shared\_Layout.cshtml.g.cs
+C:\Users\ebowen2\OneDrive - University of Plymouth\.Git projects\comp1004-coursework-cluster-f\MyCoreApp\obj\Debug\netcoreapp3.1\Razor\Pages\Shared\_ValidationScriptsPartial.cshtml.g.cs
+C:\Users\ebowen2\OneDrive - University of Plymouth\.Git projects\comp1004-coursework-cluster-f\MyCoreApp\obj\Debug\netcoreapp3.1\Razor\Pages\_ViewImports.cshtml.g.cs
+C:\Users\ebowen2\OneDrive - University of Plymouth\.Git projects\comp1004-coursework-cluster-f\MyCoreApp\obj\Debug\netcoreapp3.1\Razor\Pages\_ViewStart.cshtml.g.cs
+C:\Users\ebowen2\OneDrive - University of Plymouth\.Git projects\comp1004-coursework-cluster-f\MyCoreApp\obj\Debug\netcoreapp3.1\MyCoreApp.RazorTargetAssemblyInfo.cache
+C:\Users\ebowen2\OneDrive - University of Plymouth\.Git projects\comp1004-coursework-cluster-f\MyCoreApp\obj\Debug\netcoreapp3.1\MyCoreApp.RazorTargetAssemblyInfo.cs
+C:\Users\ebowen2\OneDrive - University of Plymouth\.Git projects\comp1004-coursework-cluster-f\MyCoreApp\obj\Debug\netcoreapp3.1\MyCoreApp.Views.pdb
+C:\Users\ebowen2\OneDrive - University of Plymouth\.Git projects\comp1004-coursework-cluster-f\MyCoreApp\obj\Debug\netcoreapp3.1\MyCoreApp.dll
+C:\Users\ebowen2\OneDrive - University of Plymouth\.Git projects\comp1004-coursework-cluster-f\MyCoreApp\obj\Debug\netcoreapp3.1\MyCoreApp.pdb
+C:\Users\ebowen2\OneDrive - University of Plymouth\.Git projects\comp1004-coursework-cluster-f\MyCoreApp\obj\Debug\netcoreapp3.1\MyCoreApp.genruntimeconfig.cache
+C:\Users\ebowen2\OneDrive - University of Plymouth\.Git projects\comp1004-coursework-cluster-f\MyCoreApp\obj\Debug\netcoreapp3.1\MyCoreApp.csproj.CopyComplete
+C:\Users\Eli Bowen\OneDrive - University of Plymouth\.Git projects\comp1004-coursework-cluster-f\MyCoreApp\bin\Debug\netcoreapp3.1\appsettings.Development.json
+C:\Users\Eli Bowen\OneDrive - University of Plymouth\.Git projects\comp1004-coursework-cluster-f\MyCoreApp\bin\Debug\netcoreapp3.1\appsettings.json
+C:\Users\Eli Bowen\OneDrive - University of Plymouth\.Git projects\comp1004-coursework-cluster-f\MyCoreApp\bin\Debug\netcoreapp3.1\MyCoreApp.StaticWebAssets.xml
+C:\Users\Eli Bowen\OneDrive - University of Plymouth\.Git projects\comp1004-coursework-cluster-f\MyCoreApp\bin\Debug\netcoreapp3.1\MyCoreApp.exe
+C:\Users\Eli Bowen\OneDrive - University of Plymouth\.Git projects\comp1004-coursework-cluster-f\MyCoreApp\bin\Debug\netcoreapp3.1\MyCoreApp.deps.json
+C:\Users\Eli Bowen\OneDrive - University of Plymouth\.Git projects\comp1004-coursework-cluster-f\MyCoreApp\bin\Debug\netcoreapp3.1\MyCoreApp.runtimeconfig.json
+C:\Users\Eli Bowen\OneDrive - University of Plymouth\.Git projects\comp1004-coursework-cluster-f\MyCoreApp\bin\Debug\netcoreapp3.1\MyCoreApp.runtimeconfig.dev.json
+C:\Users\Eli Bowen\OneDrive - University of Plymouth\.Git projects\comp1004-coursework-cluster-f\MyCoreApp\bin\Debug\netcoreapp3.1\MyCoreApp.dll
+C:\Users\Eli Bowen\OneDrive - University of Plymouth\.Git projects\comp1004-coursework-cluster-f\MyCoreApp\bin\Debug\netcoreapp3.1\MyCoreApp.pdb
+C:\Users\Eli Bowen\OneDrive - University of Plymouth\.Git projects\comp1004-coursework-cluster-f\MyCoreApp\bin\Debug\netcoreapp3.1\MyCoreApp.Views.dll
+C:\Users\Eli Bowen\OneDrive - University of Plymouth\.Git projects\comp1004-coursework-cluster-f\MyCoreApp\bin\Debug\netcoreapp3.1\MyCoreApp.Views.pdb
+C:\Users\Eli Bowen\OneDrive - University of Plymouth\.Git projects\comp1004-coursework-cluster-f\MyCoreApp\obj\Debug\netcoreapp3.1\MyCoreApp.csproj.AssemblyReference.cache
+C:\Users\Eli Bowen\OneDrive - University of Plymouth\.Git projects\comp1004-coursework-cluster-f\MyCoreApp\obj\Debug\netcoreapp3.1\MyCoreApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Eli Bowen\OneDrive - University of Plymouth\.Git projects\comp1004-coursework-cluster-f\MyCoreApp\obj\Debug\netcoreapp3.1\MyCoreApp.AssemblyInfoInputs.cache
+C:\Users\Eli Bowen\OneDrive - University of Plymouth\.Git projects\comp1004-coursework-cluster-f\MyCoreApp\obj\Debug\netcoreapp3.1\MyCoreApp.AssemblyInfo.cs
+C:\Users\Eli Bowen\OneDrive - University of Plymouth\.Git projects\comp1004-coursework-cluster-f\MyCoreApp\obj\Debug\netcoreapp3.1\MyCoreApp.csproj.CoreCompileInputs.cache
+C:\Users\Eli Bowen\OneDrive - University of Plymouth\.Git projects\comp1004-coursework-cluster-f\MyCoreApp\obj\Debug\netcoreapp3.1\MyCoreApp.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Eli Bowen\OneDrive - University of Plymouth\.Git projects\comp1004-coursework-cluster-f\MyCoreApp\obj\Debug\netcoreapp3.1\MyCoreApp.RazorAssemblyInfo.cache
+C:\Users\Eli Bowen\OneDrive - University of Plymouth\.Git projects\comp1004-coursework-cluster-f\MyCoreApp\obj\Debug\netcoreapp3.1\MyCoreApp.RazorAssemblyInfo.cs
+C:\Users\Eli Bowen\OneDrive - University of Plymouth\.Git projects\comp1004-coursework-cluster-f\MyCoreApp\obj\Debug\netcoreapp3.1\staticwebassets\MyCoreApp.StaticWebAssets.Manifest.cache
+C:\Users\Eli Bowen\OneDrive - University of Plymouth\.Git projects\comp1004-coursework-cluster-f\MyCoreApp\obj\Debug\netcoreapp3.1\staticwebassets\MyCoreApp.StaticWebAssets.Pack.cache
+C:\Users\Eli Bowen\OneDrive - University of Plymouth\.Git projects\comp1004-coursework-cluster-f\MyCoreApp\obj\Debug\netcoreapp3.1\staticwebassets\msbuild.MyCoreApp.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\Eli Bowen\OneDrive - University of Plymouth\.Git projects\comp1004-coursework-cluster-f\MyCoreApp\obj\Debug\netcoreapp3.1\staticwebassets\msbuild.build.MyCoreApp.props
+C:\Users\Eli Bowen\OneDrive - University of Plymouth\.Git projects\comp1004-coursework-cluster-f\MyCoreApp\obj\Debug\netcoreapp3.1\staticwebassets\msbuild.buildMultiTargeting.MyCoreApp.props
+C:\Users\Eli Bowen\OneDrive - University of Plymouth\.Git projects\comp1004-coursework-cluster-f\MyCoreApp\obj\Debug\netcoreapp3.1\staticwebassets\msbuild.buildTransitive.MyCoreApp.props
+C:\Users\Eli Bowen\OneDrive - University of Plymouth\.Git projects\comp1004-coursework-cluster-f\MyCoreApp\obj\Debug\netcoreapp3.1\MyCoreApp.TagHelpers.input.cache
+C:\Users\Eli Bowen\OneDrive - University of Plymouth\.Git projects\comp1004-coursework-cluster-f\MyCoreApp\obj\Debug\netcoreapp3.1\MyCoreApp.TagHelpers.output.cache
+C:\Users\Eli Bowen\OneDrive - University of Plymouth\.Git projects\comp1004-coursework-cluster-f\MyCoreApp\obj\Debug\netcoreapp3.1\MyCoreApp.RazorCoreGenerate.cache
+C:\Users\Eli Bowen\OneDrive - University of Plymouth\.Git projects\comp1004-coursework-cluster-f\MyCoreApp\obj\Debug\netcoreapp3.1\Razor\Pages\Error.cshtml.g.cs
+C:\Users\Eli Bowen\OneDrive - University of Plymouth\.Git projects\comp1004-coursework-cluster-f\MyCoreApp\obj\Debug\netcoreapp3.1\Razor\Pages\Index.cshtml.g.cs
+C:\Users\Eli Bowen\OneDrive - University of Plymouth\.Git projects\comp1004-coursework-cluster-f\MyCoreApp\obj\Debug\netcoreapp3.1\Razor\Pages\Privacy.cshtml.g.cs
+C:\Users\Eli Bowen\OneDrive - University of Plymouth\.Git projects\comp1004-coursework-cluster-f\MyCoreApp\obj\Debug\netcoreapp3.1\Razor\Pages\Shared\_Layout.cshtml.g.cs
+C:\Users\Eli Bowen\OneDrive - University of Plymouth\.Git projects\comp1004-coursework-cluster-f\MyCoreApp\obj\Debug\netcoreapp3.1\Razor\Pages\Shared\_ValidationScriptsPartial.cshtml.g.cs
+C:\Users\Eli Bowen\OneDrive - University of Plymouth\.Git projects\comp1004-coursework-cluster-f\MyCoreApp\obj\Debug\netcoreapp3.1\Razor\Pages\_ViewImports.cshtml.g.cs
+C:\Users\Eli Bowen\OneDrive - University of Plymouth\.Git projects\comp1004-coursework-cluster-f\MyCoreApp\obj\Debug\netcoreapp3.1\Razor\Pages\_ViewStart.cshtml.g.cs
+C:\Users\Eli Bowen\OneDrive - University of Plymouth\.Git projects\comp1004-coursework-cluster-f\MyCoreApp\obj\Debug\netcoreapp3.1\MyCoreApp.RazorTargetAssemblyInfo.cache
+C:\Users\Eli Bowen\OneDrive - University of Plymouth\.Git projects\comp1004-coursework-cluster-f\MyCoreApp\obj\Debug\netcoreapp3.1\MyCoreApp.RazorTargetAssemblyInfo.cs
+C:\Users\Eli Bowen\OneDrive - University of Plymouth\.Git projects\comp1004-coursework-cluster-f\MyCoreApp\obj\Debug\netcoreapp3.1\MyCoreApp.Views.pdb
+C:\Users\Eli Bowen\OneDrive - University of Plymouth\.Git projects\comp1004-coursework-cluster-f\MyCoreApp\obj\Debug\netcoreapp3.1\MyCoreApp.dll
+C:\Users\Eli Bowen\OneDrive - University of Plymouth\.Git projects\comp1004-coursework-cluster-f\MyCoreApp\obj\Debug\netcoreapp3.1\MyCoreApp.pdb
+C:\Users\Eli Bowen\OneDrive - University of Plymouth\.Git projects\comp1004-coursework-cluster-f\MyCoreApp\obj\Debug\netcoreapp3.1\MyCoreApp.genruntimeconfig.cache
+C:\Users\Eli Bowen\OneDrive - University of Plymouth\.Git projects\comp1004-coursework-cluster-f\MyCoreApp\obj\Debug\netcoreapp3.1\MyCoreApp.csproj.CopyComplete
 C:\Users\elijb\OneDrive - University of Plymouth\.Git projects\comp1004-coursework-cluster-f\MyCoreApp\bin\Debug\netcoreapp3.1\appsettings.Development.json
 C:\Users\elijb\OneDrive - University of Plymouth\.Git projects\comp1004-coursework-cluster-f\MyCoreApp\bin\Debug\netcoreapp3.1\appsettings.json
 C:\Users\elijb\OneDrive - University of Plymouth\.Git projects\comp1004-coursework-cluster-f\MyCoreApp\bin\Debug\netcoreapp3.1\MyCoreApp.StaticWebAssets.xml
@@ -190,40 +269,129 @@ C:\Users\elijb\OneDrive - University of Plymouth\.Git projects\comp1004-coursewo
 C:\Users\elijb\OneDrive - University of Plymouth\.Git projects\comp1004-coursework-cluster-f\MyCoreApp\obj\Debug\netcoreapp3.1\MyCoreApp.pdb
 C:\Users\elijb\OneDrive - University of Plymouth\.Git projects\comp1004-coursework-cluster-f\MyCoreApp\obj\Debug\netcoreapp3.1\MyCoreApp.genruntimeconfig.cache
 C:\Users\elijb\OneDrive - University of Plymouth\.Git projects\comp1004-coursework-cluster-f\MyCoreApp\obj\Debug\netcoreapp3.1\MyCoreApp.csproj.CopyComplete
-C:\Users\ebowen2\OneDrive - University of Plymouth\.Git projects\comp1004-coursework-cluster-f\MyCoreApp\bin\Debug\netcoreapp3.1\appsettings.Development.json
-C:\Users\ebowen2\OneDrive - University of Plymouth\.Git projects\comp1004-coursework-cluster-f\MyCoreApp\bin\Debug\netcoreapp3.1\appsettings.json
-C:\Users\ebowen2\OneDrive - University of Plymouth\.Git projects\comp1004-coursework-cluster-f\MyCoreApp\bin\Debug\netcoreapp3.1\MyCoreApp.exe
-C:\Users\ebowen2\OneDrive - University of Plymouth\.Git projects\comp1004-coursework-cluster-f\MyCoreApp\bin\Debug\netcoreapp3.1\MyCoreApp.deps.json
-C:\Users\ebowen2\OneDrive - University of Plymouth\.Git projects\comp1004-coursework-cluster-f\MyCoreApp\bin\Debug\netcoreapp3.1\MyCoreApp.runtimeconfig.json
-C:\Users\ebowen2\OneDrive - University of Plymouth\.Git projects\comp1004-coursework-cluster-f\MyCoreApp\bin\Debug\netcoreapp3.1\MyCoreApp.runtimeconfig.dev.json
-C:\Users\ebowen2\OneDrive - University of Plymouth\.Git projects\comp1004-coursework-cluster-f\MyCoreApp\bin\Debug\netcoreapp3.1\MyCoreApp.dll
-C:\Users\ebowen2\OneDrive - University of Plymouth\.Git projects\comp1004-coursework-cluster-f\MyCoreApp\bin\Debug\netcoreapp3.1\MyCoreApp.pdb
-C:\Users\ebowen2\OneDrive - University of Plymouth\.Git projects\comp1004-coursework-cluster-f\MyCoreApp\bin\Debug\netcoreapp3.1\MyCoreApp.Views.dll
-C:\Users\ebowen2\OneDrive - University of Plymouth\.Git projects\comp1004-coursework-cluster-f\MyCoreApp\bin\Debug\netcoreapp3.1\MyCoreApp.Views.pdb
-C:\Users\ebowen2\OneDrive - University of Plymouth\.Git projects\comp1004-coursework-cluster-f\MyCoreApp\obj\Debug\netcoreapp3.1\MyCoreApp.csproj.AssemblyReference.cache
-C:\Users\ebowen2\OneDrive - University of Plymouth\.Git projects\comp1004-coursework-cluster-f\MyCoreApp\obj\Debug\netcoreapp3.1\MyCoreApp.AssemblyInfoInputs.cache
-C:\Users\ebowen2\OneDrive - University of Plymouth\.Git projects\comp1004-coursework-cluster-f\MyCoreApp\obj\Debug\netcoreapp3.1\MyCoreApp.AssemblyInfo.cs
-C:\Users\ebowen2\OneDrive - University of Plymouth\.Git projects\comp1004-coursework-cluster-f\MyCoreApp\obj\Debug\netcoreapp3.1\MyCoreApp.csproj.CoreCompileInputs.cache
-C:\Users\ebowen2\OneDrive - University of Plymouth\.Git projects\comp1004-coursework-cluster-f\MyCoreApp\obj\Debug\netcoreapp3.1\MyCoreApp.MvcApplicationPartsAssemblyInfo.cache
-C:\Users\ebowen2\OneDrive - University of Plymouth\.Git projects\comp1004-coursework-cluster-f\MyCoreApp\obj\Debug\netcoreapp3.1\MyCoreApp.RazorAssemblyInfo.cache
-C:\Users\ebowen2\OneDrive - University of Plymouth\.Git projects\comp1004-coursework-cluster-f\MyCoreApp\obj\Debug\netcoreapp3.1\MyCoreApp.RazorAssemblyInfo.cs
-C:\Users\ebowen2\OneDrive - University of Plymouth\.Git projects\comp1004-coursework-cluster-f\MyCoreApp\obj\Debug\netcoreapp3.1\staticwebassets\MyCoreApp.StaticWebAssets.Manifest.cache
-C:\Users\ebowen2\OneDrive - University of Plymouth\.Git projects\comp1004-coursework-cluster-f\MyCoreApp\obj\Debug\netcoreapp3.1\staticwebassets\MyCoreApp.StaticWebAssets.xml
-C:\Users\ebowen2\OneDrive - University of Plymouth\.Git projects\comp1004-coursework-cluster-f\MyCoreApp\obj\Debug\netcoreapp3.1\scopedcss\bundle\MyCoreApp.styles.css
-C:\Users\ebowen2\OneDrive - University of Plymouth\.Git projects\comp1004-coursework-cluster-f\MyCoreApp\obj\Debug\netcoreapp3.1\MyCoreApp.TagHelpers.input.cache
-C:\Users\ebowen2\OneDrive - University of Plymouth\.Git projects\comp1004-coursework-cluster-f\MyCoreApp\obj\Debug\netcoreapp3.1\MyCoreApp.TagHelpers.output.cache
-C:\Users\ebowen2\OneDrive - University of Plymouth\.Git projects\comp1004-coursework-cluster-f\MyCoreApp\obj\Debug\netcoreapp3.1\MyCoreApp.RazorCoreGenerate.cache
-C:\Users\ebowen2\OneDrive - University of Plymouth\.Git projects\comp1004-coursework-cluster-f\MyCoreApp\obj\Debug\netcoreapp3.1\Razor\Pages\Error.cshtml.g.cs
-C:\Users\ebowen2\OneDrive - University of Plymouth\.Git projects\comp1004-coursework-cluster-f\MyCoreApp\obj\Debug\netcoreapp3.1\Razor\Pages\Index.cshtml.g.cs
-C:\Users\ebowen2\OneDrive - University of Plymouth\.Git projects\comp1004-coursework-cluster-f\MyCoreApp\obj\Debug\netcoreapp3.1\Razor\Pages\Privacy.cshtml.g.cs
-C:\Users\ebowen2\OneDrive - University of Plymouth\.Git projects\comp1004-coursework-cluster-f\MyCoreApp\obj\Debug\netcoreapp3.1\Razor\Pages\Shared\_Layout.cshtml.g.cs
-C:\Users\ebowen2\OneDrive - University of Plymouth\.Git projects\comp1004-coursework-cluster-f\MyCoreApp\obj\Debug\netcoreapp3.1\Razor\Pages\Shared\_ValidationScriptsPartial.cshtml.g.cs
-C:\Users\ebowen2\OneDrive - University of Plymouth\.Git projects\comp1004-coursework-cluster-f\MyCoreApp\obj\Debug\netcoreapp3.1\Razor\Pages\_ViewImports.cshtml.g.cs
-C:\Users\ebowen2\OneDrive - University of Plymouth\.Git projects\comp1004-coursework-cluster-f\MyCoreApp\obj\Debug\netcoreapp3.1\Razor\Pages\_ViewStart.cshtml.g.cs
-C:\Users\ebowen2\OneDrive - University of Plymouth\.Git projects\comp1004-coursework-cluster-f\MyCoreApp\obj\Debug\netcoreapp3.1\MyCoreApp.RazorTargetAssemblyInfo.cache
-C:\Users\ebowen2\OneDrive - University of Plymouth\.Git projects\comp1004-coursework-cluster-f\MyCoreApp\obj\Debug\netcoreapp3.1\MyCoreApp.RazorTargetAssemblyInfo.cs
-C:\Users\ebowen2\OneDrive - University of Plymouth\.Git projects\comp1004-coursework-cluster-f\MyCoreApp\obj\Debug\netcoreapp3.1\MyCoreApp.Views.pdb
-C:\Users\ebowen2\OneDrive - University of Plymouth\.Git projects\comp1004-coursework-cluster-f\MyCoreApp\obj\Debug\netcoreapp3.1\MyCoreApp.dll
-C:\Users\ebowen2\OneDrive - University of Plymouth\.Git projects\comp1004-coursework-cluster-f\MyCoreApp\obj\Debug\netcoreapp3.1\MyCoreApp.pdb
-C:\Users\ebowen2\OneDrive - University of Plymouth\.Git projects\comp1004-coursework-cluster-f\MyCoreApp\obj\Debug\netcoreapp3.1\MyCoreApp.genruntimeconfig.cache
-C:\Users\ebowen2\OneDrive - University of Plymouth\.Git projects\comp1004-coursework-cluster-f\MyCoreApp\obj\Debug\netcoreapp3.1\MyCoreApp.csproj.CopyComplete
+C:\Users\Eli Bowen\Documents\comp1004-coursework-cluster-f\MyCoreApp\bin\Debug\netcoreapp3.1\appsettings.Development.json
+C:\Users\Eli Bowen\Documents\comp1004-coursework-cluster-f\MyCoreApp\bin\Debug\netcoreapp3.1\appsettings.json
+C:\Users\Eli Bowen\Documents\comp1004-coursework-cluster-f\MyCoreApp\bin\Debug\netcoreapp3.1\MyCoreApp.StaticWebAssets.xml
+C:\Users\Eli Bowen\Documents\comp1004-coursework-cluster-f\MyCoreApp\bin\Debug\netcoreapp3.1\MyCoreApp.exe
+C:\Users\Eli Bowen\Documents\comp1004-coursework-cluster-f\MyCoreApp\bin\Debug\netcoreapp3.1\MyCoreApp.deps.json
+C:\Users\Eli Bowen\Documents\comp1004-coursework-cluster-f\MyCoreApp\bin\Debug\netcoreapp3.1\MyCoreApp.runtimeconfig.json
+C:\Users\Eli Bowen\Documents\comp1004-coursework-cluster-f\MyCoreApp\bin\Debug\netcoreapp3.1\MyCoreApp.runtimeconfig.dev.json
+C:\Users\Eli Bowen\Documents\comp1004-coursework-cluster-f\MyCoreApp\bin\Debug\netcoreapp3.1\MyCoreApp.dll
+C:\Users\Eli Bowen\Documents\comp1004-coursework-cluster-f\MyCoreApp\bin\Debug\netcoreapp3.1\MyCoreApp.pdb
+C:\Users\Eli Bowen\Documents\comp1004-coursework-cluster-f\MyCoreApp\bin\Debug\netcoreapp3.1\MyCoreApp.Views.dll
+C:\Users\Eli Bowen\Documents\comp1004-coursework-cluster-f\MyCoreApp\bin\Debug\netcoreapp3.1\MyCoreApp.Views.pdb
+C:\Users\Eli Bowen\Documents\comp1004-coursework-cluster-f\MyCoreApp\obj\Debug\netcoreapp3.1\MyCoreApp.csproj.AssemblyReference.cache
+C:\Users\Eli Bowen\Documents\comp1004-coursework-cluster-f\MyCoreApp\obj\Debug\netcoreapp3.1\MyCoreApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Eli Bowen\Documents\comp1004-coursework-cluster-f\MyCoreApp\obj\Debug\netcoreapp3.1\MyCoreApp.AssemblyInfoInputs.cache
+C:\Users\Eli Bowen\Documents\comp1004-coursework-cluster-f\MyCoreApp\obj\Debug\netcoreapp3.1\MyCoreApp.AssemblyInfo.cs
+C:\Users\Eli Bowen\Documents\comp1004-coursework-cluster-f\MyCoreApp\obj\Debug\netcoreapp3.1\MyCoreApp.csproj.CoreCompileInputs.cache
+C:\Users\Eli Bowen\Documents\comp1004-coursework-cluster-f\MyCoreApp\obj\Debug\netcoreapp3.1\MyCoreApp.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Eli Bowen\Documents\comp1004-coursework-cluster-f\MyCoreApp\obj\Debug\netcoreapp3.1\MyCoreApp.RazorAssemblyInfo.cache
+C:\Users\Eli Bowen\Documents\comp1004-coursework-cluster-f\MyCoreApp\obj\Debug\netcoreapp3.1\MyCoreApp.RazorAssemblyInfo.cs
+C:\Users\Eli Bowen\Documents\comp1004-coursework-cluster-f\MyCoreApp\obj\Debug\netcoreapp3.1\staticwebassets\MyCoreApp.StaticWebAssets.Manifest.cache
+C:\Users\Eli Bowen\Documents\comp1004-coursework-cluster-f\MyCoreApp\obj\Debug\netcoreapp3.1\staticwebassets\MyCoreApp.StaticWebAssets.Pack.cache
+C:\Users\Eli Bowen\Documents\comp1004-coursework-cluster-f\MyCoreApp\obj\Debug\netcoreapp3.1\staticwebassets\msbuild.MyCoreApp.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\Eli Bowen\Documents\comp1004-coursework-cluster-f\MyCoreApp\obj\Debug\netcoreapp3.1\staticwebassets\msbuild.build.MyCoreApp.props
+C:\Users\Eli Bowen\Documents\comp1004-coursework-cluster-f\MyCoreApp\obj\Debug\netcoreapp3.1\staticwebassets\msbuild.buildMultiTargeting.MyCoreApp.props
+C:\Users\Eli Bowen\Documents\comp1004-coursework-cluster-f\MyCoreApp\obj\Debug\netcoreapp3.1\staticwebassets\msbuild.buildTransitive.MyCoreApp.props
+C:\Users\Eli Bowen\Documents\comp1004-coursework-cluster-f\MyCoreApp\obj\Debug\netcoreapp3.1\MyCoreApp.TagHelpers.input.cache
+C:\Users\Eli Bowen\Documents\comp1004-coursework-cluster-f\MyCoreApp\obj\Debug\netcoreapp3.1\MyCoreApp.TagHelpers.output.cache
+C:\Users\Eli Bowen\Documents\comp1004-coursework-cluster-f\MyCoreApp\obj\Debug\netcoreapp3.1\MyCoreApp.RazorCoreGenerate.cache
+C:\Users\Eli Bowen\Documents\comp1004-coursework-cluster-f\MyCoreApp\obj\Debug\netcoreapp3.1\Razor\Pages\Error.cshtml.g.cs
+C:\Users\Eli Bowen\Documents\comp1004-coursework-cluster-f\MyCoreApp\obj\Debug\netcoreapp3.1\Razor\Pages\Index.cshtml.g.cs
+C:\Users\Eli Bowen\Documents\comp1004-coursework-cluster-f\MyCoreApp\obj\Debug\netcoreapp3.1\Razor\Pages\Privacy.cshtml.g.cs
+C:\Users\Eli Bowen\Documents\comp1004-coursework-cluster-f\MyCoreApp\obj\Debug\netcoreapp3.1\Razor\Pages\Shared\_Layout.cshtml.g.cs
+C:\Users\Eli Bowen\Documents\comp1004-coursework-cluster-f\MyCoreApp\obj\Debug\netcoreapp3.1\Razor\Pages\Shared\_ValidationScriptsPartial.cshtml.g.cs
+C:\Users\Eli Bowen\Documents\comp1004-coursework-cluster-f\MyCoreApp\obj\Debug\netcoreapp3.1\Razor\Pages\_ViewImports.cshtml.g.cs
+C:\Users\Eli Bowen\Documents\comp1004-coursework-cluster-f\MyCoreApp\obj\Debug\netcoreapp3.1\Razor\Pages\_ViewStart.cshtml.g.cs
+C:\Users\Eli Bowen\Documents\comp1004-coursework-cluster-f\MyCoreApp\obj\Debug\netcoreapp3.1\MyCoreApp.RazorTargetAssemblyInfo.cache
+C:\Users\Eli Bowen\Documents\comp1004-coursework-cluster-f\MyCoreApp\obj\Debug\netcoreapp3.1\MyCoreApp.RazorTargetAssemblyInfo.cs
+C:\Users\Eli Bowen\Documents\comp1004-coursework-cluster-f\MyCoreApp\obj\Debug\netcoreapp3.1\MyCoreApp.Views.pdb
+C:\Users\Eli Bowen\Documents\comp1004-coursework-cluster-f\MyCoreApp\obj\Debug\netcoreapp3.1\MyCoreApp.dll
+C:\Users\Eli Bowen\Documents\comp1004-coursework-cluster-f\MyCoreApp\obj\Debug\netcoreapp3.1\MyCoreApp.pdb
+C:\Users\Eli Bowen\Documents\comp1004-coursework-cluster-f\MyCoreApp\obj\Debug\netcoreapp3.1\MyCoreApp.genruntimeconfig.cache
+C:\Users\Eli Bowen\Documents\comp1004-coursework-cluster-f\MyCoreApp\obj\Debug\netcoreapp3.1\MyCoreApp.csproj.CopyComplete
+C:\Users\elijb\Downloads\comp1004-coursework-cluster-f\comp1004-coursework-cluster-f\MyCoreApp\bin\Debug\netcoreapp3.1\appsettings.Development.json
+C:\Users\elijb\Downloads\comp1004-coursework-cluster-f\comp1004-coursework-cluster-f\MyCoreApp\bin\Debug\netcoreapp3.1\appsettings.json
+C:\Users\elijb\Downloads\comp1004-coursework-cluster-f\comp1004-coursework-cluster-f\MyCoreApp\bin\Debug\netcoreapp3.1\MyCoreApp.StaticWebAssets.xml
+C:\Users\elijb\Downloads\comp1004-coursework-cluster-f\comp1004-coursework-cluster-f\MyCoreApp\bin\Debug\netcoreapp3.1\MyCoreApp.exe
+C:\Users\elijb\Downloads\comp1004-coursework-cluster-f\comp1004-coursework-cluster-f\MyCoreApp\bin\Debug\netcoreapp3.1\MyCoreApp.deps.json
+C:\Users\elijb\Downloads\comp1004-coursework-cluster-f\comp1004-coursework-cluster-f\MyCoreApp\bin\Debug\netcoreapp3.1\MyCoreApp.runtimeconfig.json
+C:\Users\elijb\Downloads\comp1004-coursework-cluster-f\comp1004-coursework-cluster-f\MyCoreApp\bin\Debug\netcoreapp3.1\MyCoreApp.runtimeconfig.dev.json
+C:\Users\elijb\Downloads\comp1004-coursework-cluster-f\comp1004-coursework-cluster-f\MyCoreApp\bin\Debug\netcoreapp3.1\MyCoreApp.dll
+C:\Users\elijb\Downloads\comp1004-coursework-cluster-f\comp1004-coursework-cluster-f\MyCoreApp\bin\Debug\netcoreapp3.1\MyCoreApp.pdb
+C:\Users\elijb\Downloads\comp1004-coursework-cluster-f\comp1004-coursework-cluster-f\MyCoreApp\bin\Debug\netcoreapp3.1\MyCoreApp.Views.dll
+C:\Users\elijb\Downloads\comp1004-coursework-cluster-f\comp1004-coursework-cluster-f\MyCoreApp\bin\Debug\netcoreapp3.1\MyCoreApp.Views.pdb
+C:\Users\elijb\Downloads\comp1004-coursework-cluster-f\comp1004-coursework-cluster-f\MyCoreApp\obj\Debug\netcoreapp3.1\MyCoreApp.csproj.AssemblyReference.cache
+C:\Users\elijb\Downloads\comp1004-coursework-cluster-f\comp1004-coursework-cluster-f\MyCoreApp\obj\Debug\netcoreapp3.1\MyCoreApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\elijb\Downloads\comp1004-coursework-cluster-f\comp1004-coursework-cluster-f\MyCoreApp\obj\Debug\netcoreapp3.1\MyCoreApp.AssemblyInfoInputs.cache
+C:\Users\elijb\Downloads\comp1004-coursework-cluster-f\comp1004-coursework-cluster-f\MyCoreApp\obj\Debug\netcoreapp3.1\MyCoreApp.AssemblyInfo.cs
+C:\Users\elijb\Downloads\comp1004-coursework-cluster-f\comp1004-coursework-cluster-f\MyCoreApp\obj\Debug\netcoreapp3.1\MyCoreApp.csproj.CoreCompileInputs.cache
+C:\Users\elijb\Downloads\comp1004-coursework-cluster-f\comp1004-coursework-cluster-f\MyCoreApp\obj\Debug\netcoreapp3.1\MyCoreApp.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\elijb\Downloads\comp1004-coursework-cluster-f\comp1004-coursework-cluster-f\MyCoreApp\obj\Debug\netcoreapp3.1\MyCoreApp.RazorAssemblyInfo.cache
+C:\Users\elijb\Downloads\comp1004-coursework-cluster-f\comp1004-coursework-cluster-f\MyCoreApp\obj\Debug\netcoreapp3.1\MyCoreApp.RazorAssemblyInfo.cs
+C:\Users\elijb\Downloads\comp1004-coursework-cluster-f\comp1004-coursework-cluster-f\MyCoreApp\obj\Debug\netcoreapp3.1\staticwebassets\MyCoreApp.StaticWebAssets.Manifest.cache
+C:\Users\elijb\Downloads\comp1004-coursework-cluster-f\comp1004-coursework-cluster-f\MyCoreApp\obj\Debug\netcoreapp3.1\staticwebassets\MyCoreApp.StaticWebAssets.Pack.cache
+C:\Users\elijb\Downloads\comp1004-coursework-cluster-f\comp1004-coursework-cluster-f\MyCoreApp\obj\Debug\netcoreapp3.1\staticwebassets\msbuild.MyCoreApp.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\elijb\Downloads\comp1004-coursework-cluster-f\comp1004-coursework-cluster-f\MyCoreApp\obj\Debug\netcoreapp3.1\staticwebassets\msbuild.build.MyCoreApp.props
+C:\Users\elijb\Downloads\comp1004-coursework-cluster-f\comp1004-coursework-cluster-f\MyCoreApp\obj\Debug\netcoreapp3.1\staticwebassets\msbuild.buildMultiTargeting.MyCoreApp.props
+C:\Users\elijb\Downloads\comp1004-coursework-cluster-f\comp1004-coursework-cluster-f\MyCoreApp\obj\Debug\netcoreapp3.1\staticwebassets\msbuild.buildTransitive.MyCoreApp.props
+C:\Users\elijb\Downloads\comp1004-coursework-cluster-f\comp1004-coursework-cluster-f\MyCoreApp\obj\Debug\netcoreapp3.1\MyCoreApp.TagHelpers.input.cache
+C:\Users\elijb\Downloads\comp1004-coursework-cluster-f\comp1004-coursework-cluster-f\MyCoreApp\obj\Debug\netcoreapp3.1\MyCoreApp.TagHelpers.output.cache
+C:\Users\elijb\Downloads\comp1004-coursework-cluster-f\comp1004-coursework-cluster-f\MyCoreApp\obj\Debug\netcoreapp3.1\MyCoreApp.RazorCoreGenerate.cache
+C:\Users\elijb\Downloads\comp1004-coursework-cluster-f\comp1004-coursework-cluster-f\MyCoreApp\obj\Debug\netcoreapp3.1\Razor\Pages\Error.cshtml.g.cs
+C:\Users\elijb\Downloads\comp1004-coursework-cluster-f\comp1004-coursework-cluster-f\MyCoreApp\obj\Debug\netcoreapp3.1\Razor\Pages\Index.cshtml.g.cs
+C:\Users\elijb\Downloads\comp1004-coursework-cluster-f\comp1004-coursework-cluster-f\MyCoreApp\obj\Debug\netcoreapp3.1\Razor\Pages\Privacy.cshtml.g.cs
+C:\Users\elijb\Downloads\comp1004-coursework-cluster-f\comp1004-coursework-cluster-f\MyCoreApp\obj\Debug\netcoreapp3.1\Razor\Pages\Shared\_Layout.cshtml.g.cs
+C:\Users\elijb\Downloads\comp1004-coursework-cluster-f\comp1004-coursework-cluster-f\MyCoreApp\obj\Debug\netcoreapp3.1\Razor\Pages\Shared\_ValidationScriptsPartial.cshtml.g.cs
+C:\Users\elijb\Downloads\comp1004-coursework-cluster-f\comp1004-coursework-cluster-f\MyCoreApp\obj\Debug\netcoreapp3.1\Razor\Pages\_ViewImports.cshtml.g.cs
+C:\Users\elijb\Downloads\comp1004-coursework-cluster-f\comp1004-coursework-cluster-f\MyCoreApp\obj\Debug\netcoreapp3.1\Razor\Pages\_ViewStart.cshtml.g.cs
+C:\Users\elijb\Downloads\comp1004-coursework-cluster-f\comp1004-coursework-cluster-f\MyCoreApp\obj\Debug\netcoreapp3.1\MyCoreApp.RazorTargetAssemblyInfo.cache
+C:\Users\elijb\Downloads\comp1004-coursework-cluster-f\comp1004-coursework-cluster-f\MyCoreApp\obj\Debug\netcoreapp3.1\MyCoreApp.RazorTargetAssemblyInfo.cs
+C:\Users\elijb\Downloads\comp1004-coursework-cluster-f\comp1004-coursework-cluster-f\MyCoreApp\obj\Debug\netcoreapp3.1\MyCoreApp.Views.pdb
+C:\Users\elijb\Downloads\comp1004-coursework-cluster-f\comp1004-coursework-cluster-f\MyCoreApp\obj\Debug\netcoreapp3.1\MyCoreApp.dll
+C:\Users\elijb\Downloads\comp1004-coursework-cluster-f\comp1004-coursework-cluster-f\MyCoreApp\obj\Debug\netcoreapp3.1\MyCoreApp.pdb
+C:\Users\elijb\Downloads\comp1004-coursework-cluster-f\comp1004-coursework-cluster-f\MyCoreApp\obj\Debug\netcoreapp3.1\MyCoreApp.genruntimeconfig.cache
+C:\Users\elijb\Downloads\comp1004-coursework-cluster-f\comp1004-coursework-cluster-f\MyCoreApp\obj\Debug\netcoreapp3.1\MyCoreApp.csproj.CopyComplete
+F:\temp\comp1004-coursework-cluster-f\MyCoreApp\bin\Debug\netcoreapp3.1\appsettings.Development.json
+F:\temp\comp1004-coursework-cluster-f\MyCoreApp\bin\Debug\netcoreapp3.1\appsettings.json
+F:\temp\comp1004-coursework-cluster-f\MyCoreApp\bin\Debug\netcoreapp3.1\MyCoreApp.StaticWebAssets.xml
+F:\temp\comp1004-coursework-cluster-f\MyCoreApp\bin\Debug\netcoreapp3.1\MyCoreApp.exe
+F:\temp\comp1004-coursework-cluster-f\MyCoreApp\bin\Debug\netcoreapp3.1\MyCoreApp.deps.json
+F:\temp\comp1004-coursework-cluster-f\MyCoreApp\bin\Debug\netcoreapp3.1\MyCoreApp.runtimeconfig.json
+F:\temp\comp1004-coursework-cluster-f\MyCoreApp\bin\Debug\netcoreapp3.1\MyCoreApp.runtimeconfig.dev.json
+F:\temp\comp1004-coursework-cluster-f\MyCoreApp\bin\Debug\netcoreapp3.1\MyCoreApp.dll
+F:\temp\comp1004-coursework-cluster-f\MyCoreApp\bin\Debug\netcoreapp3.1\MyCoreApp.pdb
+F:\temp\comp1004-coursework-cluster-f\MyCoreApp\bin\Debug\netcoreapp3.1\MyCoreApp.Views.dll
+F:\temp\comp1004-coursework-cluster-f\MyCoreApp\bin\Debug\netcoreapp3.1\MyCoreApp.Views.pdb
+F:\temp\comp1004-coursework-cluster-f\MyCoreApp\obj\Debug\netcoreapp3.1\MyCoreApp.csproj.AssemblyReference.cache
+F:\temp\comp1004-coursework-cluster-f\MyCoreApp\obj\Debug\netcoreapp3.1\MyCoreApp.GeneratedMSBuildEditorConfig.editorconfig
+F:\temp\comp1004-coursework-cluster-f\MyCoreApp\obj\Debug\netcoreapp3.1\MyCoreApp.AssemblyInfoInputs.cache
+F:\temp\comp1004-coursework-cluster-f\MyCoreApp\obj\Debug\netcoreapp3.1\MyCoreApp.AssemblyInfo.cs
+F:\temp\comp1004-coursework-cluster-f\MyCoreApp\obj\Debug\netcoreapp3.1\MyCoreApp.csproj.CoreCompileInputs.cache
+F:\temp\comp1004-coursework-cluster-f\MyCoreApp\obj\Debug\netcoreapp3.1\MyCoreApp.MvcApplicationPartsAssemblyInfo.cache
+F:\temp\comp1004-coursework-cluster-f\MyCoreApp\obj\Debug\netcoreapp3.1\MyCoreApp.RazorAssemblyInfo.cache
+F:\temp\comp1004-coursework-cluster-f\MyCoreApp\obj\Debug\netcoreapp3.1\MyCoreApp.RazorAssemblyInfo.cs
+F:\temp\comp1004-coursework-cluster-f\MyCoreApp\obj\Debug\netcoreapp3.1\staticwebassets\MyCoreApp.StaticWebAssets.Manifest.cache
+F:\temp\comp1004-coursework-cluster-f\MyCoreApp\obj\Debug\netcoreapp3.1\staticwebassets\MyCoreApp.StaticWebAssets.Pack.cache
+F:\temp\comp1004-coursework-cluster-f\MyCoreApp\obj\Debug\netcoreapp3.1\staticwebassets\msbuild.MyCoreApp.Microsoft.AspNetCore.StaticWebAssets.props
+F:\temp\comp1004-coursework-cluster-f\MyCoreApp\obj\Debug\netcoreapp3.1\staticwebassets\msbuild.build.MyCoreApp.props
+F:\temp\comp1004-coursework-cluster-f\MyCoreApp\obj\Debug\netcoreapp3.1\staticwebassets\msbuild.buildMultiTargeting.MyCoreApp.props
+F:\temp\comp1004-coursework-cluster-f\MyCoreApp\obj\Debug\netcoreapp3.1\staticwebassets\msbuild.buildTransitive.MyCoreApp.props
+F:\temp\comp1004-coursework-cluster-f\MyCoreApp\obj\Debug\netcoreapp3.1\MyCoreApp.TagHelpers.input.cache
+F:\temp\comp1004-coursework-cluster-f\MyCoreApp\obj\Debug\netcoreapp3.1\MyCoreApp.TagHelpers.output.cache
+F:\temp\comp1004-coursework-cluster-f\MyCoreApp\obj\Debug\netcoreapp3.1\MyCoreApp.RazorCoreGenerate.cache
+F:\temp\comp1004-coursework-cluster-f\MyCoreApp\obj\Debug\netcoreapp3.1\Razor\Pages\Error.cshtml.g.cs
+F:\temp\comp1004-coursework-cluster-f\MyCoreApp\obj\Debug\netcoreapp3.1\Razor\Pages\Index.cshtml.g.cs
+F:\temp\comp1004-coursework-cluster-f\MyCoreApp\obj\Debug\netcoreapp3.1\Razor\Pages\Privacy.cshtml.g.cs
+F:\temp\comp1004-coursework-cluster-f\MyCoreApp\obj\Debug\netcoreapp3.1\Razor\Pages\Shared\_Layout.cshtml.g.cs
+F:\temp\comp1004-coursework-cluster-f\MyCoreApp\obj\Debug\netcoreapp3.1\Razor\Pages\Shared\_ValidationScriptsPartial.cshtml.g.cs
+F:\temp\comp1004-coursework-cluster-f\MyCoreApp\obj\Debug\netcoreapp3.1\Razor\Pages\_ViewImports.cshtml.g.cs
+F:\temp\comp1004-coursework-cluster-f\MyCoreApp\obj\Debug\netcoreapp3.1\Razor\Pages\_ViewStart.cshtml.g.cs
+F:\temp\comp1004-coursework-cluster-f\MyCoreApp\obj\Debug\netcoreapp3.1\MyCoreApp.RazorTargetAssemblyInfo.cache
+F:\temp\comp1004-coursework-cluster-f\MyCoreApp\obj\Debug\netcoreapp3.1\MyCoreApp.RazorTargetAssemblyInfo.cs
+F:\temp\comp1004-coursework-cluster-f\MyCoreApp\obj\Debug\netcoreapp3.1\MyCoreApp.Views.pdb
+F:\temp\comp1004-coursework-cluster-f\MyCoreApp\obj\Debug\netcoreapp3.1\MyCoreApp.dll
+F:\temp\comp1004-coursework-cluster-f\MyCoreApp\obj\Debug\netcoreapp3.1\MyCoreApp.pdb
+F:\temp\comp1004-coursework-cluster-f\MyCoreApp\obj\Debug\netcoreapp3.1\MyCoreApp.genruntimeconfig.cache
+F:\temp\comp1004-coursework-cluster-f\MyCoreApp\obj\Debug\netcoreapp3.1\MyCoreApp.csproj.CopyComplete
